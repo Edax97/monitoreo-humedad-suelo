@@ -46,7 +46,7 @@ export function SelectValHidraul(props: Props) {
           </div>
           <button
             type="button"
-            className="btn btn-primary"
+            className="btn btn-outline-primary mt-2"
             onClick={props.select}
           >
             Definir valores

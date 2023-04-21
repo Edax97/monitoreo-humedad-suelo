@@ -12,6 +12,18 @@ import { moverFecha } from "../../api/utilities/date-utils";
 export interface DatumHType {
   fecha: string;
   Nivel: number;
+  "Humedad (%)": number;
+}
+
+export interface DataXY {
+  time: any;
+  h: number;
+}
+
+export interface DatumVisType {
+  level: number | "suma";
+  color: string;
+  data: DataXY[];
 }
 
 export interface SondaType {
@@ -20,14 +32,29 @@ export interface SondaType {
   color: string;
 }
 
+interface VarHidraulType {
+  cc: number;
+  pmp: number;
+}
+
 interface Props {
   children: ReactNode;
 }
 
-const StateContext = createContext<any>(null);
+interface StateContextType {
+  dataVis: DatumVisType[];
+  timeRange: any;
+  setTimeRange: (a: any) => any;
+  sondas: SondaType[];
+  setSondas: (a: any) => any;
+  varHidraul: VarHidraulType;
+  setVarHidraul: (a: any) => any;
+}
+
+const StateContext = createContext<StateContextType>(null!);
 
 export function StateProvider(props: Props) {
-  const [dataHum, setDataHum] = useState<DatumHType[]>([]);
+  const [dataSondas, setDataHum] = useState<DatumHType[]>([]);
   useEffect(() => {
     getDataHumedad().then((data) => setDataHum(data));
   }, []);
@@ -43,17 +70,36 @@ export function StateProvider(props: Props) {
   ]);
 
   const dataFiltrada = useMemo(() => {
-    return dataHum.filter((d) => {
-      /* for (const s in sondas) {
-        if (s.level == d["Nivel"]) return s.show;
-      } */
-      return false;
+    return dataSondas
+      .filter((d) => {
+        const s_found = sondas.find((s) => s.level === d["Nivel"]);
+        return s_found?.show;
+      })
+      .slice(0, 300);
+  }, [dataSondas, sondas]);
+
+  const dataVis = useMemo(() => {
+    //dataVis = {30: [{x,y}], 60: [{x,y}], 'suma': [{x,y}]}
+    const dataVisT = sondas
+      .filter((s) => s.show)
+      .map<DatumVisType>((s) => ({ level: s.level, color: s.color, data: [] }))
+      .concat({ level: "suma", data: [], color: "black" });
+
+    dataFiltrada.forEach((datum) => {
+      //search datum.level in dataVisT and push in data
+      const levelIndex = dataVisT.findIndex((l) => l.level === datum["Nivel"]);
+      dataVisT[levelIndex]["data"].push({
+        time: datum["fecha"],
+        h: datum["Humedad (%)"],
+      });
     });
-  }, [dataHum, timeRange, sondas]);
+    return dataVisT;
+  }, [dataFiltrada, sondas]);
 
-  const dataVis = useMemo(() => dataHum, [dataHum]);
-
-  const [varHidraul, setVarHidraul] = useState({ cc: 120, pmp: 40 });
+  const [varHidraul, setVarHidraul] = useState<VarHidraulType>({
+    cc: 120,
+    pmp: 40,
+  });
 
   return (
     <StateContext.Provider
@@ -68,6 +114,14 @@ export function StateProvider(props: Props) {
       }}
     >
       {props.children}
+      <div>DATA HUMEDAD FILTRADA</div>
+      <div className="mt-5">
+        {dataFiltrada.slice(0, 100).map((d) => (
+          <div
+            key={`${d.fecha}-${d.Nivel}`}
+          >{`${d.Nivel}  |  ${d.fecha}  |  ${d["Humedad (%)"]}`}</div>
+        ))}
+      </div>
     </StateContext.Provider>
   );
 }

@@ -21,12 +21,16 @@ export function FiltradoSonda(props: Props) {
       </button>
       <ul className="dropdown-menu" aria-labelledby="dropdown-sondas">
         {props.sondas.map((sonda) => (
-          <li>
+          <li key={sonda.level}>
             <button
               className="dropdown-item d-inline"
               onClick={() => props.toggleSonda(sonda.level)}
             >
-              <input className="me-3" type="checkbox" checked={sonda.show} />
+              <input
+                className="me-3 form-check-input"
+                type="checkbox"
+                checked={sonda.show}
+              />
               {sonda.level} cm
             </button>
           </li>
