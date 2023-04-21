@@ -24,7 +24,7 @@ export function FiltradoSonda(props: Props) {
           <li key={sonda.level}>
             <button
               className="dropdown-item d-inline"
-              onClick={() => props.toggleSonda(sonda.level)}
+              onClick={() => props.toggleSonda(+sonda.level)}
             >
               <input
                 className="me-3 form-check-input"

@@ -1,5 +1,5 @@
 import React from "react";
-import { DataXY, DatumVisType } from "../../state-provider/state-provider";
+import { DataXY, SeriesVisType } from "../../state-provider/state-provider";
 import {
   Axis, // any of these can be non-animated equivalents
   Grid,
@@ -8,12 +8,12 @@ import {
   //Tooltip,
 } from "@visx/xychart";
 interface Props {
-  dataVis: DatumVisType[];
+  dataVis: SeriesVisType[];
 }
 
 const accesors = {
-  xAccessor: (d: DataXY) => d.time,
-  yAccessor: (d: DataXY) => d.h,
+  xAccessor: (d: DataXY) => d?.time,
+  yAccessor: (d: DataXY) => d?.h,
 };
 
 export function Grafica(props: Props) {
@@ -21,7 +21,7 @@ export function Grafica(props: Props) {
     <div>
       <XYChart
         height={400}
-        xScale={{ type: "linear" }}
+        xScale={{ type: "time" }}
         yScale={{ type: "linear" }}
         children={[
           ...props.dataVis.map((dVis) => (
@@ -33,7 +33,9 @@ export function Grafica(props: Props) {
             />
           )),
           <Axis orientation="bottom" />,
-          <Grid rows={false} />,
+          <Axis orientation="right" />,
+          <Axis orientation="left" />,
+          <Grid rows={false} strokeDasharray={"5"} />,
         ]}
       />
     </div>

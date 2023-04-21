@@ -1,14 +1,9 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { useStateContext } from "../../state-provider/state-provider";
 import { Grafica } from "../grafica-component/grafica";
 
 export default function GraficaSeries() {
-  const { dataVis: dataVisT } = useStateContext();
+  const { dataVis } = useStateContext();
 
-  const dataVis = useMemo(
-    () => dataVisT.filter((d) => d.level !== "suma"),
-    [dataVisT]
-  );
-
-  return <Grafica dataVis={dataVis} />;
+  return <Grafica dataVis={dataVis.series} />;
 }

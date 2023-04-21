@@ -3,19 +3,16 @@ import { useStateContext } from "../../state-provider/state-provider";
 import Leyenda from "../leyenda-component/leyenda";
 
 export default function LeyendaSumaContainer() {
-  const { sondas } = useStateContext();
+  const { sumaSondas } = useStateContext();
 
   const serieSuma = useMemo(
     () => ({
-      color: "#5F264A",
-      label: sondas
-        .filter((s) => s.show)
-        .map((s) => s.level)
-        .join("+"),
+      color: sumaSondas.color,
+      label: `${sumaSondas.level} cm`,
     }),
-    [sondas]
+    [sumaSondas]
   );
-  return serieSuma.label.length > 0 ? (
+  return sumaSondas.show ? (
     <Leyenda infoText={null} series={[serieSuma]} />
   ) : null;
 }
