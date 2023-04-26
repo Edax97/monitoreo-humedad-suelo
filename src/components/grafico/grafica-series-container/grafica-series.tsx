@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
-import { Grafica } from "../grafica-component/grafica";
+import { AreaType, Grafica } from "../grafica-component/grafica";
 
 export default function GraficaSeries() {
-  const { dataVis } = useStateContext();
+  const { dataVis, timeRange } = useStateContext();
 
-  return <Grafica dataVis={dataVis.series} />;
+  const areaList = useMemo<AreaType[]>(
+    () => [
+      {
+        label: "dominio-tiempo",
+        showLabel: false,
+        color: "#ffffff00",
+        data: [
+          { time: timeRange.startDate, h: 0 },
+          { time: timeRange.endDate, h: 0 },
+        ],
+      },
+    ],
+    [timeRange]
+  );
+
+  return <Grafica dataVis={dataVis.series} areaList={areaList} />;
 }

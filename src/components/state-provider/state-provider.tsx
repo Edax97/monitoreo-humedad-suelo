@@ -8,6 +8,7 @@ import React, {
 } from "react";
 import { getDataHumedad } from "../../api/data-humedad";
 import { moverFecha } from "../../api/utilities/date-utils";
+import { max } from "d3";
 
 export interface DatumHType {
   fecha: string;
@@ -24,6 +25,7 @@ export interface SeriesVisType {
   level: number | string;
   color: string;
   data: DataXY[];
+  lastDatum: Date | null;
 }
 
 export interface SondaType {
@@ -32,7 +34,7 @@ export interface SondaType {
   color: string;
 }
 
-interface VarHidraulType {
+export interface VarHidraulType {
   cc: number;
   pmp: number;
 }
@@ -43,7 +45,7 @@ interface Props {
 
 interface StateContextType {
   dataVis: { series: SeriesVisType[]; suma: SeriesVisType };
-  timeRange: any;
+  timeRange: { startDate: Date; endDate: Date };
   setTimeRange: (a: any) => any;
   sondas: SondaType[];
   setSondas: (a: any) => any;
@@ -60,7 +62,7 @@ export function StateProvider(props: Props) {
     getDataHumedad().then((data) => setDataHum(data));
   }, []);
 
-  const [timeRange, setTimeRange] = useState<any>({
+  const [timeRange, setTimeRange] = useState({
     startDate: moverFecha(new Date(), -14),
     endDate: new Date(),
   });
@@ -87,10 +89,17 @@ export function StateProvider(props: Props) {
         const s_found = sondas.find((s) => s.level === d["Nivel"]);
         return s_found?.show;
       })
-      .slice(0, 300);
-  }, [dataSondas, sondas]);
+      .filter((d) => {
+        const datum_time = new Date(d["fecha"]);
+        return (
+          datum_time > timeRange.startDate && datum_time < timeRange.endDate
+        );
+      });
+  }, [dataSondas, sondas, timeRange]);
 
   const dataVis = useMemo(() => {
+    const lastDatum = max(dataFiltrada, (d) => new Date(d["fecha"]));
+
     //dataVis = {30: [{x,y}], 60: [{x,y}], 'suma': [{x,y}]}
     const seriesVis = sondas
       .filter((s) => s.show)
@@ -98,27 +107,40 @@ export function StateProvider(props: Props) {
         level: s.level,
         color: s.color,
         data: [],
+        lastDatum: lastDatum || null,
       }));
     const sumaVis: SeriesVisType = {
       level: sumaSondas.level,
       color: sumaSondas.color,
       data: [],
+      lastDatum: lastDatum || null,
     };
 
     dataFiltrada.forEach((datum) => {
-      //search datum.level in dataVisT and push in data
+      const datum_h = datum["Humedad (%)"];
+      const datum_time = new Date(datum["fecha"]);
+      //search datum.Nivel in SeriesVis and push in data
       const levelIndex = seriesVis.findIndex((l) => l.level === datum["Nivel"]);
       seriesVis[levelIndex]["data"].push({
-        time: new Date(datum["fecha"]),
-        h: datum["Humedad (%)"],
+        time: datum_time,
+        h: datum_h,
       });
+
+      //search for datum.fecha in sumaVis
+      const timeIndex = sumaVis.data.findIndex(
+        (i) => i.time.toString() === datum_time.toString()
+      );
+      if (timeIndex === -1) sumaVis.data.push({ time: datum_time, h: datum_h });
+      else {
+        sumaVis.data[timeIndex].h += datum_h;
+      }
     });
     return { series: seriesVis, suma: sumaVis };
   }, [dataFiltrada, sondas, sumaSondas]);
 
   const [varHidraul, setVarHidraul] = useState<VarHidraulType>({
-    cc: 120,
-    pmp: 40,
+    cc: 110,
+    pmp: 80,
   });
 
   return (

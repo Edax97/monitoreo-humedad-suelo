@@ -1,7 +1,7 @@
 @import "/src/styles/variables";
 .legend-box {
   border-style: solid;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem 0.4rem 0 0;
   border-width: 0.2px;
   border-color: adjust-color($color: $gray, $alpha: 0.2);
 }
