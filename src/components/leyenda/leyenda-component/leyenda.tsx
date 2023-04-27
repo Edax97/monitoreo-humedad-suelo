@@ -14,7 +14,7 @@ interface Props {
 
 export default function Leyenda(props: Props) {
   return props.series.length > 0 ? (
-    <div className="legend-box px-2 pb-1">
+    <div className="px-2 pb-1" style={{ fontSize: "small" }}>
       <div className="d-flex gap-3">
         {props.infoText && <div key="info">{props.infoText}</div>}
         {props.series.map((serie) => (

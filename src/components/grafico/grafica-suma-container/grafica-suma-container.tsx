@@ -1,3 +1,4 @@
+import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
 import { AreaType, Grafica } from "../grafica-component/grafica";
@@ -36,5 +37,16 @@ export default function GraficaSumaContainer() {
     ],
     [timeRange, varHidraul]
   );
-  return <Grafica dataVis={[dataVis.suma]} areaList={areaList} />;
+  return (
+    <ParentSize>
+      {({ width }) => (
+        <Grafica
+          width={width}
+          height={400}
+          dataVis={[dataVis.suma]}
+          areaList={areaList}
+        />
+      )}
+    </ParentSize>
+  );
 }

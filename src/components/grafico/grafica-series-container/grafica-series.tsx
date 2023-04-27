@@ -1,3 +1,4 @@
+import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
 import { AreaType, Grafica } from "../grafica-component/grafica";
@@ -20,5 +21,16 @@ export default function GraficaSeries() {
     [timeRange]
   );
 
-  return <Grafica dataVis={dataVis.series} areaList={areaList} />;
+  return (
+    <ParentSize>
+      {({ width, height }) => (
+        <Grafica
+          width={width}
+          height={400}
+          dataVis={dataVis.series}
+          areaList={areaList}
+        />
+      )}
+    </ParentSize>
+  );
 }
