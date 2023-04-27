@@ -15,7 +15,7 @@ import {
 } from "@visx/xychart";
 
 import "./grafica.scss";
-import { StylesProps } from "react-select/dist/declarations/src/styles";
+import { timeFormat } from "d3";
 
 export interface AreaType {
   label: string;
@@ -32,8 +32,8 @@ interface Props {
 }
 
 const accesors = {
-  xAccessor: (d: DataXY) => d?.time,
-  yAccessor: (d: DataXY) => d?.h,
+  xAccessor: (d: DataXY) => d.time,
+  yAccessor: (d: DataXY) => d.h,
 };
 const axisColor = "rgb(135, 142, 155)";
 const gridColor = "rgba(135, 142, 155, 0.3)";
@@ -189,18 +189,34 @@ export function Grafica(props: Props) {
 
         <Tooltip<DataXY>
           renderTooltip={(tooltip) => {
-            return null;
-            /* (
-                  <div>
-                    {" "}
-                    Hi {`${tooltip.tooltipData?.nearestDatum?.datum.time}`}{" "}
-                  </div>
-                ) */
+            const datumBySeries = tooltip.tooltipData?.datumByKey;
+            return (
+              <div className="p-2 fw-normal">
+                {props.dataVis.map((s, j) => {
+                  const datum = datumBySeries
+                    ? datumBySeries[`d-${s.level}`].datum
+                    : null;
+                  return (
+                    <>
+                      <div className="mb-1" style={{ color: s.color }}>
+                        {`${s.level} cm: ${datum?.h}`}
+                      </div>
+                      {j === props.dataVis.length - 1 ? (
+                        <div>{timeFormat("%d-%m-%y %H:%M")(datum?.time)}</div>
+                      ) : null}
+                    </>
+                  );
+                })}
+              </div>
+            );
           }}
           showHorizontalCrosshair={true}
           showVerticalCrosshair={true}
-          snapTooltipToDatumX={false}
-          snapTooltipToDatumY={false}
+          snapTooltipToDatumX={true}
+          showSeriesGlyphs={true}
+          glyphStyle={{ fill: "#000000" }}
+          verticalCrosshairStyle={{ strokeWidth: 1 }}
+          horizontalCrosshairStyle={{ strokeWidth: 1 }}
         />,
       ]}
     />

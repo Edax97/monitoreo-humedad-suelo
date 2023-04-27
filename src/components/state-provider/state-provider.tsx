@@ -84,17 +84,14 @@ export function StateProvider(props: Props) {
   );
 
   const dataFiltrada = useMemo(() => {
-    return dataSondas
-      .filter((d) => {
-        const s_found = sondas.find((s) => s.level === d["Nivel"]);
-        return s_found?.show;
-      })
-      .filter((d) => {
-        const datum_time = new Date(d["fecha"]);
-        return (
-          datum_time > timeRange.startDate && datum_time < timeRange.endDate
-        );
-      });
+    return dataSondas.filter((d) => {
+      const d_found = sondas.find((s) => s.level === d["Nivel"]);
+      const datum_time = new Date(d["fecha"]);
+      const belongsRange =
+        datum_time > timeRange.startDate && datum_time < timeRange.endDate;
+
+      return d_found?.show && belongsRange;
+    });
   }, [dataSondas, sondas, timeRange]);
 
   const dataVis = useMemo(() => {
@@ -116,7 +113,8 @@ export function StateProvider(props: Props) {
       lastDatum: lastDatum || null,
     };
 
-    dataFiltrada.forEach((datum) => {
+    for (let j = dataFiltrada.length - 1; j >= 0; j--) {
+      const datum = dataFiltrada[j];
       const datum_h = datum["Humedad (%)"];
       const datum_time = new Date(datum["fecha"]);
       //search datum.Nivel in SeriesVis and push in data
@@ -128,13 +126,14 @@ export function StateProvider(props: Props) {
 
       //search for datum.fecha in sumaVis
       const timeIndex = sumaVis.data.findIndex(
-        (i) => i.time.toString() === datum_time.toString()
+        (index) => index.time.toString() === datum_time.toString()
       );
       if (timeIndex === -1) sumaVis.data.push({ time: datum_time, h: datum_h });
       else {
         sumaVis.data[timeIndex].h += datum_h;
       }
-    });
+    }
+
     return { series: seriesVis, suma: sumaVis };
   }, [dataFiltrada, sondas, sumaSondas]);
 
