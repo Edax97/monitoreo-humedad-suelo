@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { getDataHumedad } from "../../api/data-humedad";
+import { fetchDataHumedad, getDataHumedad } from "../../api/data-humedad";
 import { moverFecha } from "../../api/utilities/date-utils";
 import { max } from "d3";
 
@@ -59,7 +59,8 @@ const StateContext = createContext<StateContextType>(null!);
 export function StateProvider(props: Props) {
   const [dataSondas, setDataHum] = useState<DatumHType[]>([]);
   useEffect(() => {
-    getDataHumedad().then((data) => setDataHum(data));
+    //getDataHumedad().then((data) => setDataHum(data));
+    fetchDataHumedad().then((data) => setDataHum(data));
   }, []);
 
   const [timeRange, setTimeRange] = useState({
@@ -68,12 +69,12 @@ export function StateProvider(props: Props) {
   });
 
   const [sondas, setSondas] = useState<SondaType[]>([
-    { level: 30, show: true, color: "#05BFDB" },
-    { level: 60, show: true, color: "#0A4D68" },
+    { level: 30, show: true, color: "#E06469" },
+    { level: 60, show: true, color: "#088395" },
   ]);
   const sumaSondas = useMemo(
     () => ({
-      color: "#5F264A",
+      color: "#BE5A83",
       show: true,
       level: sondas
         .filter((s) => s.show)
@@ -89,7 +90,6 @@ export function StateProvider(props: Props) {
       const datum_time = new Date(d["fecha"]);
       const belongsRange =
         datum_time > timeRange.startDate && datum_time < timeRange.endDate;
-
       return d_found?.show && belongsRange;
     });
   }, [dataSondas, sondas, timeRange]);
@@ -130,7 +130,9 @@ export function StateProvider(props: Props) {
       );
       if (timeIndex === -1) sumaVis.data.push({ time: datum_time, h: datum_h });
       else {
-        sumaVis.data[timeIndex].h += datum_h;
+        sumaVis.data[timeIndex].h = parseFloat(
+          (sumaVis.data[timeIndex].h + datum_h).toFixed(1)
+        );
       }
     }
 

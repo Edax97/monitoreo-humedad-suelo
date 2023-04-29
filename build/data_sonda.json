@@ -1,5 +1,5801 @@
 [
  {
+  "fecha": "2023-04-27 16:00:03",
+  "Nivel": 30,
+  "Humedad (%)": 39.7,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-27 16:00:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-27 15:30:09",
+  "Nivel": 30,
+  "Humedad (%)": 40.6,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-27 15:30:09",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-27 15:00:14",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-27 15:00:14",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.7,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 14:30:20",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-27 14:30:20",
+  "Nivel": 60,
+  "Humedad (%)": 63.8,
+  "Temperatura (C°)": 23.7,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-27 14:00:29",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.4,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 14:00:29",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 7.2
+ },
+ {
+  "fecha": "2023-04-27 13:30:36",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.4,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 13:30:36",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 7.4
+ },
+ {
+  "fecha": "2023-04-27 13:00:42",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.4,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 13:00:42",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 7.2
+ },
+ {
+  "fecha": "2023-04-27 12:30:48",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 12:30:48",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.7,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-27 12:00:58",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 12:00:58",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-27 11:31:07",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 11:31:07",
+  "Nivel": 60,
+  "Humedad (%)": 65,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-27 11:01:15",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 11:01:15",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 10:31:27",
+  "Nivel": 30,
+  "Humedad (%)": 41.2,
+  "Temperatura (C°)": 23.5,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 10:31:27",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 10:01:33",
+  "Nivel": 30,
+  "Humedad (%)": 40.9,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-27 10:01:33",
+  "Nivel": 60,
+  "Humedad (%)": 64,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-27 09:31:43",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 09:31:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-27 09:01:53",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 09:01:53",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-27 08:32:04",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 08:32:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 08:02:14",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 08:02:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 07:32:22",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 07:32:22",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 07:02:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 07:02:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 06:32:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 06:32:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 06:02:52",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 06:02:52",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 05:33:00",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 05:33:00",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 05:03:10",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 05:03:10",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-27 04:33:19",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 04:33:19",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 04:03:28",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 04:03:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 03:33:36",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 03:33:36",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 03:03:47",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 03:03:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 02:33:57",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 02:33:57",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 02:04:06",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 02:04:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 01:34:17",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 01:34:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 01:04:28",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 01:04:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 00:34:38",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 00:34:38",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-27 00:04:46",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-27 00:04:46",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 23:34:56",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 23:34:56",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 23:05:05",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 23:05:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 22:35:16",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 22:35:16",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 22:05:26",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 22:05:26",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 21:35:36",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 21:35:36",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 21:05:50",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 21:05:50",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 20:35:55",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 20:35:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 20:06:06",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 20:06:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 19:36:17",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 19:36:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 19:06:25",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 19:06:25",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 18:36:35",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 18:36:35",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 18:06:45",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 18:06:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 17:36:55",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 17:36:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 17:07:04",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 17:07:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-26 16:37:12",
+  "Nivel": 30,
+  "Humedad (%)": 39.5,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-26 16:37:12",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-26 16:07:22",
+  "Nivel": 30,
+  "Humedad (%)": 39.9,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-26 16:07:22",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-26 15:37:29",
+  "Nivel": 30,
+  "Humedad (%)": 41,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-26 15:37:29",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-26 15:07:36",
+  "Nivel": 30,
+  "Humedad (%)": 42.2,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 15:07:36",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-26 14:37:44",
+  "Nivel": 30,
+  "Humedad (%)": 42.2,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 14:37:44",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-26 14:07:49",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-26 14:07:49",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-26 13:37:56",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 13:37:56",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-26 13:08:06",
+  "Nivel": 30,
+  "Humedad (%)": 42.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 13:08:06",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-26 12:38:11",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 12:38:11",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-26 12:08:18",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 12:08:18",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-26 11:38:27",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-26 11:38:27",
+  "Nivel": 60,
+  "Humedad (%)": 65,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-26 11:08:37",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-26 11:08:37",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-26 10:38:44",
+  "Nivel": 30,
+  "Humedad (%)": 41,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-26 10:38:44",
+  "Nivel": 60,
+  "Humedad (%)": 64.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 10:08:55",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 10:08:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 09:39:04",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 09:39:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 09:09:13",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 09:09:13",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 08:39:22",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 08:39:22",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 08:09:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 08:09:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 07:39:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 07:39:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 07:09:49",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 07:09:49",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 06:39:58",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 06:39:58",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 06:10:11",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 06:10:11",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 05:40:16",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 05:40:16",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 05:10:25",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 05:10:25",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 04:40:35",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 04:40:35",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 04:10:45",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 04:10:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 03:40:54",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 03:40:54",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 03:11:03",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 03:11:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-26 02:41:13",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 02:41:13",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-26 02:11:21",
+  "Nivel": 30,
+  "Humedad (%)": 39,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 02:11:21",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-26 01:41:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 01:41:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-26 01:11:39",
+  "Nivel": 30,
+  "Humedad (%)": 39,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 01:11:39",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-26 00:41:49",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 00:41:49",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-26 00:12:00",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-26 00:12:00",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-25 23:42:08",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 23:42:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.3
+ },
+ {
+  "fecha": "2023-04-25 23:12:21",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 23:12:21",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 22:42:32",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 22:42:32",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 22:12:43",
+  "Nivel": 30,
+  "Humedad (%)": 39.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-25 22:12:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 21:42:53",
+  "Nivel": 30,
+  "Humedad (%)": 39.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-25 21:42:53",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 21:13:03",
+  "Nivel": 30,
+  "Humedad (%)": 39.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-25 21:13:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 20:43:14",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-25 20:43:14",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-25 20:13:27",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-25 20:13:27",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.1
+ },
+ {
+  "fecha": "2023-04-25 19:43:35",
+  "Nivel": 30,
+  "Humedad (%)": 42.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 19:43:35",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 8
+ },
+ {
+  "fecha": "2023-04-25 19:13:46",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 19:13:46",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24,
+  "PH": 7.3
+ },
+ {
+  "fecha": "2023-04-25 18:43:54",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 18:43:54",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-25 18:14:03",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 18:14:03",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 17:44:12",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 17:44:12",
+  "Nivel": 60,
+  "Humedad (%)": 64.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-25 17:14:23",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 17:14:23",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 16:44:28",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 16:44:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 16:14:33",
+  "Nivel": 30,
+  "Humedad (%)": 39.9,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-25 16:14:33",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 15:44:42",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 15:44:42",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 15:14:48",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 15:14:48",
+  "Nivel": 60,
+  "Humedad (%)": 64.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-25 14:44:54",
+  "Nivel": 30,
+  "Humedad (%)": 41.7,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 14:44:54",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-25 14:15:02",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-25 14:15:02",
+  "Nivel": 60,
+  "Humedad (%)": 64.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-25 13:45:13",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-25 13:45:13",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-25 13:15:19",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 23.6,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-25 13:15:19",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-25 12:45:27",
+  "Nivel": 30,
+  "Humedad (%)": 41.2,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-25 12:45:27",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-25 12:15:37",
+  "Nivel": 30,
+  "Humedad (%)": 41,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-25 12:15:37",
+  "Nivel": 60,
+  "Humedad (%)": 64.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 11:45:47",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 11:45:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 11:15:58",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 11:15:58",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 10:46:03",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 10:46:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 10:16:11",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 10:16:11",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 09:46:18",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 09:46:18",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 09:16:26",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 09:16:26",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 08:46:35",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 08:46:35",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 08:16:44",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 08:16:44",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 07:47:03",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 07:47:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 07:17:04",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 07:17:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 06:47:14",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 06:47:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 06:17:22",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 06:17:22",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 05:47:29",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 05:47:29",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 05:17:38",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 05:17:38",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 04:47:48",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 04:47:48",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 04:17:59",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 04:17:59",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 03:48:08",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 03:48:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 03:18:17",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 03:18:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 02:48:29",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 02:48:29",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 02:18:38",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 02:18:38",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 01:48:47",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 01:48:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 01:18:59",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 01:18:59",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 00:49:06",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 00:49:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-25 00:19:15",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-25 00:19:15",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 23:49:26",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 23:49:26",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 23:19:35",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 23:19:35",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 22:49:46",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 22:49:46",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 22:19:58",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 22:19:58",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 21:50:08",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 21:50:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 21:20:19",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 21:20:19",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 20:50:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 20:50:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 20:20:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 20:20:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 19:50:51",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 19:50:51",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 19:21:02",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-24 19:21:02",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 18:51:10",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-24 18:51:10",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 18:21:22",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-24 18:21:22",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 17:51:29",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-24 17:51:29",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 17:21:39",
+  "Nivel": 30,
+  "Humedad (%)": 39.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-24 17:21:39",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-24 16:51:47",
+  "Nivel": 30,
+  "Humedad (%)": 39.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-24 16:51:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-24 16:21:54",
+  "Nivel": 30,
+  "Humedad (%)": 40.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-24 16:21:54",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-24 15:52:03",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-24 15:52:03",
+  "Nivel": 60,
+  "Humedad (%)": 63,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-24 15:22:09",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 15:22:09",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-24 14:52:14",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 14:52:14",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-24 14:22:20",
+  "Nivel": 30,
+  "Humedad (%)": 41.7,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 14:22:20",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-24 13:52:29",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 13:52:29",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-24 13:22:36",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 13:22:36",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-24 12:52:43",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 12:52:43",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-24 12:22:52",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 12:22:52",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-24 11:53:00",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 11:53:00",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-24 11:23:10",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 11:23:10",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-24 10:53:19",
+  "Nivel": 30,
+  "Humedad (%)": 41,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-24 10:53:19",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 10:23:28",
+  "Nivel": 30,
+  "Humedad (%)": 40.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 10:23:28",
+  "Nivel": 60,
+  "Humedad (%)": 64.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 09:53:39",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 09:53:39",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 09:23:48",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 09:23:48",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 08:53:57",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 08:53:57",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 08:24:06",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 08:24:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 07:54:17",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 07:54:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 07:24:26",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 07:24:26",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 06:54:39",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 06:54:39",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 06:24:45",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 06:24:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 05:54:54",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 05:54:54",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 05:25:05",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 05:25:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 04:55:13",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 04:55:13",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 04:25:21",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 04:25:21",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 03:55:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 03:55:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 03:25:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 03:25:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 02:55:52",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 02:55:52",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 02:26:00",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 02:26:00",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 01:56:09",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 01:56:09",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 01:26:23",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 01:26:23",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 00:56:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 00:56:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-24 00:26:39",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-24 00:26:39",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 23:56:47",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 23:56:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 23:26:58",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 23:26:58",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 22:57:11",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 22:57:11",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 22:27:20",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 22:27:20",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 21:57:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 21:57:31",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 21:27:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 21:27:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 20:57:51",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 20:57:51",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 20:28:03",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 20:28:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 19:58:12",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 19:58:12",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 19:28:25",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 19:28:25",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 18:58:33",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 18:58:33",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 18:28:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 18:28:41",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 17:58:50",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-23 17:58:50",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 17:28:59",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-23 17:28:59",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-23 16:59:10",
+  "Nivel": 30,
+  "Humedad (%)": 39.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-23 16:59:10",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-23 16:29:18",
+  "Nivel": 30,
+  "Humedad (%)": 40.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-23 16:29:18",
+  "Nivel": 60,
+  "Humedad (%)": 62.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-23 15:59:26",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 15:59:26",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-23 15:29:33",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 15:29:33",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-23 14:59:40",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-23 14:59:40",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.1
+ },
+ {
+  "fecha": "2023-04-23 14:29:47",
+  "Nivel": 30,
+  "Humedad (%)": 41.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 14:29:47",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.3
+ },
+ {
+  "fecha": "2023-04-23 13:59:56",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 13:59:56",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24,
+  "PH": 7.5
+ },
+ {
+  "fecha": "2023-04-23 13:30:04",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 13:30:04",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.4
+ },
+ {
+  "fecha": "2023-04-23 13:00:10",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-23 13:00:10",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-23 12:30:18",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-23 12:30:18",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-23 12:00:28",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-23 12:00:28",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-23 11:30:36",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-23 11:30:36",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-23 11:00:46",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-23 11:00:46",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 10:30:55",
+  "Nivel": 30,
+  "Humedad (%)": 40.7,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 10:30:55",
+  "Nivel": 60,
+  "Humedad (%)": 64.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-23 10:01:05",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 10:01:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 09:31:14",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 09:31:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 09:01:23",
+  "Nivel": 30,
+  "Humedad (%)": 37.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 09:01:23",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 08:31:33",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 08:31:33",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 08:01:43",
+  "Nivel": 30,
+  "Humedad (%)": 37.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 08:01:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 07:31:51",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 07:31:51",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 07:02:01",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 07:02:01",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 06:32:09",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 06:32:09",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 06:02:19",
+  "Nivel": 30,
+  "Humedad (%)": 37.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 06:02:19",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 05:32:27",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 05:32:27",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 05:02:37",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 05:02:37",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 04:32:47",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 04:32:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 04:02:57",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 04:02:57",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 03:33:08",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 03:33:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 03:03:17",
+  "Nivel": 30,
+  "Humedad (%)": 37.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 03:03:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 02:33:32",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 02:33:32",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 02:03:40",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 02:03:40",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 01:33:45",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 01:33:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 01:03:55",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 01:03:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 00:34:05",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 00:34:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-23 00:04:16",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-23 00:04:16",
+  "Nivel": 60,
+  "Humedad (%)": 61,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 23:34:28",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 23:34:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 23:04:39",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 23:04:39",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 22:34:52",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 22:34:52",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 22:05:04",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 22:05:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 21:35:14",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 21:35:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 21:05:24",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 21:05:24",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 20:35:32",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 20:35:32",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 20:05:44",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 20:05:44",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 19:35:53",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 19:35:53",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 19:06:03",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 19:06:03",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 18:36:11",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 18:36:11",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 18:06:23",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 18:06:23",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 17:36:29",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 17:36:29",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 17:06:37",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 17:06:37",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 16:36:44",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-22 16:36:44",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 16:06:52",
+  "Nivel": 30,
+  "Humedad (%)": 39.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-22 16:06:52",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 15:37:01",
+  "Nivel": 30,
+  "Humedad (%)": 40.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 15:37:01",
+  "Nivel": 60,
+  "Humedad (%)": 62.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 15:07:06",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 15:07:06",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-22 14:37:12",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-22 14:37:12",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-22 14:07:18",
+  "Nivel": 30,
+  "Humedad (%)": 42.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 14:07:18",
+  "Nivel": 60,
+  "Humedad (%)": 66.7,
+  "Temperatura (C°)": 24.1,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-22 13:37:25",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 13:37:25",
+  "Nivel": 60,
+  "Humedad (%)": 66.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-22 13:07:32",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 13:07:32",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-22 12:37:40",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 12:37:40",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-22 12:07:51",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 12:07:51",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-22 11:38:00",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 11:38:00",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-22 11:08:08",
+  "Nivel": 30,
+  "Humedad (%)": 41.7,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 11:08:08",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-22 10:38:23",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-22 10:38:23",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-22 10:08:26",
+  "Nivel": 30,
+  "Humedad (%)": 41.2,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-22 10:08:26",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 09:38:36",
+  "Nivel": 30,
+  "Humedad (%)": 40.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 09:38:36",
+  "Nivel": 60,
+  "Humedad (%)": 64.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 09:08:46",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 09:08:46",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.4
+ },
+ {
+  "fecha": "2023-04-22 08:38:57",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 08:38:57",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 08:09:07",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 08:09:07",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 07:39:18",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 07:39:18",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 07:09:28",
+  "Nivel": 30,
+  "Humedad (%)": 37.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 07:09:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 06:39:37",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 06:39:37",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 06:09:47",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 06:09:47",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 05:39:55",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 05:39:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 05:10:06",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 05:10:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 04:40:15",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 04:40:15",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 04:10:25",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 04:10:25",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 03:40:35",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 03:40:35",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 03:10:43",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 03:10:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 02:40:54",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 02:40:54",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 02:11:04",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 02:11:04",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 01:41:12",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 01:41:12",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 01:11:20",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 01:11:20",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 00:41:28",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 00:41:28",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-22 00:11:38",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-22 00:11:38",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 23:41:48",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 23:41:48",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 23:11:59",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 23:11:59",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 22:42:08",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 22:42:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 22:12:17",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 22:12:17",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 21:42:30",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 21:42:30",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-21 21:12:40",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 21:12:40",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 20:42:50",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 20:42:50",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 20:13:01",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 20:13:01",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 19:43:12",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 19:43:12",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 19:13:21",
+  "Nivel": 30,
+  "Humedad (%)": 38.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 19:13:21",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 18:43:30",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 18:43:30",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 18:13:44",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 18:13:44",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 17:43:48",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 17:43:48",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 17:13:56",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-21 17:13:56",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 16:44:05",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-21 16:44:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 16:14:12",
+  "Nivel": 30,
+  "Humedad (%)": 39.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-21 16:14:12",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 15:44:19",
+  "Nivel": 30,
+  "Humedad (%)": 40.4,
+  "Temperatura (C°)": 24,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-21 15:44:19",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 15:14:26",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 24,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-21 15:14:26",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 14:44:34",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 14:44:34",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.1
+ },
+ {
+  "fecha": "2023-04-21 14:14:39",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 14:14:39",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 7.3
+ },
+ {
+  "fecha": "2023-04-21 13:44:46",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 13:44:46",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 7.4
+ },
+ {
+  "fecha": "2023-04-21 13:14:55",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 13:14:55",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.1,
+  "PH": 7.4
+ },
+ {
+  "fecha": "2023-04-21 12:45:02",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 12:45:02",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 7.5
+ },
+ {
+  "fecha": "2023-04-21 12:15:11",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 12:15:11",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 7.4
+ },
+ {
+  "fecha": "2023-04-21 11:45:18",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 11:45:18",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 11:15:28",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 11:15:28",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 10:45:37",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 10:45:37",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 10:15:55",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 10:15:55",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 09:45:55",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-21 09:45:55",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 09:16:05",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 09:16:05",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 08:46:14",
+  "Nivel": 30,
+  "Humedad (%)": 41.4,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 08:46:14",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 08:16:24",
+  "Nivel": 30,
+  "Humedad (%)": 41.2,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 08:16:24",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 07:46:32",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 07:46:32",
+  "Nivel": 60,
+  "Humedad (%)": 66.3,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 07:16:42",
+  "Nivel": 30,
+  "Humedad (%)": 41.3,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 07:16:42",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 06:46:55",
+  "Nivel": 30,
+  "Humedad (%)": 41,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 06:46:55",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 06:17:02",
+  "Nivel": 30,
+  "Humedad (%)": 41.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-21 06:17:02",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.2,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-21 05:47:11",
+  "Nivel": 30,
+  "Humedad (%)": 40.6,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-21 05:47:11",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.3,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-21 05:17:20",
+  "Nivel": 30,
+  "Humedad (%)": 40.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-21 05:17:20",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-21 04:47:30",
+  "Nivel": 30,
+  "Humedad (%)": 40.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-21 04:47:30",
+  "Nivel": 60,
+  "Humedad (%)": 65.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-21 04:17:38",
+  "Nivel": 30,
+  "Humedad (%)": 40.1,
+  "Temperatura (C°)": 24,
+  "PH": 5.3
+ },
+ {
+  "fecha": "2023-04-21 04:17:38",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-21 03:47:49",
+  "Nivel": 30,
+  "Humedad (%)": 36.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 03:47:49",
+  "Nivel": 60,
+  "Humedad (%)": 64.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 03:17:59",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 03:17:59",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 02:48:11",
+  "Nivel": 30,
+  "Humedad (%)": 36.6,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 02:48:11",
+  "Nivel": 60,
+  "Humedad (%)": 61,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 02:18:19",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 02:18:19",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 01:48:29",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 01:48:29",
+  "Nivel": 60,
+  "Humedad (%)": 60.8,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 01:18:41",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 01:18:41",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 00:48:51",
+  "Nivel": 30,
+  "Humedad (%)": 36.9,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 00:48:51",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-21 00:19:02",
+  "Nivel": 30,
+  "Humedad (%)": 36.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-21 00:19:02",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 23:49:11",
+  "Nivel": 30,
+  "Humedad (%)": 36.7,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 23:49:11",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 23:19:27",
+  "Nivel": 30,
+  "Humedad (%)": 36.7,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 23:19:27",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 22:49:33",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 22:49:33",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 22:19:43",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 22:19:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 21:49:55",
+  "Nivel": 30,
+  "Humedad (%)": 36.8,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 21:49:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 21:20:05",
+  "Nivel": 30,
+  "Humedad (%)": 36.9,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 21:20:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 20:50:16",
+  "Nivel": 30,
+  "Humedad (%)": 37,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 20:50:16",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 20:20:27",
+  "Nivel": 30,
+  "Humedad (%)": 37,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 20:20:27",
+  "Nivel": 60,
+  "Humedad (%)": 61,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 19:50:39",
+  "Nivel": 30,
+  "Humedad (%)": 37.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 19:50:39",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 19:20:49",
+  "Nivel": 30,
+  "Humedad (%)": 37.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 19:20:49",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 18:51:00",
+  "Nivel": 30,
+  "Humedad (%)": 37.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 18:51:00",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 18:21:08",
+  "Nivel": 30,
+  "Humedad (%)": 37.1,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 18:21:08",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 17:51:16",
+  "Nivel": 30,
+  "Humedad (%)": 37.6,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 17:51:16",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 17:21:25",
+  "Nivel": 30,
+  "Humedad (%)": 37.7,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 17:21:25",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 16:51:32",
+  "Nivel": 30,
+  "Humedad (%)": 37.9,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 16:51:32",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 16:21:37",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 16:21:37",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 15:51:45",
+  "Nivel": 30,
+  "Humedad (%)": 38,
+  "Temperatura (C°)": 23.7,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 15:51:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 15:21:52",
+  "Nivel": 30,
+  "Humedad (%)": 38.1,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 15:21:52",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 14:52:00",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 14:52:00",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 14:22:07",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 14:22:07",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 13:52:14",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 13:52:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 13:22:21",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 13:22:21",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 12:52:29",
+  "Nivel": 30,
+  "Humedad (%)": 38.4,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 12:52:29",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 12:22:37",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 12:22:37",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 11:52:45",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.8,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 11:52:45",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 11:22:53",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 11:22:53",
+  "Nivel": 60,
+  "Humedad (%)": 61.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 10:53:02",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 23.9,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 10:53:02",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 10:23:10",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 10:23:10",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 09:53:20",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 09:53:20",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 09:23:30",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 09:23:30",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 08:53:38",
+  "Nivel": 30,
+  "Humedad (%)": 38.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 08:53:38",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 08:23:46",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 08:23:46",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 07:53:56",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 07:53:56",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 07:24:05",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 07:24:05",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 06:54:15",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 06:54:15",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 06:24:24",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 06:24:24",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 05:54:33",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 05:54:33",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 05:24:43",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 05:24:43",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 04:54:53",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 04:54:53",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 04:25:01",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 04:25:01",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 03:55:12",
+  "Nivel": 30,
+  "Humedad (%)": 38.5,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 03:55:12",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 03:25:20",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 03:25:20",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 02:55:34",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 02:55:34",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 02:25:46",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 02:25:46",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 01:55:50",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 01:55:50",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-20 01:26:09",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 01:26:09",
+  "Nivel": 60,
+  "Humedad (%)": 61.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-20 00:56:12",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 00:56:12",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-20 00:26:21",
+  "Nivel": 30,
+  "Humedad (%)": 38.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-20 00:26:21",
+  "Nivel": 60,
+  "Humedad (%)": 61.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 23:56:31",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.4,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 23:56:31",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 23:26:41",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 23:26:41",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 22:56:52",
+  "Nivel": 30,
+  "Humedad (%)": 38.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 22:56:52",
+  "Nivel": 60,
+  "Humedad (%)": 62.2,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 22:27:06",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 22:27:06",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 21:57:13",
+  "Nivel": 30,
+  "Humedad (%)": 38.6,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 21:57:13",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 21:27:24",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 21:27:24",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 20:57:35",
+  "Nivel": 30,
+  "Humedad (%)": 38.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.4
+ },
+ {
+  "fecha": "2023-04-19 20:57:35",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 20:27:45",
+  "Nivel": 30,
+  "Humedad (%)": 39,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 20:27:45",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.5
+ },
+ {
+  "fecha": "2023-04-19 19:57:55",
+  "Nivel": 30,
+  "Humedad (%)": 39.2,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 19:57:55",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 19:28:06",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 19:28:06",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 18:58:14",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 18:58:14",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 18:28:23",
+  "Nivel": 30,
+  "Humedad (%)": 39.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 18:28:23",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 17:58:32",
+  "Nivel": 30,
+  "Humedad (%)": 39.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.8
+ },
+ {
+  "fecha": "2023-04-19 17:58:32",
+  "Nivel": 60,
+  "Humedad (%)": 62.2,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 17:28:39",
+  "Nivel": 30,
+  "Humedad (%)": 39.9,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.9
+ },
+ {
+  "fecha": "2023-04-19 17:28:39",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.3,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 16:58:48",
+  "Nivel": 30,
+  "Humedad (%)": 40.6,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.9
+ },
+ {
+  "fecha": "2023-04-19 16:58:48",
+  "Nivel": 60,
+  "Humedad (%)": 62.2,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-19 16:28:57",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.9
+ },
+ {
+  "fecha": "2023-04-19 16:28:57",
+  "Nivel": 60,
+  "Humedad (%)": 62.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-19 15:59:05",
+  "Nivel": 30,
+  "Humedad (%)": 42.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.8
+ },
+ {
+  "fecha": "2023-04-19 15:59:05",
+  "Nivel": 60,
+  "Humedad (%)": 63.6,
+  "Temperatura (C°)": 24.4,
+  "PH": 7.6
+ },
+ {
+  "fecha": "2023-04-19 15:29:12",
+  "Nivel": 30,
+  "Humedad (%)": 42.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 15:29:12",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.4,
+  "PH": 8.1
+ },
+ {
+  "fecha": "2023-04-19 14:59:21",
+  "Nivel": 30,
+  "Humedad (%)": 42.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 14:59:21",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.5,
+  "PH": 7.6
+ },
+ {
+  "fecha": "2023-04-19 14:29:28",
+  "Nivel": 30,
+  "Humedad (%)": 42.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 14:29:28",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24.5,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-19 13:59:36",
+  "Nivel": 30,
+  "Humedad (%)": 42.7,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 13:59:36",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 13:29:43",
+  "Nivel": 30,
+  "Humedad (%)": 41.5,
+  "Temperatura (C°)": 24.1,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 13:29:43",
+  "Nivel": 60,
+  "Humedad (%)": 65.2,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 12:59:51",
+  "Nivel": 30,
+  "Humedad (%)": 41.6,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.7
+ },
+ {
+  "fecha": "2023-04-19 12:59:51",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 12:29:58",
+  "Nivel": 30,
+  "Humedad (%)": 42.4,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 12:29:58",
+  "Nivel": 60,
+  "Humedad (%)": 62.6,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-19 12:00:07",
+  "Nivel": 30,
+  "Humedad (%)": 42.5,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 12:00:07",
+  "Nivel": 60,
+  "Humedad (%)": 65,
+  "Temperatura (C°)": 24.4,
+  "PH": 7
+ },
+ {
+  "fecha": "2023-04-19 11:30:16",
+  "Nivel": 30,
+  "Humedad (%)": 42.4,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 11:30:16",
+  "Nivel": 60,
+  "Humedad (%)": 66.7,
+  "Temperatura (C°)": 24.4,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-19 11:00:25",
+  "Nivel": 30,
+  "Humedad (%)": 42.5,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 11:00:25",
+  "Nivel": 60,
+  "Humedad (%)": 66.3,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-19 10:30:35",
+  "Nivel": 30,
+  "Humedad (%)": 42.5,
+  "Temperatura (C°)": 24.2,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 10:30:35",
+  "Nivel": 60,
+  "Humedad (%)": 65.7,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.9
+ },
+ {
+  "fecha": "2023-04-19 10:00:44",
+  "Nivel": 30,
+  "Humedad (%)": 42.3,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 10:00:44",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-19 09:30:58",
+  "Nivel": 30,
+  "Humedad (%)": 42.3,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 09:30:58",
+  "Nivel": 60,
+  "Humedad (%)": 65.9,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.8
+ },
+ {
+  "fecha": "2023-04-19 09:01:02",
+  "Nivel": 30,
+  "Humedad (%)": 42,
+  "Temperatura (C°)": 24.4,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 09:01:02",
+  "Nivel": 60,
+  "Humedad (%)": 65.6,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 08:31:11",
+  "Nivel": 30,
+  "Humedad (%)": 41.9,
+  "Temperatura (C°)": 24.3,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 08:31:11",
+  "Nivel": 60,
+  "Humedad (%)": 66.1,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 08:01:21",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 08:01:21",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.5,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 07:31:32",
+  "Nivel": 30,
+  "Humedad (%)": 39.1,
+  "Temperatura (C°)": 24.4,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 07:31:32",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 07:01:40",
+  "Nivel": 30,
+  "Humedad (%)": 39.3,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 07:01:40",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 06:31:49",
+  "Nivel": 30,
+  "Humedad (%)": 39.4,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 06:31:49",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.7,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 06:01:59",
+  "Nivel": 30,
+  "Humedad (%)": 39.6,
+  "Temperatura (C°)": 24.4,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 06:01:59",
+  "Nivel": 60,
+  "Humedad (%)": 61.8,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 05:32:09",
+  "Nivel": 30,
+  "Humedad (%)": 39.4,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 05:32:09",
+  "Nivel": 60,
+  "Humedad (%)": 62,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 05:02:19",
+  "Nivel": 30,
+  "Humedad (%)": 39.7,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 05:02:19",
+  "Nivel": 60,
+  "Humedad (%)": 62.2,
+  "Temperatura (C°)": 24.7,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 04:32:29",
+  "Nivel": 30,
+  "Humedad (%)": 39.8,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 04:32:29",
+  "Nivel": 60,
+  "Humedad (%)": 62.2,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 04:02:38",
+  "Nivel": 30,
+  "Humedad (%)": 40,
+  "Temperatura (C°)": 24.5,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 04:02:38",
+  "Nivel": 60,
+  "Humedad (%)": 62.4,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.6
+ },
+ {
+  "fecha": "2023-04-19 03:32:48",
+  "Nivel": 30,
+  "Humedad (%)": 40.9,
+  "Temperatura (C°)": 24.7,
+  "PH": 5.6
+ },
+ {
+  "fecha": "2023-04-19 03:32:48",
+  "Nivel": 60,
+  "Humedad (%)": 62.4,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 03:02:58",
+  "Nivel": 30,
+  "Humedad (%)": 41.8,
+  "Temperatura (C°)": 24.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 03:02:58",
+  "Nivel": 60,
+  "Humedad (%)": 62.8,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.7
+ },
+ {
+  "fecha": "2023-04-19 02:33:08",
+  "Nivel": 30,
+  "Humedad (%)": 42.1,
+  "Temperatura (C°)": 24.7,
+  "PH": 5.5
+ },
+ {
+  "fecha": "2023-04-19 02:33:08",
+  "Nivel": 60,
+  "Humedad (%)": 63.4,
+  "Temperatura (C°)": 24.6,
+  "PH": 6.8
+ },
+ {
   "fecha": "2023-04-19 02:03:17",
   "Nivel": 30,
   "Humedad (%)": 41.9,

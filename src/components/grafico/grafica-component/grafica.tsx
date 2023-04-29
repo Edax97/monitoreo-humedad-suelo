@@ -32,8 +32,8 @@ interface Props {
 }
 
 const accesors = {
-  xAccessor: (d: DataXY) => d.time,
-  yAccessor: (d: DataXY) => d.h,
+  xAccessor: (d: DataXY) => d?.time,
+  yAccessor: (d: DataXY) => d?.h,
 };
 const axisColor = "rgb(135, 142, 155)";
 const gridColor = "rgba(135, 142, 155, 0.3)";
@@ -212,11 +212,28 @@ export function Grafica(props: Props) {
           }}
           showHorizontalCrosshair={true}
           showVerticalCrosshair={true}
-          snapTooltipToDatumX={true}
-          showSeriesGlyphs={true}
-          glyphStyle={{ fill: "#000000" }}
           verticalCrosshairStyle={{ strokeWidth: 1 }}
           horizontalCrosshairStyle={{ strokeWidth: 1 }}
+          snapTooltipToDatumX={true}
+          showSeriesGlyphs={true}
+          renderGlyph={(glyph) => {
+            const glyphColor = props.dataVis.find(
+              (s) => `d-${s.level}` === glyph.key
+            )?.color;
+
+            return glyphColor ? (
+              <g>
+                <circle
+                  cx={0}
+                  cy={0}
+                  r={4}
+                  fill="white"
+                  stroke={glyphColor}
+                  strokeWidth={2}
+                ></circle>
+              </g>
+            ) : null;
+          }}
         />,
       ]}
     />
