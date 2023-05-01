@@ -39,10 +39,10 @@ export default function GraficaSumaContainer() {
   );
   return (
     <ParentSize>
-      {({ width }) => (
+      {({ width, height }) => (
         <Grafica
           width={width}
-          height={400}
+          height={height}
           dataVis={[dataVis.suma]}
           areaList={areaList}
         />

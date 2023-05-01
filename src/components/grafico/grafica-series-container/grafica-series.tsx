@@ -26,7 +26,7 @@ export default function GraficaSeries() {
       {({ width, height }) => (
         <Grafica
           width={width}
-          height={400}
+          height={height}
           dataVis={dataVis.series}
           areaList={areaList}
         />

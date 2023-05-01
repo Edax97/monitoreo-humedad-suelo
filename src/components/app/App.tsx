@@ -53,6 +53,7 @@ function App() {
                   borderWidth: "1px",
                   borderRadius: "0.4rem",
                   backgroundColor: graphBackColor,
+                  height: "35vh",
                 }}
               >
                 <GraficaSeries />
@@ -77,6 +78,7 @@ function App() {
                   borderColor: lineColor,
                   borderWidth: "1px",
                   backgroundColor: graphBackColor,
+                  height: "35vh",
                 }}
               >
                 <GraficaSumaContainer />
