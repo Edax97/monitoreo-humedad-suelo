@@ -14,7 +14,7 @@ import {
   //Tooltip,
 } from "@visx/xychart";
 
-import "./grafica.scss";
+import "./grafico-component.scss";
 import { timeFormat } from "d3";
 
 export interface AreaType {

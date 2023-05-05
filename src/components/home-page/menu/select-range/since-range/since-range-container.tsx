@@ -1,6 +1,6 @@
 import React, { useCallback, useMemo, useState } from "react";
-import { moverFecha } from "../../../../api/utilities/date-utils";
-import { useStateContext } from "../../../state-provider/state-provider";
+import { moverFecha } from "../../../../../api/utilities/date-utils";
+import { useStateContext } from "../../../../state-provider/state-provider";
 import SinceRangeComponent, { SinceType } from "./since-range-component";
 
 export default function SinceRangeContainer() {

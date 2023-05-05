@@ -1,6 +1,6 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
-import { useStateContext } from "../state-provider/state-provider";
+import { useStateContext } from "../../state-provider/state-provider";
 import TimeAxisComponent from "./time-axis-component";
 
 export default function TimeAxisContainer() {

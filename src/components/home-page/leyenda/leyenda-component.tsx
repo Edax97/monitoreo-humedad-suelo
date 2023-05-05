@@ -1,5 +1,5 @@
 import React from "react";
-import "./leyenda.scss";
+import "./leyenda-component.scss";
 import { GoDash } from "react-icons/go";
 
 export interface SeriesLegend {
@@ -12,7 +12,7 @@ interface Props {
   series: SeriesLegend[];
 }
 
-export default function Leyenda(props: Props) {
+export default function LeyendaComponent(props: Props) {
   return props.series.length > 0 ? (
     <div className="px-2 pb-1" style={{ fontSize: "small" }}>
       <div className="d-flex gap-3">

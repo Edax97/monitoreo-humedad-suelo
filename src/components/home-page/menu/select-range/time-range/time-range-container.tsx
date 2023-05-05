@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { useStateContext } from "../../../state-provider/state-provider";
+import { useStateContext } from "../../../../state-provider/state-provider";
 import TimeRangeComponent, { RangeType } from "./time-range-component";
 
 export default function TimeRangeContainer() {

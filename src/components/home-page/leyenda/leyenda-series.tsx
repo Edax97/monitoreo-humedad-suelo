@@ -1,6 +1,6 @@
 import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
-import Leyenda from "../leyenda-component/leyenda";
+import LeyendaComponent from "./leyenda-component";
 
 export default function LeyendaSeries() {
   const { sondas } = useStateContext();
@@ -14,5 +14,5 @@ export default function LeyendaSeries() {
       }));
   }, [sondas]);
 
-  return <Leyenda infoText={null} series={series} />;
+  return <LeyendaComponent infoText={null} series={series} />;
 }

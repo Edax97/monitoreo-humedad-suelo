@@ -1,8 +1,8 @@
 import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
-import Leyenda from "../leyenda-component/leyenda";
+import LeyendaComponent from "./leyenda-component";
 
-export default function LeyendaSumaContainer() {
+export default function LeyendaSuma() {
   const { sumaSondas } = useStateContext();
 
   const serieSuma = useMemo(
@@ -13,6 +13,6 @@ export default function LeyendaSumaContainer() {
     [sumaSondas]
   );
   return sumaSondas.show ? (
-    <Leyenda infoText={null} series={[serieSuma]} />
+    <LeyendaComponent infoText={null} series={[serieSuma]} />
   ) : null;
 }

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import SinceRangeContainer from "../since-range/since-range-container";
-import TimeRangeContainer from "../time-range/time-range-container";
+import SinceRangeContainer from "./since-range/since-range-container";
+import TimeRangeContainer from "./time-range/time-range-container";
 
-export default function SelectRangeComponent() {
+export default function SelectRangeContainer() {
   const [showTimeRange, setShowTimeRange] = useState(true);
 
   return (

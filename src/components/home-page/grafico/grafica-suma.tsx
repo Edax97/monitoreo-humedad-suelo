@@ -1,9 +1,9 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import { useStateContext } from "../../state-provider/state-provider";
-import { AreaType, Grafica } from "../grafica-component/grafica";
+import { AreaType, Grafica } from "./grafico-component";
 
-export default function GraficaSumaContainer() {
+export default function GraficaSuma() {
   const { dataVis, timeRange, varHidraul } = useStateContext();
   const areaList = useMemo<AreaType[]>(
     () => [
