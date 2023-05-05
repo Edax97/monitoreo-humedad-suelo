@@ -10,7 +10,8 @@ import { StateProvider } from "../state-provider/state-provider";
 import TimeAxisContainer from "../time-axis/time-axis-container";
 import "./App.scss";
 
-const graphBackColor = "rgba(247, 255, 224, 0.8)";
+const graphBackColor = "rgba(230, 240, 230, 0.8)";
+const legendColor = "rgba(230, 240, 230, 0.8)";
 const lineColor = "rgba(100,100,100,0.3)";
 
 function App() {
@@ -43,7 +44,7 @@ function App() {
                 borderRadius: "0.4rem",
               }}
             >
-              <div>
+              <div style={{ backgroundColor: legendColor }}>
                 <LeyendaSeries />
               </div>
               <div
@@ -68,7 +69,7 @@ function App() {
                 borderRadius: "0.4rem",
               }}
             >
-              <div>
+              <div style={{ backgroundColor: legendColor }}>
                 <LeyendaSumaContainer />
               </div>
               <div
