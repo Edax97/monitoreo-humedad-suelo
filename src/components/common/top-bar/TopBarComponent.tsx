@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import { AiOutlineMenu } from "react-icons/ai";
+import { RiMenu5Fill as Menu } from "react-icons/ri";
 
 interface Props {
   statusText: string;
@@ -9,11 +9,20 @@ interface Props {
 
 export default function TopBarComponent(props: Props) {
   return (
-    <div className="p-2 d-flex gap-3">
-      <div className="text-primary fs-5" role="button" onClick={props.onMenu}>
-        <AiOutlineMenu />
+    <div className="px-4 py-2 d-flex align-items-center gap-3 bg-primary bg-opacity-25">
+      <div
+        className="fs-5 d-flex align-items-center"
+        role="button"
+        onClick={props.onMenu}
+      >
+        <Menu />
       </div>
-      <div className="fs-5">{props.statusText}</div>
+      <div
+        className="fs-5 text-black text-opacity-75"
+        style={{ letterSpacing: "0.01em" }}
+      >
+        {props.statusText}
+      </div>
       {props.children}
     </div>
   );

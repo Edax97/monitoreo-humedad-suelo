@@ -8,7 +8,7 @@ export default function SelectRangeContainer() {
   return (
     <div className="dropdown">
       <button
-        className="btn btn-light dropdown-toggle"
+        className="btn btn-outline-primary"
         id="dropdown-range"
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
