@@ -1,0 +1,19 @@
+import React, { ReactNode } from "react";
+import "./card-component.scss";
+
+interface Props {
+  children: ReactNode;
+  className?: string;
+}
+
+export default function CardComponent(props: Props) {
+  return (
+    <div
+      className={`card bg-primary bg-opacity-10 card-primary ${
+        props.className || ""
+      }`}
+    >
+      {props.children}
+    </div>
+  );
+}

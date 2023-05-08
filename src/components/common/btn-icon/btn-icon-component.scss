@@ -1,0 +1,11 @@
+.btn-icon {
+  height: 2.4em;
+  width: 2.4em;
+  background-color: rgba(0, 0, 0, 0);
+  border-style: none;
+  border-radius: 50%;
+  &:hover,
+  &:focus {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
