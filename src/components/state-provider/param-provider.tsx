@@ -40,6 +40,7 @@ export default function ParamProvider(props: Props) {
 
   const [fetchLoading, setFetchLoading] = useState(true);
   const [postLoading, setPostLoading] = useState(false);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [postError, setPostError] = useState(false);
 
   const updateParams = (key: string, value: any) =>
