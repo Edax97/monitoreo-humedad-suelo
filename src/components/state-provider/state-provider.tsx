@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { fetchDataHumedad, getDataHumedad } from "../../api/data-humedad";
+import { fetchDataHumedad } from "../../api/data-humedad";
 import { moverFecha } from "../../api/utilities/date-utils";
 import { max } from "d3";
 
@@ -86,13 +86,12 @@ export function StateProvider(props: Props) {
 
   const dataFiltrada = useMemo(() => {
     return dataSondas.filter((d) => {
-      const d_found = sondas.find((s) => s.level === d["Nivel"]);
       const datum_time = new Date(d["fecha"]);
       const belongsRange =
         datum_time > timeRange.startDate && datum_time < timeRange.endDate;
-      return d_found?.show && belongsRange;
+      return belongsRange;
     });
-  }, [dataSondas, sondas, timeRange]);
+  }, [dataSondas, timeRange]);
 
   const dataVis = useMemo(() => {
     const lastDatum = max(dataFiltrada, (d) => new Date(d["fecha"]));
