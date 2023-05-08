@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import DatosSondaPage from "../datos-sonda-page/DatosSondaPage";
+import ConfigSensoresPage from "../config-sensores-page/ConfigSensoresPage";
 import HomePage from "../home-page/HomePage";
 import ParamCampoPage from "../param-campo-page/ParamCampoPage";
+import ParamProvider from "../state-provider/param-provider";
+import SensoresProvider from "../state-provider/SensoresProvider";
 import { StateProvider } from "../state-provider/state-provider";
 
 const router = createBrowserRouter([
@@ -10,8 +12,8 @@ const router = createBrowserRouter([
     element: <HomePage />,
   },
   {
-    path: "datos-sonda",
-    element: <DatosSondaPage />,
+    path: "config-sensores",
+    element: <ConfigSensoresPage />,
   },
   {
     path: "param-campo",
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
 function App() {
   return (
     <StateProvider>
-      <RouterProvider router={router} />
+      <ParamProvider>
+        <SensoresProvider>
+          <RouterProvider router={router} />
+        </SensoresProvider>
+      </ParamProvider>
     </StateProvider>
   );
 }

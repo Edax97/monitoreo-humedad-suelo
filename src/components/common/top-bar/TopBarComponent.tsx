@@ -1,5 +1,6 @@
 import React, { ReactNode } from "react";
 import { RiMenu5Fill as Menu } from "react-icons/ri";
+import BtnIconComponent from "../btn-icon/BtnIconComponent";
 
 interface Props {
   statusText: string;
@@ -9,21 +10,25 @@ interface Props {
 
 export default function TopBarComponent(props: Props) {
   return (
-    <div className="px-4 py-2 d-flex align-items-center gap-3 bg-primary bg-opacity-25">
+    <div className="py-1 text-white bg-primary">
       <div
-        className="fs-5 d-flex align-items-center"
-        role="button"
-        onClick={props.onMenu}
+        className="container-lg d-flex align-items-center gap-3 "
+        style={{ height: "48px" }}
       >
-        <Menu />
+        <BtnIconComponent
+          iconClassName="fs-5 text-white"
+          onClick={props.onMenu}
+        >
+          <Menu />
+        </BtnIconComponent>
+        <div
+          className="fs-5 text-opacity-75"
+          style={{ letterSpacing: "0.01em" }}
+        >
+          {props.statusText}
+        </div>
+        {props.children}
       </div>
-      <div
-        className="fs-5 text-black text-opacity-75"
-        style={{ letterSpacing: "0.01em" }}
-      >
-        {props.statusText}
-      </div>
-      {props.children}
     </div>
   );
 }

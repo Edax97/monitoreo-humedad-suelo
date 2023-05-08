@@ -7,7 +7,7 @@ import TopBarComponent from "../common/top-bar/TopBarComponent";
 import GraficaSuma from "./grafico/grafica-suma";
 import LeyendaSeries from "./leyenda/leyenda-series";
 import LeyendaSuma from "./leyenda/leyenda-suma";
-import ConfigComponent from "./menu/configuracion/configuracion-component";
+import ConfigComponent from "../common/menu/configuracion/configuracion-component";
 
 const graphBackColor = "rgba(230, 240, 230, 0.8)";
 const legendColor = "rgba(230, 240, 230, 0.8)";
@@ -84,9 +84,3 @@ export default function HomePage() {
     </div>
   );
 }
-
-/*
-      <>
-        
-      </>
-    */

@@ -1,21 +1,24 @@
 import { useState } from "react";
+import BtnIconComponent from "../../../common/btn-icon/BtnIconComponent";
 import SinceRangeContainer from "./since-range/since-range-container";
 import TimeRangeContainer from "./time-range/time-range-container";
+import { BsCalendarRange as Calendar } from "react-icons/bs";
 
 export default function SelectRangeContainer() {
   const [showTimeRange, setShowTimeRange] = useState(true);
 
   return (
     <div className="dropdown">
-      <button
-        className="btn btn-outline-primary"
+      <BtnIconComponent
+        iconClassName="fs-5 text-white"
         id="dropdown-range"
         data-bs-toggle="dropdown"
         data-bs-auto-close="outside"
         aria-expanded="false"
+        aria-label="Seleccionar rango temporal"
       >
-        Rango temporal
-      </button>
+        <Calendar />
+      </BtnIconComponent>
       <div className="dropdown-menu" aria-labelledby="dropdown-range">
         <>
           {showTimeRange ? <TimeRangeContainer /> : <SinceRangeContainer />}

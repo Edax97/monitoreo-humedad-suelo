@@ -1,14 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import TopBarComponent from "../common/top-bar/TopBarComponent";
-import ParamsFormContainer from "./params-form/ParamsFormContainer";
 import { MdArrowBackIos as Back } from "react-icons/md";
+import { Link } from "react-router-dom";
+import SensoresFormContainer from "./sensores-form/SensoresFormContainer";
 
-export default function ParamCampoPage() {
+export default function ConfigSensoresPage() {
   return (
     <>
       <header>
-        <TopBarComponent statusText="Parámetros de campo">
+        <TopBarComponent statusText="Configuración de sensores">
           <Link
             to={"/"}
             className="ms-auto btn btn-outline-light d-flex align-items-center"
@@ -18,10 +18,10 @@ export default function ParamCampoPage() {
         </TopBarComponent>
       </header>
       <main
-        className="px-4 d-flex justify-content-center"
+        className="d-flex justify-content-center"
         style={{ paddingTop: "6rem" }}
       >
-        <ParamsFormContainer />
+        <SensoresFormContainer />
       </main>
     </>
   );

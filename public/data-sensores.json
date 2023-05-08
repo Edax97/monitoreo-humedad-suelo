@@ -1,0 +1,6 @@
+{
+  "dataSensores": [
+    { "numero": 1, "imei": "sonda01-01", "prof": 20 },
+    { "numero": 2, "imei": "sonda01-02", "prof": 40 }
+  ]
+}
