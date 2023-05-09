@@ -1,6 +1,5 @@
 import React from "react";
 import GraficaSeries from "./grafico/grafica-series";
-import SelectRangeContainer from "./menu/select-range/select-range-container";
 import TimeAxisContainer from "./time-axis/time-axis-container";
 import "./home-page.scss";
 import TopBarComponent from "../common/top-bar/TopBarComponent";
@@ -8,6 +7,7 @@ import GraficaSuma from "./grafico/grafica-suma";
 import LeyendaSeries from "./leyenda/leyenda-series";
 import LeyendaSuma from "./leyenda/leyenda-suma";
 import ConfigComponent from "../common/menu/configuracion/configuracion-component";
+import SelectRangeContainer from "./select-range/SelectRangeContainer";
 
 const graphBackColor = "rgba(230, 240, 230, 0.8)";
 const legendColor = "rgba(230, 240, 230, 0.8)";
@@ -19,15 +19,17 @@ export default function HomePage() {
       <header>
         <TopBarComponent statusText="Lámina de agua aprovechable">
           <div className="ms-auto d-flex gap-3">
-            <SelectRangeContainer />
             <ConfigComponent />
           </div>
         </TopBarComponent>
       </header>
       <main className="my-4">
         <div className="container-lg">
+          <div className="pt-3">
+            <SelectRangeContainer />
+          </div>
           <div
-            className="mt-3"
+            className="mt-5"
             style={{
               borderStyle: "solid",
               borderColor: lineColor,
@@ -45,7 +47,7 @@ export default function HomePage() {
                 borderWidth: "1px",
                 borderRadius: "0.4rem",
                 backgroundColor: graphBackColor,
-                height: "35vh",
+                height: "30vh",
               }}
             >
               <GraficaSeries />
@@ -70,7 +72,7 @@ export default function HomePage() {
                 borderColor: lineColor,
                 borderWidth: "1px",
                 backgroundColor: graphBackColor,
-                height: "35vh",
+                height: "30vh",
               }}
             >
               <GraficaSuma />

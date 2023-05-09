@@ -190,19 +190,21 @@ export function Grafica(props: Props) {
         <Tooltip<DataXY>
           renderTooltip={(tooltip) => {
             const datumBySeries = tooltip.tooltipData?.datumByKey;
+            if (!datumBySeries) return null;
             return (
               <div className="p-2 fw-normal">
                 {props.dataVis.map((s, j) => {
-                  const datum = datumBySeries
-                    ? datumBySeries[`d-${s.level}`].datum
-                    : null;
+                  const keyData = datumBySeries[`d-${s.level}`];
+                  if (!keyData) return null;
                   return (
                     <>
                       <div className="mb-1" style={{ color: s.color }}>
-                        {`${s.level} cm: ${datum?.h}`}
+                        {`${s.level} cm: ${keyData.datum?.h}`}
                       </div>
                       {j === props.dataVis.length - 1 ? (
-                        <div>{timeFormat("%d-%m-%y %H:%M")(datum?.time)}</div>
+                        <div>
+                          {timeFormat("%d-%m-%y %H:%M")(keyData.datum?.time)}
+                        </div>
                       ) : null}
                     </>
                   );
