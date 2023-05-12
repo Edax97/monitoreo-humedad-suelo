@@ -9,6 +9,7 @@ interface Props {
   seriesLegend: SeriesLegend[];
   dataVis: SeriesVisType[];
   areaList: AreaType[];
+  unidad: string;
   width: number;
   height: number;
   axisLabel: string;

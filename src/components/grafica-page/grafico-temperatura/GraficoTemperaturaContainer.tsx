@@ -53,6 +53,7 @@ export default function GraficoTemperaturaContainer() {
           height={350}
           dataVis={dataVis}
           areaList={areaList}
+          unidad="°C"
           accessors={accessors}
           axisLabel={""}
         />

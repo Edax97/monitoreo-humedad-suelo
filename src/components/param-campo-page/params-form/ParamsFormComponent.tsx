@@ -11,13 +11,15 @@ interface Props {
   updateParams: (key: string, value: any) => any;
   onCancel: () => any;
   onSave: () => any;
+  afterSave: () => any;
+  saveLoading: boolean;
 }
 
 export default function ParamsFormComponent(props: Props) {
   const onSubmit = useCallback(
     (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      props.onSave();
+      props.onSave().then(() => props.afterSave());
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [props.onSave]
@@ -51,7 +53,11 @@ export default function ParamsFormComponent(props: Props) {
         >
           Cancelar
         </button>
-        <button className="btn btn-primary text-white" type="submit">
+        <button
+          className="btn btn-primary text-white"
+          type="submit"
+          disabled={props.saveLoading}
+        >
           Guardar
         </button>
       </div>

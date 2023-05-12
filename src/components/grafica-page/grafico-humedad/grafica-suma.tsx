@@ -70,7 +70,8 @@ export default function GraficaSuma() {
           height={300}
           dataVis={[sumaVis]}
           areaList={areaList}
-          axisLabel="Lámina aprovechable (cm)"
+          unidad="mm"
+          axisLabel="Lámina aprovechable (mm)"
           accessors={accessors}
         />
       )}
