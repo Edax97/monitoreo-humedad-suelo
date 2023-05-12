@@ -1,35 +1,62 @@
-import React from "react";
-import GraficaSeries from "../grafico/grafica-series";
-import LeyendaSeries from "../leyenda/leyenda-series";
-const graphBackColor = "rgba(230, 240, 230, 0.8)";
-const legendColor = "rgba(230, 240, 230, 0.8)";
-const lineColor = "rgba(100,100,100,0.3)";
+import { ParentSize } from "@visx/responsive";
+import React, { useMemo } from "react";
+import {
+  DatumSensor,
+  useGraficasContext,
+} from "../../state-provider/GraficasProvider";
+import { AccessorsType, AreaType } from "../grafico/grafico-component";
+import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
+
 export default function GraficoPHContainer() {
+  const { dataVis, timeRange } = useGraficasContext();
+
+  const accessors = useMemo<AccessorsType>(
+    () => ({
+      xAccessor: (d: DatumSensor) => d?.fecha,
+      yAccessor: (d: DatumSensor) => d?.pH,
+    }),
+    []
+  );
+
+  const areaList = useMemo<AreaType[]>(
+    () => [
+      {
+        label: "dominio-tiempo",
+        showLabel: false,
+        color: "#ffffff00",
+        data: [
+          { x: timeRange?.startDate, y: 0 },
+          { x: timeRange?.endDate, y: 0 },
+        ],
+      },
+    ],
+    [timeRange]
+  );
+
+  const seriesLegend = useMemo(() => {
+    return dataVis
+      .filter((s) => s.showSeries)
+      .map((s) => ({
+        color: s.color,
+        label: `${s.profundidad} cm`,
+      }));
+  }, [dataVis]);
+
+  if (dataVis.length === 0) return null;
   return (
-    <div
-      className="mt-2"
-      style={{
-        borderStyle: "solid",
-        borderColor: lineColor,
-        borderWidth: "1px",
-        borderRadius: "0.4rem",
-      }}
-    >
-      <div style={{ backgroundColor: legendColor }}>
-        <LeyendaSeries />
-      </div>
-      <div
-        style={{
-          borderTopStyle: "solid",
-          borderColor: lineColor,
-          borderWidth: "1px",
-          borderRadius: "0.4rem",
-          backgroundColor: graphBackColor,
-          height: "25vh",
-        }}
-      >
-        <GraficaSeries />
-      </div>
-    </div>
+    <ParentSize>
+      {({ width, height }) => (
+        <GraficoLeyendaComponent
+          infoText={null}
+          seriesLegend={seriesLegend}
+          width={width}
+          height={350}
+          dataVis={dataVis}
+          areaList={areaList}
+          accessors={accessors}
+          axisLabel={""}
+        />
+      )}
+    </ParentSize>
   );
 }

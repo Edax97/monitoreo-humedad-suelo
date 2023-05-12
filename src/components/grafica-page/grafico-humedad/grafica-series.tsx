@@ -4,7 +4,8 @@ import {
   DatumSensor,
   useGraficasContext,
 } from "../../state-provider/GraficasProvider";
-import { AreaType, Grafica } from "./grafico-component";
+import { AreaType } from "../grafico/grafico-component";
+import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
 
 export default function GraficaSeries() {
   const { dataVis, timeRange } = useGraficasContext();
@@ -32,13 +33,24 @@ export default function GraficaSeries() {
     [timeRange]
   );
 
+  const seriesLegend = useMemo(() => {
+    return dataVis
+      .filter((s) => s.showSeries)
+      .map((s) => ({
+        color: s.color,
+        label: `${s.profundidad} cm`,
+      }));
+  }, [dataVis]);
+
   if (dataVis.length === 0) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
-        <Grafica
+        <GraficoLeyendaComponent
+          infoText={null}
+          seriesLegend={seriesLegend}
           width={width}
-          height={height}
+          height={300}
           dataVis={dataVis}
           areaList={areaList}
           axisLabel="Lámina aprovechable (cm)"

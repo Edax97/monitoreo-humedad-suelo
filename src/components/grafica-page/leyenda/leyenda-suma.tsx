@@ -14,5 +14,5 @@ export default function LeyendaSuma() {
   );
 
   if (!sumaVis) return null;
-  return <LeyendaComponent infoText={null} series={[serieSuma]} />;
+  return <LeyendaComponent infoText={null} seriesLegend={[serieSuma]} />;
 }

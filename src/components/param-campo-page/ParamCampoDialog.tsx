@@ -5,7 +5,7 @@ import ParamsFormContainer from "./params-form/ParamsFormContainer";
 import { MdClose as Close } from "react-icons/md";
 import BtnIconComponent from "../common/btn-icon/BtnIconComponent";
 
-Modal.setAppElement(document.getElementById("app") || "");
+//Modal.setAppElement(document.getElementById("app") || "");
 
 export default function ParamCampoDialog() {
   const [modalOpen, setModalOpen] = useState(false);

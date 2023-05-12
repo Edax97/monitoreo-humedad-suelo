@@ -1,13 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ConfigSensoresPage from "../config-sensores-page/ConfigSensoresPage";
 import GraficoPage from "../grafica-page/GraficoPage";
-import ParamCampoPage from "../param-campo-page/ParamCampoPage";
 import ParamProvider from "../state-provider/param-provider";
 import SensoresProvider from "../state-provider/SensoresProvider";
-import GraficoHumedadContainer from "../grafica-page/grafico-humedad/GraficoHumedadContainer";
-import GraficoTemperaturaContainer from "../grafica-page/grafico-temperatura/GraficoTemperaturaContainer";
-import GraficoPHContainer from "../grafica-page/grafico-ph/GraficoPHContainer";
+import GraficoHumedadPage from "../grafica-page/grafico-humedad/GraficoHumedadPage";
 import GraficasProvider from "../state-provider/GraficasProvider";
+import GraficoPHPage from "../grafica-page/grafico-ph/GraficoPHPage";
+import GraficoTemperaturaPage from "../grafica-page/grafico-temperatura/GraficoTemperaturaPage";
 
 const router = createBrowserRouter([
   {
@@ -16,15 +14,15 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <GraficoHumedadContainer />,
+        element: <GraficoHumedadPage />,
       },
       {
         path: "grafico-temperatura",
-        element: <GraficoTemperaturaContainer />,
+        element: <GraficoTemperaturaPage />,
       },
       {
         path: "grafico-ph",
-        element: <GraficoPHContainer />,
+        element: <GraficoPHPage />,
       },
     ],
   },

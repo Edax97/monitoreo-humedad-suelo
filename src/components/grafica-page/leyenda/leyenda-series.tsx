@@ -15,5 +15,5 @@ export default function LeyendaSeries() {
   }, [dataVis]);
 
   if (series.length === 0) return null;
-  return <LeyendaComponent infoText={null} series={series} />;
+  return <LeyendaComponent infoText={null} seriesLegend={series} />;
 }

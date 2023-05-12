@@ -4,7 +4,8 @@ import {
   DatumSensor,
   useGraficasContext,
 } from "../../state-provider/GraficasProvider";
-import { AccessorsType, AreaType, Grafica } from "./grafico-component";
+import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
+import { AccessorsType, AreaType } from "../grafico/grafico-component";
 
 export default function GraficaSuma() {
   const { sumaVis, timeRange, parametros } = useGraficasContext();
@@ -50,13 +51,23 @@ export default function GraficaSuma() {
     ];
   }, [timeRange, parametros]);
 
+  const serieSuma = useMemo(
+    () => ({
+      color: sumaVis?.color || "",
+      label: `${sumaVis?.profundidad} cm`,
+    }),
+    [sumaVis]
+  );
+
   if (!sumaVis) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
-        <Grafica
+        <GraficoLeyendaComponent
+          infoText={null}
+          seriesLegend={[serieSuma]}
           width={width}
-          height={height}
+          height={300}
           dataVis={[sumaVis]}
           areaList={areaList}
           axisLabel="Lámina aprovechable (cm)"
