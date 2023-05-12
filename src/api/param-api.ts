@@ -1,19 +1,30 @@
 import { ParamsType } from "../components/state-provider/param-provider";
 
-interface ParamsAPIType {
+interface ParamsDataType {
   success: boolean;
   error: string;
   datos: ParamsType[];
 }
+interface ParamsResType {
+  success: boolean;
+  error: string;
+  datos: null;
+}
 
-const paramsURL = "https://saphy-iot.com/api/consultaParametros/1";
+const paramsGetURL = "https://saphy-iot.com/api/consultaParametros/1";
+const paramsPostURL = "https://saphy-iot.com/api/parametro/actualizar/1";
 
 export const fetchParamsAPI = () =>
-  fetch(paramsURL)
-    .then<ParamsAPIType>((r) => r.json())
+  fetch(paramsGetURL)
+    .then<ParamsDataType>((r) => r.json())
     .then((d) => d.datos[0]);
 
-export const postParamsAPI = async (params: ParamsType) => ({
-  status: "OK",
-  payload: params,
-});
+export const postParamsAPI = (params: ParamsType) =>
+  fetch(paramsPostURL, {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(params),
+  }).then<ParamsResType>((r) => r.json());

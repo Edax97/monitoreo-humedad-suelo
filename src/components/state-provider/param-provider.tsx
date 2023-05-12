@@ -68,10 +68,14 @@ export default function ParamProvider(props: Props) {
   const postParams = () => {
     if (params === null) return;
     setPostLoading(true);
-    postParamsAPI(params).then((r) => {
-      console.log("Post data", r);
-      setPostLoading(false);
-    });
+    setPostError(false);
+    return postParamsAPI(params)
+      .then((r) => {
+        console.log("Post data", r);
+        setPostLoading(false);
+        setInitialParams(params);
+      })
+      .catch((e) => setPostError(true));
   };
 
   const cancelParams = useCallback(

@@ -9,7 +9,6 @@ import React, {
 } from "react";
 import { fetchDataSondaAPI, ParametrosType } from "../../api/data-sonda-api";
 import { coloresList } from "../../api/utilities/colores";
-import { moverFecha } from "../../api/utilities/date-utils";
 
 export interface DatumSensor {
   Humedad: number;
@@ -38,6 +37,7 @@ interface GraficaContextType {
   sumaVis: SeriesVisType | null;
   parametros: ParametrosType | null;
   getData: (range: RangeType) => any;
+  reloadData: () => any;
   getLoading: boolean;
   getError: boolean;
 }
@@ -97,12 +97,11 @@ export default function GraficasProvider(props: Props) {
     setGetLoading(true);
     setGetError(false);
     const desde = `${timeFormat("%Y-%m-%d")(r.startDate)} 00:00:00`;
-    const hasta = `${timeFormat("%Y-%m-%d")(
-      moverFecha(r.endDate, 1)
-    )} 00:00:00`;
+    const hasta = `${timeFormat("%Y-%m-%d")(r.endDate)} 23:59:59`;
 
     fetchDataSondaAPI(desde, hasta)
       .then((dataSonda) => {
+        //console.log("Fetch data");
         setGetLoading(false);
         setDataVis(
           dataSonda.datos.map(({ profundidad, trama }, i) => {
@@ -136,6 +135,11 @@ export default function GraficasProvider(props: Props) {
       });
   }, []);
 
+  const reloadData = useCallback(() => {
+    if (!timeRange) return;
+    getData(timeRange);
+  }, [timeRange, getData]);
+
   return (
     <GraficasContext.Provider
       value={{
@@ -144,6 +148,7 @@ export default function GraficasProvider(props: Props) {
         sumaVis,
         parametros: valores,
         getData,
+        reloadData,
         getLoading,
         getError,
       }}

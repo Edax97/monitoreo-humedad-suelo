@@ -53,6 +53,7 @@ export default function GraficoPHContainer() {
           height={350}
           dataVis={dataVis}
           areaList={areaList}
+          unidad=""
           accessors={accessors}
           axisLabel={""}
         />

@@ -1,6 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect } from "react";
 import LoadingComponent from "../../common/loading/LoadingComponent";
+import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import { useParamsContext } from "../../state-provider/param-provider";
 import ParamsFormComponent, { ParamsLabelsType } from "./ParamsFormComponent";
 
@@ -20,11 +21,21 @@ export default function ParamsFormContainer() {
     params,
     fetchParams,
     fetchLoading,
+    postLoading,
+    postError,
   } = useParamsContext();
+
+  const { reloadData } = useGraficasContext();
 
   useEffect(() => fetchParams(), []);
 
   if (fetchLoading) return <LoadingComponent className="mt-5 pt-5 mb-5 pb-5" />;
+  if (postError)
+    return (
+      <div className="my-5 alert alert-danger">
+        Error al actualizar parámetros.
+      </div>
+    );
   if (params === null)
     return (
       <div className="my-5 alert alert-danger">Error al cargar parámetros.</div>
@@ -36,6 +47,8 @@ export default function ParamsFormContainer() {
       updateParams={updateParams}
       onCancel={cancelParams}
       onSave={postParams}
+      afterSave={reloadData}
+      saveLoading={postLoading}
     />
   );
 }

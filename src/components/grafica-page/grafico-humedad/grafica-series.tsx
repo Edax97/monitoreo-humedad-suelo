@@ -53,7 +53,8 @@ export default function GraficaSeries() {
           height={300}
           dataVis={dataVis}
           areaList={areaList}
-          axisLabel="Lámina aprovechable (cm)"
+          unidad="mm"
+          axisLabel="Lámina aprovechable (mm)"
           accessors={accessors}
         />
       )}
