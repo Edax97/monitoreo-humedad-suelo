@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { SingleValue } from "react-select";
 import { moverFecha } from "../../../api/utilities/date-utils";
-import { useGraficaContext } from "../../state-provider/GraficaProvider";
+import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import SelectRangeComponent from "./SelectRangeComponent";
 
 export type SinceType = { value: number; label: string };
@@ -15,7 +15,7 @@ const sinceOptions: SinceType[] = [
 ];
 
 export default function SelectRangeContainer() {
-  const { timeRange, setTimeRange } = useGraficaContext();
+  const { timeRange, getData } = useGraficasContext();
 
   const [tempRange, setTempRange] = useState<RangeType>(null);
   const [sinceSelected, setSinceSelected] = useState<SinceType>({
@@ -41,9 +41,9 @@ export default function SelectRangeContainer() {
       setValidationError(true);
       return;
     }
-    setTimeRange(tempRange);
+    getData(tempRange);
     //getData()
-  }, [tempRange, setTimeRange]);
+  }, [tempRange, getData]);
 
   const selectSince = useCallback((v: SingleValue<SinceType>) => {
     if (!v) return;
@@ -59,6 +59,10 @@ export default function SelectRangeContainer() {
     setTempRange(timeRange);
   }, [timeRange]);
 
+  useEffect(() => {
+    getData({ startDate: moverFecha(new Date(), -7), endDate: new Date() });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <SelectRangeComponent
       tempRange={tempRange}

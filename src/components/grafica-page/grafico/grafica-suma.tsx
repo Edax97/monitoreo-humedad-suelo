@@ -1,50 +1,66 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
-import { useGraficaContext } from "../../state-provider/GraficaProvider";
-import { AreaType, Grafica } from "./grafico-component";
+import {
+  DatumSensor,
+  useGraficasContext,
+} from "../../state-provider/GraficasProvider";
+import { AccessorsType, AreaType, Grafica } from "./grafico-component";
 
 export default function GraficaSuma() {
-  const { dataVis, timeRange, varHidraul } = useGraficaContext();
-  const areaList = useMemo<AreaType[]>(
-    () => [
+  const { sumaVis, timeRange, parametros } = useGraficasContext();
+
+  const accessors = useMemo<AccessorsType>(
+    () => ({
+      xAccessor: (d: DatumSensor) => d?.fecha,
+      yAccessor: (d: DatumSensor) => d?.raprovechable,
+    }),
+    []
+  );
+
+  const areaList = useMemo<AreaType[]>(() => {
+    if (!parametros || !timeRange) return [];
+    return [
       {
-        label: "rango-humedad",
+        label: "rango-valores",
         showLabel: false,
         color: "#ffffff00",
         data: [
-          { time: timeRange.startDate, h: 1.2 * varHidraul.cc },
-          { time: timeRange.endDate, h: 1.2 * varHidraul.cc },
+          { x: timeRange.startDate, y: 1.2 * 0 },
+          { x: timeRange.endDate, y: 1.2 * 0 },
         ],
       },
       {
-        label: "CC",
-        showLabel: true,
+        label: " aprovechable",
+        showLabel: false,
         color: "hsl(147, 68%, 91%)",
         data: [
-          { time: timeRange.startDate, h: varHidraul.cc },
-          { time: timeRange.endDate, h: varHidraul.cc },
+          { x: timeRange.startDate, y: parametros.aprovechable },
+          { x: timeRange.endDate, y: parametros.aprovechable },
         ],
       },
       {
-        label: "PMP",
-        showLabel: true,
+        label: "raprovechable",
+        showLabel: false,
         color: "hsl(0, 61%, 94%)",
         data: [
-          { time: timeRange.startDate, h: varHidraul.pmp },
-          { time: timeRange.endDate, h: varHidraul.pmp },
+          { x: timeRange.startDate, y: parametros.raprovechable },
+          { x: timeRange.endDate, y: parametros.raprovechable },
         ],
       },
-    ],
-    [timeRange, varHidraul]
-  );
+    ];
+  }, [timeRange, parametros]);
+
+  if (!sumaVis) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
         <Grafica
           width={width}
           height={height}
-          dataVis={[dataVis.suma]}
+          dataVis={[sumaVis]}
           areaList={areaList}
+          axisLabel="Lámina aprovechable (cm)"
+          accessors={accessors}
         />
       )}
     </ParentSize>

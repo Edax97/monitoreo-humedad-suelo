@@ -1,20 +1,12 @@
-import { DatumHType } from "../components/state-provider/GraficaProvider";
-import { RangeType } from "../components/state-provider/GraficasProvider";
+import {
+  DatumSensor,
+  RangeType,
+} from "../components/state-provider/GraficasProvider";
 
-interface DatumSensorAPI {
-  humedad: number;
-  aprovechable: number;
-  raprovechable: number;
-  fecha: string;
-  cm: number;
-  temepratura: number;
-  conductividad: number;
-  ph: number;
-}
 interface DataSensorType {
   sensor: string;
   profundidad: number;
-  trama: DatumSensorAPI[];
+  trama: DatumSensor[];
 }
 export interface ParametrosType {
   [key: string]: number;
@@ -27,8 +19,20 @@ interface GetDataType {
   parametros: ParametrosType;
 }
 
-export const fetchDataHumedad = () =>
-  fetch("data_sonda.json").then<DatumHType[]>((res) => res.json());
-
 export const getDataSondaAPI = (r: RangeType) =>
   fetch(`data-model.json`).then<GetDataType>((res) => res.json());
+
+export const fetchDataSondaAPI = (desde: string, hasta: string) => {
+  return fetch("https://saphy-iot.com/api/ConsultaPunto/863192058179590", {
+    method: "POST",
+    headers: {
+      Accept: "application/json, text/plain, */*",
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      desde: desde,
+      hasta: hasta,
+      cant_registro: 0,
+    }),
+  }).then<GetDataType>((res) => res.json());
+};

@@ -8,9 +8,10 @@ import React, {
 import { getSensoresAPI, postSensoresAPI } from "../../api/sensores-api";
 
 export interface DataSensorType {
-  numero: number;
-  imei: string;
-  prof: number;
+  codigo: number;
+  idpunto: number;
+  nombre: string;
+  profundidad: string;
 }
 
 interface SensoresContextType {
@@ -18,7 +19,7 @@ interface SensoresContextType {
   initialDataSensores: DataSensorType[];
   getSensores: () => any;
   postSensores: () => any;
-  updateSensores: (imei: string, prof: number) => any;
+  updateSensores: (codigo: number, prof: string) => any;
   cancelSensores: () => any;
   getLoading: boolean;
   postLoading: boolean;
@@ -42,7 +43,7 @@ export default function SensoresProvider(props: Props) {
   const getSensores = useCallback(() => {
     setGetLoading(true);
     getSensoresAPI()
-      .then((data) => data.dataSensores)
+      .then((data) => data.datos)
       .then((sensores) => {
         setDataSensores(sensores);
         setInitialDataSensores(sensores);
@@ -52,15 +53,15 @@ export default function SensoresProvider(props: Props) {
   const postSensores = useCallback(() => {
     setPostLoading(true);
     setPostError(false);
-    postSensoresAPI({ dataSensores }).then((r) => {
+    postSensoresAPI({ datos: dataSensores }).then((r) => {
       console.log("POST", console.log(r.payload));
       setPostLoading(false);
     });
   }, [dataSensores]);
 
-  const updateSensores = useCallback((imei: string, prof: number) => {
+  const updateSensores = useCallback((codigo: number, profundidad: string) => {
     setDataSensores((sensores) =>
-      sensores.map((s) => (s.imei === imei ? { ...s, prof } : s))
+      sensores.map((s) => (s.codigo === codigo ? { ...s, profundidad } : s))
     );
   }, []);
 

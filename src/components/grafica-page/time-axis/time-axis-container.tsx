@@ -1,19 +1,20 @@
 import { ParentSize } from "@visx/responsive";
-import React, { useMemo } from "react";
-import { useGraficaContext } from "../../state-provider/GraficaProvider";
+import React from "react";
+import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import TimeAxisComponent from "./time-axis-component";
 
 export default function TimeAxisContainer() {
-  const { timeRange } = useGraficaContext();
-  const timeDomain = useMemo(
-    () => [timeRange.startDate, timeRange.endDate],
-    [timeRange]
-  );
+  const { timeRange } = useGraficasContext();
 
+  if (!timeRange) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
-        <TimeAxisComponent width={width} hMargin={60} domain={timeDomain} />
+        <TimeAxisComponent
+          width={width}
+          hMargin={60}
+          domain={[timeRange.startDate, timeRange.endDate]}
+        />
       )}
     </ParentSize>
   );

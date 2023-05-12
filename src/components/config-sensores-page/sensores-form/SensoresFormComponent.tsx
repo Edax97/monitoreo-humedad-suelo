@@ -5,7 +5,7 @@ interface Props {
   onCancel: () => any;
   onSave: () => any;
   sensores: DataSensorType[];
-  updateSensores: (imei: string, prof: number) => any;
+  updateSensores: (codigo: number, prof: string) => any;
 }
 export default function SensoresFormComponent(props: Props) {
   const onSubmit = useCallback(
@@ -21,18 +21,18 @@ export default function SensoresFormComponent(props: Props) {
     <form action="#" onSubmit={onSubmit}>
       {props.sensores.map((sensor) => (
         <>
-          <div key={sensor.numero} className="d-flex align-items-center">
-            <span>{`Sensor N° ${sensor.numero}`}</span>
-            <span className="ms-3 opacity-50">{`IMEI: ${sensor.imei}`}</span>
+          <div key={sensor.codigo} className="d-flex align-items-center">
+            <span>{`Sensor N° ${sensor.codigo}`}</span>
+            <span className="ms-3 opacity-50">{`Punto ID: ${sensor.idpunto}`}</span>
             <span className="ms-auto">Profundidad:</span>
             <input
               aria-label="Profundidad"
               type="number"
               className="form-control ms-3"
               style={{ width: "6rem" }}
-              value={sensor.prof}
+              value={sensor.profundidad}
               onChange={(e) =>
-                props.updateSensores(sensor.imei, +e.target.value)
+                props.updateSensores(sensor.codigo, e.target.value)
               }
               required
             />

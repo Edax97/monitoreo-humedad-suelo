@@ -5,6 +5,8 @@ import SensoresFormContainer from "./sensores-form/SensoresFormContainer";
 import BtnIconComponent from "../common/btn-icon/BtnIconComponent";
 import { MdClose as Close } from "react-icons/md";
 
+Modal.setAppElement(document.getElementById("app") || "");
+
 export default function ConfigSensoresDialog() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -27,7 +29,7 @@ export default function ConfigSensoresDialog() {
                   <Close />
                 </BtnIconComponent>
               </div>
-              <div className="py-4 ps-4 pe-3">
+              <div className="p-5">
                 <SensoresFormContainer />
               </div>
             </div>

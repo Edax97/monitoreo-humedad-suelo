@@ -1,40 +1,39 @@
-import { max } from "d3";
+import { max, timeFormat } from "d3";
 import React, {
   createContext,
   ReactNode,
   useCallback,
   useContext,
-  useEffect,
   useMemo,
   useState,
 } from "react";
-import { getDataSondaAPI, ParametrosType } from "../../api/data-sonda-api";
+import { fetchDataSondaAPI, ParametrosType } from "../../api/data-sonda-api";
 import { coloresList } from "../../api/utilities/colores";
 import { moverFecha } from "../../api/utilities/date-utils";
 
 export interface DatumSensor {
-  humedad: number;
+  Humedad: number;
   aprovechable: number;
   raprovechable: number;
   fecha: Date;
   cm: number;
-  temepratura: number;
-  conductividad: number;
-  ph: number;
+  Temperatura: number;
+  Conductividad: number;
+  pH: number;
 }
 
 export interface SeriesVisType {
-  profundidad: number | string;
+  profundidad: string;
   trama: DatumSensor[];
   lastDatum: Date | null;
   showSeries: boolean;
   color: string;
 }
 
-export type RangeType = { startDate: Date; endDate: Date } | null;
+export type RangeType = { startDate: Date; endDate: Date };
 
 interface GraficaContextType {
-  timeRange: RangeType;
+  timeRange: RangeType | null;
   dataVis: SeriesVisType[];
   sumaVis: SeriesVisType | null;
   parametros: ParametrosType | null;
@@ -49,7 +48,7 @@ interface Props {
   children: ReactNode;
 }
 export default function GraficasProvider(props: Props) {
-  const [timeRange, setTimeRange] = useState<RangeType>(null);
+  const [timeRange, setTimeRange] = useState<RangeType | null>(null);
   //const [maxTimeRange, setMaxTimeRange] = useState<Range>(null);
 
   //const [dataSonda, setDataSonda] = useState<DataSondaType | null>(null);
@@ -68,21 +67,26 @@ export default function GraficasProvider(props: Props) {
     const sumaProfundidad = dataVis.map((s) => s.profundidad).join("+");
 
     const tramaSuma = firstSensor.trama.map((datum) => {
-      let [humedad, aprovechable, raprovechable] = [0, 0, 0];
+      let [Humedad, aprovechable, raprovechable] = [0, 0, 0];
       dataVis.forEach((sensor) => {
         const datumSensor = sensor.trama.find(
           (d) => d.fecha.toString() === datum.fecha.toString()
         );
-        humedad += datumSensor?.humedad || 0;
+        Humedad += datumSensor?.Humedad || 0;
         aprovechable += datumSensor?.aprovechable || 0;
-        raprovechable += datumSensor?.aprovechable || 0;
+        raprovechable += datumSensor?.raprovechable || 0;
       });
-      return { ...datum, humedad, aprovechable, raprovechable };
+      return {
+        ...datum,
+        Humedad,
+        aprovechable: +aprovechable.toFixed(1),
+        raprovechable: +raprovechable.toFixed(1),
+      };
     });
     return {
       profundidad: sumaProfundidad,
       showSeries: true,
-      color: coloresList[-1],
+      color: coloresList[5],
       lastDatum,
       trama: tramaSuma,
     };
@@ -92,18 +96,29 @@ export default function GraficasProvider(props: Props) {
     if (!r) return;
     setGetLoading(true);
     setGetError(false);
-    getDataSondaAPI(r)
+    const desde = `${timeFormat("%Y-%m-%d")(r.startDate)} 00:00:00`;
+    const hasta = `${timeFormat("%Y-%m-%d")(
+      moverFecha(r.endDate, 1)
+    )} 00:00:00`;
+
+    fetchDataSondaAPI(desde, hasta)
       .then((dataSonda) => {
+        setGetLoading(false);
         setDataVis(
           dataSonda.datos.map(({ profundidad, trama }, i) => {
             const lastDatum = max(trama, (d) => new Date(d["fecha"])) || null;
             const invTrama: DatumSensor[] = [];
             for (let j = trama.length - 1; j >= 0; j--) {
               const datum = trama[j];
-              invTrama.push({ ...datum, fecha: new Date(datum.fecha) });
+              invTrama.push({
+                ...datum,
+                fecha: new Date(datum.fecha),
+                aprovechable: +(+datum.aprovechable).toFixed(1),
+                raprovechable: +(+datum.raprovechable).toFixed(1),
+              });
             }
             return {
-              profundidad,
+              profundidad: `${(+profundidad).toFixed(0)}`,
               trama: invTrama,
               showSeries: true,
               lastDatum,
@@ -112,19 +127,13 @@ export default function GraficasProvider(props: Props) {
           })
         );
         setValores(dataSonda.parametros);
-        setTimeRange(r);
-        setGetLoading(false);
+        setTimeRange({ startDate: new Date(desde), endDate: new Date(hasta) });
       })
       .catch((e) => {
         console.log("API Error", e);
         setGetLoading(false);
         setGetError(true);
       });
-  }, []);
-
-  useEffect(() => {
-    getData({ startDate: moverFecha(new Date(), -7), endDate: new Date() });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

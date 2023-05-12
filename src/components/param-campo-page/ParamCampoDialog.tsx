@@ -5,6 +5,8 @@ import ParamsFormContainer from "./params-form/ParamsFormContainer";
 import { MdClose as Close } from "react-icons/md";
 import BtnIconComponent from "../common/btn-icon/BtnIconComponent";
 
+Modal.setAppElement(document.getElementById("app") || "");
+
 export default function ParamCampoDialog() {
   const [modalOpen, setModalOpen] = useState(false);
 
@@ -14,6 +16,7 @@ export default function ParamCampoDialog() {
       <Modal
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
+        //appElement={[<App />]}
         style={{
           overlay: { backgroundColor: "rgba(0,0,0,0.3)" },
           content: { border: "none", backgroundColor: "rgba(0,0,0,0)" },
@@ -27,7 +30,7 @@ export default function ParamCampoDialog() {
                   <Close />
                 </BtnIconComponent>
               </div>
-              <div className="py-4 ps-4 pe-3">
+              <div className="p-5">
                 <ParamsFormContainer />
               </div>
             </div>

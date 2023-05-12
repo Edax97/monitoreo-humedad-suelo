@@ -1,18 +1,19 @@
 import React, { useMemo } from "react";
-import { useGraficaContext } from "../../state-provider/GraficaProvider";
+import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import LeyendaComponent from "./leyenda-component";
 
 export default function LeyendaSeries() {
-  const { sondas } = useGraficaContext();
+  const { dataVis } = useGraficasContext();
 
   const series = useMemo(() => {
-    return sondas
-      .filter((s) => s.show)
+    return dataVis
+      .filter((s) => s.showSeries)
       .map((s) => ({
         color: s.color,
-        label: `${s.level} cm`,
+        label: `${s.profundidad} cm`,
       }));
-  }, [sondas]);
+  }, [dataVis]);
 
+  if (series.length === 0) return null;
   return <LeyendaComponent infoText={null} series={series} />;
 }

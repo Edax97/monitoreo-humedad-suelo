@@ -1,6 +1,6 @@
 import React from "react";
 import ResizeObserver from "resize-observer-polyfill";
-import { DataXY, SeriesVisType } from "../../state-provider/GraficaProvider";
+//import { DataXY, SeriesVisType } from "../../state-provider/GraficaProvider";
 import {
   Annotation,
   AnnotationCircleSubject,
@@ -16,12 +16,21 @@ import {
 
 import "./grafico-component.scss";
 import { timeFormat } from "d3";
+import {
+  DatumSensor,
+  SeriesVisType,
+} from "../../state-provider/GraficasProvider";
 
 export interface AreaType {
   label: string;
   showLabel: boolean;
   color: string;
-  data: DataXY[];
+  data: { x: Date | undefined; y: number }[];
+}
+
+export interface AccessorsType {
+  xAccessor: (d: DatumSensor) => Date | null;
+  yAccessor: (d: DatumSensor) => number;
 }
 
 interface Props {
@@ -29,13 +38,11 @@ interface Props {
   areaList: AreaType[];
   width: number;
   height: number;
+  axisLabel: string;
+  accessors: AccessorsType;
 }
 
-const accesors = {
-  xAccessor: (d: DataXY) => d?.time,
-  yAccessor: (d: DataXY) => d?.h,
-};
-const axisColor = "rgb(135, 142, 155)";
+const axisColor = "rgb(135, 142, 155, 0.8)";
 const gridColor = "rgba(135, 142, 155, 0.3)";
 
 export function Grafica(props: Props) {
@@ -48,7 +55,7 @@ export function Grafica(props: Props) {
         top: 20,
         bottom: 10,
         right: 60,
-        left: 60,
+        left: 70,
       }}
       xScale={{ type: "time" }}
       yScale={{ type: "linear" }}
@@ -57,14 +64,19 @@ export function Grafica(props: Props) {
           <>
             <AreaSeries
               data={area.data}
-              {...accesors}
+              xAccessor={(d) => d.x}
+              yAccessor={(d) => d.y}
               dataKey={area.label}
               fillOpacity="1"
               renderLine={false}
               fill={area.color}
             />
             {area.showLabel && (
-              <Annotation datum={area.data[1]} {...accesors}>
+              <Annotation
+                datum={area.data[1]}
+                xAccessor={(d) => d.x}
+                yAccessor={(d) => d.y}
+              >
                 <AnnotationLabel
                   title={`${area.label}`}
                   verticalAnchor="start"
@@ -125,13 +137,13 @@ export function Grafica(props: Props) {
         />,
         <Axis
           orientation="left"
-          label="Humedad (%)"
+          /* label={props.axisLabel}
           labelProps={{
             fill: axisColor,
             fontSize: 16,
             textAnchor: "middle",
           }}
-          labelOffset={29}
+          labelOffset={40} */
           stroke={axisColor}
           tickStroke={axisColor}
           numTicks={5}
@@ -148,26 +160,29 @@ export function Grafica(props: Props) {
         <Grid rows={false} strokeDasharray={"3 7"} stroke={gridColor} />,
 
         ...props.dataVis.map((dVis) => {
-          const lastDatum = dVis.data.find(
-            (d) => d.time.toString() === dVis.lastDatum?.toString()
-          );
-          const lastDatumLabel = `${lastDatum?.h}`;
+          const lastDatum = dVis.trama[-1];
+          const lastDatumLabel = `${props.accessors.yAccessor(lastDatum)}`;
           const labelSize = lastDatumLabel.length;
           const hPadding = 5;
 
           return (
             <>
               <LineSeries
-                dataKey={`d-${dVis.level}`}
-                data={dVis.data}
+                dataKey={`d-${dVis.profundidad}`}
+                data={dVis.trama}
                 colorAccessor={() => dVis.color}
-                {...accesors}
+                {...props.accessors}
               />
               {lastDatum && (
-                <Annotation datum={lastDatum} {...accesors} dx={4} dy={0}>
+                <Annotation
+                  datum={lastDatum}
+                  {...props.accessors}
+                  dx={4}
+                  dy={0}
+                >
                   <AnnotationCircleSubject stroke={dVis.color} radius={3} />
                   <AnnotationLabel
-                    title={`${lastDatum.h}`}
+                    title={lastDatumLabel}
                     verticalAnchor="start"
                     showAnchorLine={false}
                     maxWidth={labelSize * 3.5 + 2 * hPadding}
@@ -189,23 +204,25 @@ export function Grafica(props: Props) {
           );
         }),
 
-        <Tooltip<DataXY>
+        <Tooltip<DatumSensor>
           renderTooltip={(tooltip) => {
             const datumBySeries = tooltip.tooltipData?.datumByKey;
             if (!datumBySeries) return null;
             return (
               <div className="p-2 fw-normal">
                 {props.dataVis.map((s, j) => {
-                  const keyData = datumBySeries[`d-${s.level}`];
+                  const keyData = datumBySeries[`d-${s.profundidad}`];
                   if (!keyData) return null;
                   return (
                     <>
                       <div className="mb-1" style={{ color: s.color }}>
-                        {`${s.level} cm: ${keyData.datum?.h}`}
+                        {`${s.profundidad} cm: ${props.accessors.yAccessor(
+                          keyData.datum
+                        )}`}
                       </div>
                       {j === props.dataVis.length - 1 ? (
                         <div>
-                          {timeFormat("%d-%m-%y %H:%M")(keyData.datum?.time)}
+                          {timeFormat("%d-%m-%y %H:%M")(keyData.datum.fecha)}
                         </div>
                       ) : null}
                     </>
@@ -222,7 +239,7 @@ export function Grafica(props: Props) {
           showSeriesGlyphs={true}
           renderGlyph={(glyph) => {
             const glyphColor = props.dataVis.find(
-              (s) => `d-${s.level}` === glyph.key
+              (s) => `d-${s.profundidad}` === glyph.key
             )?.color;
 
             return glyphColor ? (

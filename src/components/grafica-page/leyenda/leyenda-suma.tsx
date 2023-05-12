@@ -1,18 +1,18 @@
 import React, { useMemo } from "react";
-import { useGraficaContext } from "../../state-provider/GraficaProvider";
+import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import LeyendaComponent from "./leyenda-component";
 
 export default function LeyendaSuma() {
-  const { sumaSondas } = useGraficaContext();
+  const { sumaVis } = useGraficasContext();
 
   const serieSuma = useMemo(
     () => ({
-      color: sumaSondas.color,
-      label: `${sumaSondas.level} cm`,
+      color: sumaVis?.color || "",
+      label: `${sumaVis?.profundidad} cm`,
     }),
-    [sumaSondas]
+    [sumaVis]
   );
-  return sumaSondas.show ? (
-    <LeyendaComponent infoText={null} series={[serieSuma]} />
-  ) : null;
+
+  if (!sumaVis) return null;
+  return <LeyendaComponent infoText={null} series={[serieSuma]} />;
 }
