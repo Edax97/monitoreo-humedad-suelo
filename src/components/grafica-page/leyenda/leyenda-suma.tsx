@@ -1,9 +1,9 @@
 import React, { useMemo } from "react";
-import { useStateContext } from "../../state-provider/state-provider";
+import { useGraficaContext } from "../../state-provider/GraficaProvider";
 import LeyendaComponent from "./leyenda-component";
 
 export default function LeyendaSuma() {
-  const { sumaSondas } = useStateContext();
+  const { sumaSondas } = useGraficaContext();
 
   const serieSuma = useMemo(
     () => ({

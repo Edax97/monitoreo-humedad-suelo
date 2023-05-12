@@ -6,7 +6,7 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { fetchDataHumedad } from "../../api/data-humedad";
+import { fetchDataHumedad } from "../../api/data-sonda-api";
 import { moverFecha } from "../../api/utilities/date-utils";
 import { max } from "d3";
 
@@ -43,9 +43,9 @@ interface Props {
   children: ReactNode;
 }
 
-interface StateContextType {
-  dataVis: { series: SeriesVisType[]; suma: SeriesVisType };
+interface GraficaContextType {
   timeRange: { startDate: Date; endDate: Date };
+  dataVis: { series: SeriesVisType[]; suma: SeriesVisType };
   setTimeRange: (a: any) => any;
   sondas: SondaType[];
   setSondas: (a: any) => any;
@@ -54,9 +54,9 @@ interface StateContextType {
   setVarHidraul: (a: any) => any;
 }
 
-const StateContext = createContext<StateContextType>(null!);
+const GraficaContext = createContext<GraficaContextType>(null!);
 
-export function StateProvider(props: Props) {
+export function GraficaProvider(props: Props) {
   const [dataSondas, setDataHum] = useState<DatumHType[]>([]);
   useEffect(() => {
     //getDataHumedad().then((data) => setDataHum(data));
@@ -144,7 +144,7 @@ export function StateProvider(props: Props) {
   });
 
   return (
-    <StateContext.Provider
+    <GraficaContext.Provider
       value={{
         dataVis,
         timeRange,
@@ -157,8 +157,8 @@ export function StateProvider(props: Props) {
       }}
     >
       {props.children}
-    </StateContext.Provider>
+    </GraficaContext.Provider>
   );
 }
 
-export const useStateContext = () => useContext(StateContext);
+export const useGraficaContext = () => useContext(GraficaContext);

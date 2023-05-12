@@ -1,6 +1,6 @@
 import React from "react";
 import ResizeObserver from "resize-observer-polyfill";
-import { DataXY, SeriesVisType } from "../../state-provider/state-provider";
+import { DataXY, SeriesVisType } from "../../state-provider/GraficaProvider";
 import {
   Annotation,
   AnnotationCircleSubject,
@@ -113,6 +113,7 @@ export function Grafica(props: Props) {
           orientation="right"
           stroke={axisColor}
           tickStroke={axisColor}
+          numTicks={5}
           strokeWidth={1}
           tickLabelProps={() => ({
             fill: axisColor,
@@ -133,6 +134,7 @@ export function Grafica(props: Props) {
           labelOffset={29}
           stroke={axisColor}
           tickStroke={axisColor}
+          numTicks={5}
           strokeWidth={1}
           tickLabelProps={() => ({
             fill: axisColor,

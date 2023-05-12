@@ -1,10 +1,10 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
-import { useStateContext } from "../../state-provider/state-provider";
+import { useGraficaContext } from "../../state-provider/GraficaProvider";
 import { AreaType, Grafica } from "./grafico-component";
 
 export default function GraficaSeries() {
-  const { dataVis, timeRange } = useStateContext();
+  const { dataVis, timeRange } = useGraficaContext();
 
   const areaList = useMemo<AreaType[]>(
     () => [

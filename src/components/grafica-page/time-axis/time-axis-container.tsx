@@ -1,10 +1,10 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
-import { useStateContext } from "../../state-provider/state-provider";
+import { useGraficaContext } from "../../state-provider/GraficaProvider";
 import TimeAxisComponent from "./time-axis-component";
 
 export default function TimeAxisContainer() {
-  const { timeRange } = useStateContext();
+  const { timeRange } = useGraficaContext();
   const timeDomain = useMemo(
     () => [timeRange.startDate, timeRange.endDate],
     [timeRange]
