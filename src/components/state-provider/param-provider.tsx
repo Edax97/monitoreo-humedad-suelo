@@ -8,12 +8,14 @@ import React, {
 import { fetchParamsAPI, postParamsAPI } from "../../api/param-api";
 
 export interface ParamsType {
-  profRaiz: number;
+  codigo: number;
+  nombre: string;
+  profundidad: number;
   cc: number;
   pmp: number;
   dap: number;
-  kAgotam: number;
-  [key: string]: number;
+  agotamiento: number;
+  [key: string]: number | string;
 }
 
 export interface ParamsContextType {
@@ -39,6 +41,7 @@ export default function ParamProvider(props: Props) {
   const [initialParams, setInitialParams] = useState<ParamsType | null>(null);
 
   const [fetchLoading, setFetchLoading] = useState(true);
+
   const [postLoading, setPostLoading] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [postError, setPostError] = useState(false);
@@ -51,12 +54,16 @@ export default function ParamProvider(props: Props) {
 
   const fetchParams = () => {
     setFetchLoading(true);
-    fetchParamsAPI().then((data) => {
-      console.log("Fetch data", data);
-      setInitialParams(data);
-      setParams(data);
-      setFetchLoading(false);
-    });
+    fetchParamsAPI()
+      .then((datos) => {
+        setInitialParams(datos);
+        setParams(datos);
+        setFetchLoading(false);
+      })
+      .catch((e) => {
+        console.log("API error", e);
+        setFetchLoading(false);
+      });
   };
   const postParams = () => {
     if (params === null) return;

@@ -8,12 +8,14 @@ interface Props {
 
 export default function CardComponent(props: Props) {
   return (
-    <div
-      className={`card bg-primary bg-opacity-10 card-primary ${
-        props.className || ""
-      }`}
-    >
-      {props.children}
+    <div className="bg-white card border-0">
+      <div
+        className={`card bg-primary bg-opacity-10 card-primary ${
+          props.className || ""
+        }`}
+      >
+        {props.children}
+      </div>
     </div>
   );
 }

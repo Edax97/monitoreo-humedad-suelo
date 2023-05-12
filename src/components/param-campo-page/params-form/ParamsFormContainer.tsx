@@ -5,11 +5,11 @@ import { useParamsContext } from "../../state-provider/param-provider";
 import ParamsFormComponent, { ParamsLabelsType } from "./ParamsFormComponent";
 
 const paramsLabels: ParamsLabelsType = {
-  profRaiz: { label: "Profundidad de raíz", um: "cm" },
+  profundidad: { label: "Profundidad de raíz", um: "cm" },
   cc: { label: "Capacidad de campo", um: "%" },
   pmp: { label: "Punto de marchitez permanente", um: "%" },
   dap: { label: "Densidad aparente", um: "" },
-  kAgotam: { label: "Constante de agotamiento", um: "" },
+  agotamiento: { label: "Constante de agotamiento", um: "" },
 };
 
 export default function ParamsFormContainer() {
@@ -24,8 +24,11 @@ export default function ParamsFormContainer() {
 
   useEffect(() => fetchParams(), []);
 
-  if (fetchLoading) return <LoadingComponent className="mt-5 pt-5" />;
-  if (params === null) return null;
+  if (fetchLoading) return <LoadingComponent className="mt-5 pt-5 mb-5 pb-5" />;
+  if (params === null)
+    return (
+      <div className="my-5 alert alert-danger">Error al cargar parámetros.</div>
+    );
   return (
     <ParamsFormComponent
       params={params}

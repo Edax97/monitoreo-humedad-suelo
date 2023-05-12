@@ -1,35 +1,42 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ConfigSensoresPage from "../config-sensores-page/ConfigSensoresPage";
-import HomePage from "../home-page/HomePage";
-import ParamCampoPage from "../param-campo-page/ParamCampoPage";
+import GraficoPage from "../grafica-page/GraficoPage";
 import ParamProvider from "../state-provider/param-provider";
 import SensoresProvider from "../state-provider/SensoresProvider";
-import { StateProvider } from "../state-provider/state-provider";
+import GraficoHumedadPage from "../grafica-page/grafico-humedad/GraficoHumedadPage";
+import GraficasProvider from "../state-provider/GraficasProvider";
+import GraficoPHPage from "../grafica-page/grafico-ph/GraficoPHPage";
+import GraficoTemperaturaPage from "../grafica-page/grafico-temperatura/GraficoTemperaturaPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <HomePage />,
-  },
-  {
-    path: "config-sensores",
-    element: <ConfigSensoresPage />,
-  },
-  {
-    path: "param-campo",
-    element: <ParamCampoPage />,
+    element: <GraficoPage />,
+    children: [
+      {
+        index: true,
+        element: <GraficoHumedadPage />,
+      },
+      {
+        path: "grafico-temperatura",
+        element: <GraficoTemperaturaPage />,
+      },
+      {
+        path: "grafico-ph",
+        element: <GraficoPHPage />,
+      },
+    ],
   },
 ]);
 
 function App() {
   return (
-    <StateProvider>
-      <ParamProvider>
-        <SensoresProvider>
+    <GraficasProvider>
+      <SensoresProvider>
+        <ParamProvider>
           <RouterProvider router={router} />
-        </SensoresProvider>
-      </ParamProvider>
-    </StateProvider>
+        </ParamProvider>
+      </SensoresProvider>
+    </GraficasProvider>
   );
 }
 

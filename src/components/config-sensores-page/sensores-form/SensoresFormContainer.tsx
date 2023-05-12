@@ -16,8 +16,13 @@ export default function SensoresFormContainer() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => getSensores(), []);
 
-  if (getLoading) return <LoadingComponent className="mt-5 pt-5" />;
-  if (dataSensores.length === 0) return <div>ERROR</div>;
+  if (getLoading) return <LoadingComponent className="mt-5 pt-5 mb-5 pb-5" />;
+  if (dataSensores.length === 0)
+    return (
+      <div className="my-5 alert alert-danger">
+        Error al cargar la configuración.
+      </div>
+    );
   return (
     <SensoresFormComponent
       sensores={dataSensores}
