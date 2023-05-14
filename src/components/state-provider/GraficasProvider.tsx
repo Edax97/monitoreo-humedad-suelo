@@ -62,16 +62,13 @@ export default function GraficasProvider(props: Props) {
   const sumaVis = useMemo<SeriesVisType | null>(() => {
     if (dataVis.length === 0) return null;
     const firstSensor = dataVis[0];
-    const lastDatum = max(firstSensor.trama, (d) => d["fecha"]) || null;
 
     const sumaProfundidad = dataVis.map((s) => s.profundidad).join("+");
 
-    const tramaSuma = firstSensor.trama.map((datum) => {
+    const tramaSuma = firstSensor.trama.map((datum, j) => {
       let [Humedad, aprovechable, raprovechable] = [0, 0, 0];
       dataVis.forEach((sensor) => {
-        const datumSensor = sensor.trama.find(
-          (d) => d.fecha.toString() === datum.fecha.toString()
-        );
+        const datumSensor = sensor.trama[j];
         Humedad += datumSensor?.Humedad || 0;
         aprovechable += datumSensor?.aprovechable || 0;
         raprovechable += datumSensor?.raprovechable || 0;
@@ -87,13 +84,16 @@ export default function GraficasProvider(props: Props) {
       profundidad: sumaProfundidad,
       showSeries: true,
       color: coloresList[5],
-      lastDatum,
+      lastDatum: firstSensor.lastDatum,
       trama: tramaSuma,
     };
   }, [dataVis]);
 
   const getData = useCallback((r: RangeType) => {
     if (!r) return;
+
+    console.log("API request", new Date());
+
     setGetLoading(true);
     setGetError(false);
     const desde = `${timeFormat("%Y-%m-%d")(r.startDate)} 00:00:00`;
@@ -101,13 +101,12 @@ export default function GraficasProvider(props: Props) {
 
     fetchDataSondaAPI(desde, hasta)
       .then((dataSonda) => {
-        //console.log("Fetch data");
         setGetLoading(false);
         setDataVis(
           dataSonda.datos.map(({ profundidad, trama }, i) => {
-            const lastDatum = max(trama, (d) => new Date(d["fecha"])) || null;
+            const lastDatum = new Date(trama[0].fecha);
             const invTrama: DatumSensor[] = [];
-            for (let j = trama.length - 1; j >= 0; j--) {
+            for (let j = 0; j < trama.length; j++) {
               const datum = trama[j];
               invTrama.push({
                 ...datum,
@@ -127,6 +126,8 @@ export default function GraficasProvider(props: Props) {
         );
         setValores(dataSonda.parametros);
         setTimeRange({ startDate: new Date(desde), endDate: new Date(hasta) });
+
+        console.log("Response received.", new Date());
       })
       .catch((e) => {
         console.log("API Error", e);
