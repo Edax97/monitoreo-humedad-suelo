@@ -17,7 +17,7 @@ export default function ConfigSensoresDialog() {
         isOpen={modalOpen}
         onRequestClose={() => setModalOpen(false)}
         style={{
-          overlay: { backgroundColor: "rgba(0,0,0,0.3)" },
+          overlay: { backgroundColor: "rgba(0,0,0,0.3)", zIndex: 1001 },
           content: { border: "none", backgroundColor: "rgba(0,0,0,0)" },
         }}
       >
