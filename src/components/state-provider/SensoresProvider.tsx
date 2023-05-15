@@ -24,6 +24,7 @@ interface SensoresContextType {
   getLoading: boolean;
   postLoading: boolean;
   postError: boolean;
+  postSuccess: boolean;
 }
 
 const SensoresContext = createContext<SensoresContextType>(null!);
@@ -39,9 +40,12 @@ export default function SensoresProvider(props: Props) {
   const [getLoading, setGetLoading] = useState(true);
   const [postLoading, setPostLoading] = useState(false);
   const [postError, setPostError] = useState(false);
+  const [postSuccess, setPostSuccess] = useState(false);
 
   const getSensores = useCallback(() => {
     setGetLoading(true);
+    setPostSuccess(false);
+    setPostError(false);
     getSensoresAPI()
       .then((data) => data.datos)
       .then((sensores) => {
@@ -50,13 +54,18 @@ export default function SensoresProvider(props: Props) {
         setGetLoading(false);
       });
   }, []);
+
   const postSensores = useCallback(() => {
     setPostLoading(true);
     setPostError(false);
-    postSensoresAPI({ datos: dataSensores }).then((r) => {
-      console.log("POST", console.log(r.payload));
-      setPostLoading(false);
-    });
+    setPostSuccess(false);
+    return postSensoresAPI({ datos: dataSensores })
+      .then((r) => {
+        console.log("Post Sensores", r);
+        setPostLoading(false);
+        setPostSuccess(true);
+      })
+      .catch((e) => setPostError(true));
   }, [dataSensores]);
 
   const updateSensores = useCallback((codigo: number, profundidad: string) => {
@@ -82,6 +91,7 @@ export default function SensoresProvider(props: Props) {
         getLoading,
         postLoading,
         postError,
+        postSuccess,
       }}
     >
       {props.children}

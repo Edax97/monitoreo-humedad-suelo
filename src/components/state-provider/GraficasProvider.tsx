@@ -1,4 +1,4 @@
-import { max, timeFormat } from "d3";
+import { timeFormat } from "d3";
 import React, {
   createContext,
   ReactNode,
@@ -7,7 +7,11 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { fetchDataSondaAPI, ParametrosType } from "../../api/data-sonda-api";
+import {
+  fetchDataSondaAPI,
+  GetDataType,
+  ParametrosType,
+} from "../../api/data-sonda-api";
 import { coloresList } from "../../api/utilities/colores";
 
 export interface DatumSensor {
@@ -24,7 +28,6 @@ export interface DatumSensor {
 export interface SeriesVisType {
   profundidad: string;
   trama: DatumSensor[];
-  lastDatum: Date | null;
   showSeries: boolean;
   color: string;
 }
@@ -36,7 +39,7 @@ interface GraficaContextType {
   dataVis: SeriesVisType[];
   sumaVis: SeriesVisType | null;
   parametros: ParametrosType | null;
-  getData: (range: RangeType) => any;
+  updateData: (range: RangeType) => any;
   reloadData: () => any;
   getLoading: boolean;
   getError: boolean;
@@ -49,15 +52,33 @@ interface Props {
 }
 export default function GraficasProvider(props: Props) {
   const [timeRange, setTimeRange] = useState<RangeType | null>(null);
-  //const [maxTimeRange, setMaxTimeRange] = useState<Range>(null);
+  const [maxTimeRange, setMaxTimeRange] = useState<RangeType | null>(null);
 
-  //const [dataSonda, setDataSonda] = useState<DataSondaType | null>(null);
-  const [dataVis, setDataVis] = useState<SeriesVisType[]>([]);
-
-  const [valores, setValores] = useState<ParametrosType | null>(null);
+  const [dataSonda, setDataSonda] = useState<GetDataType | null>(null);
 
   const [getLoading, setGetLoading] = useState(false);
   const [getError, setGetError] = useState(false);
+
+  const dataVis = useMemo<SeriesVisType[]>(() => {
+    if (!dataSonda || !timeRange) return [];
+    return dataSonda.datos.map(({ profundidad, trama }, i) => {
+      const tramaFiltered = trama
+        .map((datum) => ({
+          ...datum,
+          fecha: new Date(datum.fecha),
+        }))
+        .filter(
+          (datum) =>
+            datum.fecha > timeRange.startDate && datum.fecha < timeRange.endDate
+        );
+      return {
+        profundidad: `${(+profundidad).toFixed(0)}`,
+        trama: tramaFiltered,
+        showSeries: true,
+        color: coloresList[i],
+      };
+    });
+  }, [dataSonda, timeRange]);
 
   const sumaVis = useMemo<SeriesVisType | null>(() => {
     if (dataVis.length === 0) return null;
@@ -76,57 +97,41 @@ export default function GraficasProvider(props: Props) {
       return {
         ...datum,
         Humedad,
-        aprovechable: +aprovechable.toFixed(1),
-        raprovechable: +raprovechable.toFixed(1),
+        aprovechable: +aprovechable.toFixed(2),
+        raprovechable: +raprovechable.toFixed(2),
       };
     });
     return {
       profundidad: sumaProfundidad,
       showSeries: true,
       color: coloresList[5],
-      lastDatum: firstSensor.lastDatum,
       trama: tramaSuma,
     };
   }, [dataVis]);
 
-  const getData = useCallback((r: RangeType) => {
-    if (!r) return;
+  const valores = useMemo<ParametrosType | null>(() => {
+    if (!dataSonda) return null;
+    return dataSonda.parametros;
+  }, [dataSonda]);
 
+  const getData = useCallback((desde: string, hasta: string) => {
     console.log("API request", new Date());
 
     setGetLoading(true);
     setGetError(false);
-    const desde = `${timeFormat("%Y-%m-%d")(r.startDate)} 00:00:00`;
-    const hasta = `${timeFormat("%Y-%m-%d")(r.endDate)} 23:59:59`;
 
     fetchDataSondaAPI(desde, hasta)
       .then((dataSonda) => {
         setGetLoading(false);
-        setDataVis(
-          dataSonda.datos.map(({ profundidad, trama }, i) => {
-            const lastDatum = new Date(trama[0].fecha);
-            const invTrama: DatumSensor[] = [];
-            for (let j = 0; j < trama.length; j++) {
-              const datum = trama[j];
-              invTrama.push({
-                ...datum,
-                fecha: new Date(datum.fecha),
-                aprovechable: +(+datum.aprovechable).toFixed(1),
-                raprovechable: +(+datum.raprovechable).toFixed(1),
-              });
-            }
-            return {
-              profundidad: `${(+profundidad).toFixed(0)}`,
-              trama: invTrama,
-              showSeries: true,
-              lastDatum,
-              color: coloresList[i],
-            };
-          })
-        );
-        setValores(dataSonda.parametros);
-        setTimeRange({ startDate: new Date(desde), endDate: new Date(hasta) });
-
+        setDataSonda(dataSonda);
+        setTimeRange({
+          startDate: new Date(desde),
+          endDate: new Date(hasta),
+        });
+        setMaxTimeRange({
+          startDate: new Date(desde),
+          endDate: new Date(hasta),
+        });
         console.log("Response received.", new Date());
       })
       .catch((e) => {
@@ -136,9 +141,35 @@ export default function GraficasProvider(props: Props) {
       });
   }, []);
 
+  const updateData = useCallback(
+    (r: RangeType) => {
+      const desde = `${timeFormat("%Y-%m-%d")(r.startDate)} 00:00:00`;
+      const hasta = `${timeFormat("%Y-%m-%d")(r.endDate)} 23:59:59`;
+      if (!maxTimeRange) {
+        getData(desde, hasta);
+        return;
+      }
+      if (
+        new Date(desde) < maxTimeRange.startDate ||
+        new Date(hasta) > maxTimeRange.endDate
+      ) {
+        getData(desde, hasta);
+        return;
+      }
+
+      setTimeRange({
+        startDate: new Date(desde),
+        endDate: new Date(hasta),
+      });
+    },
+    [getData, maxTimeRange]
+  );
+
   const reloadData = useCallback(() => {
     if (!timeRange) return;
-    getData(timeRange);
+    const desde = `${timeFormat("%Y-%m-%d")(timeRange.startDate)} 00:00:00`;
+    const hasta = `${timeFormat("%Y-%m-%d")(timeRange.endDate)} 23:59:59`;
+    getData(desde, hasta);
   }, [timeRange, getData]);
 
   return (
@@ -148,7 +179,7 @@ export default function GraficasProvider(props: Props) {
         dataVis,
         sumaVis,
         parametros: valores,
-        getData,
+        updateData,
         reloadData,
         getLoading,
         getError,

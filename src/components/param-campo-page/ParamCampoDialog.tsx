@@ -18,7 +18,7 @@ export default function ParamCampoDialog() {
         onRequestClose={() => setModalOpen(false)}
         //appElement={[<App />]}
         style={{
-          overlay: { backgroundColor: "rgba(0,0,0,0.3)" },
+          overlay: { backgroundColor: "rgba(0,0,0,0.3)", zIndex: 1001 },
           content: { border: "none", backgroundColor: "rgba(0,0,0,0)" },
         }}
       >

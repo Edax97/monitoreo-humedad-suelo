@@ -1,4 +1,6 @@
 import React, { FormEvent, useCallback } from "react";
+import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
+import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
 import { DataSensorType } from "../../state-provider/SensoresProvider";
 
 interface Props {
@@ -6,6 +8,9 @@ interface Props {
   onSave: () => any;
   sensores: DataSensorType[];
   updateSensores: (codigo: number, prof: string) => any;
+  saveLoading: boolean;
+  saveSuccess: boolean;
+  saveError: boolean;
 }
 export default function SensoresFormComponent(props: Props) {
   const onSubmit = useCallback(
@@ -41,7 +46,18 @@ export default function SensoresFormComponent(props: Props) {
           <hr className="mb-4 text-secondary opacity-50" />
         </>
       ))}
-      <div className="mt-5 d-flex justify-content-center gap-3">
+      {props.saveError && (
+        <div className="mt-4">
+          <ErrorMessageComponent message="Error al actualizar la configuración." />
+        </div>
+      )}
+
+      {props.saveSuccess && (
+        <div className="mt-4">
+          <SuccessMessageComponent message="La configuración han sido actualizada." />
+        </div>
+      )}
+      <div className="pt-4 d-flex justify-content-center gap-3">
         <button
           className="btn btn-secondary"
           type="button"
@@ -49,7 +65,11 @@ export default function SensoresFormComponent(props: Props) {
         >
           Cancelar
         </button>
-        <button className="btn btn-primary text-white" type="submit">
+        <button
+          className="btn btn-primary text-white"
+          type="submit"
+          disabled={props.saveLoading}
+        >
           Guardar
         </button>
       </div>

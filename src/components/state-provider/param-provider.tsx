@@ -28,6 +28,7 @@ export interface ParamsContextType {
   fetchLoading: boolean;
   postLoading: boolean;
   postError: boolean;
+  postSuccess: boolean;
 }
 
 const ParamsContext = createContext<ParamsContextType>(null!);
@@ -45,6 +46,7 @@ export default function ParamProvider(props: Props) {
   const [postLoading, setPostLoading] = useState(false);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [postError, setPostError] = useState(false);
+  const [postSuccess, setPostSuccess] = useState(false);
 
   const updateParams = (key: string, value: any) =>
     setParams((p) => {
@@ -54,6 +56,8 @@ export default function ParamProvider(props: Props) {
 
   const fetchParams = () => {
     setFetchLoading(true);
+    setPostSuccess(false);
+    setPostError(false);
     fetchParamsAPI()
       .then((datos) => {
         setInitialParams(datos);
@@ -69,10 +73,12 @@ export default function ParamProvider(props: Props) {
     if (params === null) return;
     setPostLoading(true);
     setPostError(false);
+    setPostSuccess(false);
     return postParamsAPI(params)
       .then((r) => {
         console.log("Post data", r);
         setPostLoading(false);
+        setPostSuccess(true);
         setInitialParams(params);
       })
       .catch((e) => setPostError(true));
@@ -95,6 +101,7 @@ export default function ParamProvider(props: Props) {
         fetchLoading,
         postLoading,
         postError,
+        postSuccess,
       }}
     >
       {props.children}

@@ -15,7 +15,7 @@ const sinceOptions: SinceType[] = [
 ];
 
 export default function SelectRangeContainer() {
-  const { timeRange, getData } = useGraficasContext();
+  const { timeRange, updateData } = useGraficasContext();
 
   const [tempRange, setTempRange] = useState<RangeType>(null);
   const [sinceSelected, setSinceSelected] = useState<SinceType>({
@@ -41,9 +41,9 @@ export default function SelectRangeContainer() {
       setValidationError(true);
       return;
     }
-    getData(tempRange);
+    updateData(tempRange);
     //getData()
-  }, [tempRange, getData]);
+  }, [tempRange, updateData]);
 
   const selectSince = useCallback((v: SingleValue<SinceType>) => {
     if (!v) return;
@@ -60,7 +60,7 @@ export default function SelectRangeContainer() {
   }, [timeRange]);
 
   useEffect(() => {
-    getData({ startDate: moverFecha(new Date(), -7), endDate: new Date() });
+    updateData({ startDate: moverFecha(new Date(), -14), endDate: new Date() });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (

@@ -153,7 +153,7 @@ export function Grafica(props: Props) {
       />
       <Grid rows={false} strokeDasharray={"3 7"} stroke={gridColor} />,
       {props.dataVis.map((dVis) => {
-        const lastDatum = dVis.trama[-1];
+        const lastDatum = dVis.trama.slice(-1)[0];
         const lastDatumLabel = `${props.accessors.yAccessor(lastDatum)}`;
         const labelSize = lastDatumLabel.length;
         const hPadding = 5;

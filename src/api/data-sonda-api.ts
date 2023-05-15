@@ -12,9 +12,10 @@ export interface ParametrosType {
   [key: string]: number;
 }
 
-interface GetDataType {
+export interface GetDataType {
   success: boolean;
   datos: DataSensorType[];
+  totales: DatumSensor[];
   error: string;
   parametros: ParametrosType;
 }

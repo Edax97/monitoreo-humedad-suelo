@@ -1,4 +1,6 @@
 import React, { FormEvent, useCallback } from "react";
+import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
+import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
 import { ParamsType } from "../../state-provider/param-provider";
 
 export interface ParamsLabelsType {
@@ -11,15 +13,16 @@ interface Props {
   updateParams: (key: string, value: any) => any;
   onCancel: () => any;
   onSave: () => any;
-  afterSave: () => any;
   saveLoading: boolean;
+  saveSuccess: boolean;
+  saveError: boolean;
 }
 
 export default function ParamsFormComponent(props: Props) {
   const onSubmit = useCallback(
     (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      props.onSave().then(() => props.afterSave());
+      props.onSave();
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
     [props.onSave]
@@ -45,7 +48,19 @@ export default function ParamsFormComponent(props: Props) {
         </div>
       ))}
 
-      <div className="pt-5 d-flex justify-content-center gap-3">
+      {props.saveError && (
+        <div className="mt-4">
+          <ErrorMessageComponent message="Error al actualizar parámetros." />
+        </div>
+      )}
+
+      {props.saveSuccess && (
+        <div className="mt-4">
+          <SuccessMessageComponent message="Los parámetros han sido actualizados." />
+        </div>
+      )}
+
+      <div className="pt-4 d-flex justify-content-center gap-3">
         <button
           className="btn btn-secondary"
           type="button"

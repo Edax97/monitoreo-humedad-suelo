@@ -3,6 +3,8 @@ import { DataSensorType } from "../components/state-provider/SensoresProvider";
 const sensoresURL =
   "https://saphy-iot.com/api/consultaSensores/863192058179590";
 
+const sensoresPostURL = "https://saphy-iot.com/api/sensor/actualizar";
+
 interface GetSensoresAPIType {
   success: boolean;
   error: string;
@@ -16,7 +18,20 @@ interface PostSensoresAPIType {
 export const getSensoresAPI = () =>
   fetch(sensoresURL).then<GetSensoresAPIType>((r) => r.json());
 
-export const postSensoresAPI = async (data: PostSensoresAPIType) => ({
-  status: "OK",
-  payload: data,
-});
+export const postSensoresAPI = (data: PostSensoresAPIType) => {
+  return Promise.all(
+    data.datos.map((sensor) =>
+      fetch(`${sensoresPostURL}/${sensor.codigo}`, {
+        method: "POST",
+        headers: {
+          Accept: "application/json, text/plain, */*",
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          nombre: "x",
+          profundidad: +sensor.profundidad,
+        }),
+      })
+    )
+  );
+};
