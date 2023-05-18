@@ -26,14 +26,14 @@ export default function GraficaSuma() {
         showLabel: false,
         color: "#ffffff00",
         data: [
-          { x: timeRange.startDate, y: 1.2 * 0 },
-          { x: timeRange.endDate, y: 1.2 * 0 },
+          { x: timeRange.startDate, y: 0 },
+          { x: timeRange.endDate, y: 0 },
         ],
       },
       {
         label: " aprovechable",
         showLabel: false,
-        color: "hsl(147, 68%, 91%)",
+        color: "hsl(147, 68%, 88%)",
         data: [
           { x: timeRange.startDate, y: parametros.aprovechable },
           { x: timeRange.endDate, y: parametros.aprovechable },
@@ -42,7 +42,7 @@ export default function GraficaSuma() {
       {
         label: "raprovechable",
         showLabel: false,
-        color: "hsl(0, 61%, 94%)",
+        color: "hsl(0, 61%, 89%)",
         data: [
           { x: timeRange.startDate, y: parametros.raprovechable },
           { x: timeRange.endDate, y: parametros.raprovechable },
@@ -51,28 +51,28 @@ export default function GraficaSuma() {
     ];
   }, [timeRange, parametros]);
 
-  const serieSuma = useMemo(
+  const sumaLegend = useMemo(
     () => ({
       color: sumaVis?.color || "",
       label: `${sumaVis?.profundidad} cm`,
+      profundidad: sumaVis?.profundidad || "",
     }),
     [sumaVis]
   );
 
-  if (!sumaVis) return null;
+  if (!sumaVis || !timeRange) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
         <GraficoLeyendaComponent
-          infoText={null}
-          seriesLegend={[serieSuma]}
+          seriesLegend={[sumaLegend]}
           width={width}
           height={300}
           dataVis={[sumaVis]}
           areaList={areaList}
           unidad="mm"
-          axisLabel="Lámina aprovechable (mm)"
           accessors={accessors}
+          timeDomain={[timeRange.startDate, timeRange.endDate]}
         />
       )}
     </ParentSize>

@@ -15,10 +15,8 @@ export default function GraficoTemperaturaPage() {
 
   return (
     <>
-      <div className="mt-3 bg-primary bg-opacity-10 border border-secondary border-opacity-50 rounded-top">
+      <div className="mt-3 bg-secondary bg-opacity-25 card shadow">
         <GraficoTemperaturaContainer />
-      </div>
-      <div className="pt-2 rounded-bottom border border-top-0 border-secondary border-opacity-50">
         <TimeAxisContainer />
       </div>
     </>
