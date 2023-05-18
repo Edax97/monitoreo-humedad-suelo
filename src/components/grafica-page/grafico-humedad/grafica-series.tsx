@@ -4,7 +4,6 @@ import {
   DatumSensor,
   useGraficasContext,
 } from "../../state-provider/GraficasProvider";
-import { AreaType } from "../grafico/grafico-component";
 import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
 
 export default function GraficaSeries() {
@@ -18,44 +17,28 @@ export default function GraficaSeries() {
     []
   );
 
-  const areaList = useMemo<AreaType[]>(
-    () => [
-      {
-        label: "dominio-tiempo",
-        showLabel: false,
-        color: "#ffffff00",
-        data: [
-          { x: timeRange?.startDate, y: 0 },
-          { x: timeRange?.endDate, y: 0 },
-        ],
-      },
-    ],
-    [timeRange]
-  );
-
   const seriesLegend = useMemo(() => {
     return dataVis
       .filter((s) => s.showSeries)
       .map((s) => ({
         color: s.color,
         label: `${s.profundidad} cm`,
+        profundidad: s.profundidad,
       }));
   }, [dataVis]);
 
-  if (dataVis.length === 0) return null;
+  if (dataVis.length === 0 || !timeRange) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
         <GraficoLeyendaComponent
-          infoText={null}
           seriesLegend={seriesLegend}
           width={width}
           height={300}
           dataVis={dataVis}
-          areaList={areaList}
           unidad="mm"
-          axisLabel="Lámina aprovechable (mm)"
           accessors={accessors}
+          timeDomain={[timeRange.startDate, timeRange.endDate]}
         />
       )}
     </ParentSize>

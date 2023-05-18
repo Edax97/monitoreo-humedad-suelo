@@ -5,20 +5,27 @@ import { GoDash } from "react-icons/go";
 export interface SeriesLegend {
   label: string;
   color: string;
+  profundidad: string;
 }
 
 interface Props {
-  infoText: string | null;
   seriesLegend: SeriesLegend[];
+  toggleSeries?: (prof: string) => void;
 }
 
 export default function LeyendaComponent(props: Props) {
   return props.seriesLegend.length > 0 ? (
     <div className="px-2 pt-1" style={{ fontSize: "small" }}>
       <div className="d-flex gap-3">
-        {props.infoText && <div key="info">{props.infoText}</div>}
         {props.seriesLegend.map((serie) => (
-          <div key={serie.label} style={{ color: serie.color }}>
+          <div
+            key={serie.label}
+            style={{ color: serie.color }}
+            role="button"
+            onClick={() =>
+              props.toggleSeries ? props.toggleSeries(serie.profundidad) : null
+            }
+          >
             <i className="fs-5 fw-bolder">
               <GoDash />
             </i>

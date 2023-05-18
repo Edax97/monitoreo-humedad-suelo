@@ -12,7 +12,7 @@ export default function TimeAxisContainer() {
       {({ width, height }) => (
         <TimeAxisComponent
           width={width}
-          hMargin={60}
+          hMargin={50}
           domain={[timeRange.startDate, timeRange.endDate]}
         />
       )}

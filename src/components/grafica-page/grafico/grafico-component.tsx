@@ -8,7 +8,7 @@ import {
   AreaSeries,
   Axis, // any of these can be non-animated equivalents
   Grid,
-  LineSeries,
+  AnimatedLineSeries,
   Tooltip,
   XYChart,
   //Tooltip,
@@ -35,12 +35,12 @@ export interface AccessorsType {
 
 interface Props {
   dataVis: SeriesVisType[];
-  areaList: AreaType[];
+  areaList?: AreaType[];
   unidad: string;
   width: number;
   height: number;
-  axisLabel: string;
   accessors: AccessorsType;
+  timeDomain: [Date, Date];
 }
 
 const axisColor = "rgb(135, 142, 155, 1)";
@@ -58,10 +58,10 @@ export function Grafica(props: Props) {
         right: 50,
         left: 50,
       }}
-      xScale={{ type: "time" }}
-      yScale={{ type: "linear" }}
+      xScale={{ type: "time", domain: props.timeDomain }}
+      yScale={{ type: "linear", zero: false }}
     >
-      {props.areaList.map((area) => (
+      {props.areaList?.map((area) => (
         <>
           <AreaSeries
             key={area.label}
@@ -127,7 +127,7 @@ export function Grafica(props: Props) {
         orientation="right"
         stroke={axisColor}
         tickStroke={axisColor}
-        numTicks={5}
+        numTicks={4}
         strokeWidth={1}
         tickLabelProps={() => ({
           fill: axisColor,
@@ -141,7 +141,7 @@ export function Grafica(props: Props) {
         orientation="left"
         stroke={axisColor}
         tickStroke={axisColor}
-        numTicks={5}
+        numTicks={4}
         strokeWidth={1}
         tickLabelProps={() => ({
           fill: axisColor,
@@ -158,9 +158,11 @@ export function Grafica(props: Props) {
         const labelSize = lastDatumLabel.length;
         const hPadding = 5;
 
+        if (!dVis.showSeries) return null;
         return (
           <>
-            <LineSeries
+            <AnimatedLineSeries
+              //curve={curveMonotoneX}
               key={dVis.profundidad}
               dataKey={`d-${dVis.profundidad}`}
               data={dVis.trama}
@@ -180,7 +182,7 @@ export function Grafica(props: Props) {
                   title={lastDatumLabel}
                   verticalAnchor="start"
                   showAnchorLine={false}
-                  maxWidth={labelSize * 3.5 + 2 * hPadding}
+                  maxWidth={labelSize * 6 + 2 * hPadding - 10}
                   titleFontSize={15}
                   backgroundPadding={{ left: hPadding, top: 3 }}
                   backgroundProps={{

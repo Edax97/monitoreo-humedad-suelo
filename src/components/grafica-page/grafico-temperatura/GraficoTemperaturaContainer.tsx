@@ -4,7 +4,7 @@ import {
   DatumSensor,
   useGraficasContext,
 } from "../../state-provider/GraficasProvider";
-import { AccessorsType, AreaType } from "../grafico/grafico-component";
+import { AccessorsType } from "../grafico/grafico-component";
 import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
 
 export default function GraficoTemperaturaContainer() {
@@ -18,44 +18,28 @@ export default function GraficoTemperaturaContainer() {
     []
   );
 
-  const areaList = useMemo<AreaType[]>(
-    () => [
-      {
-        label: "dominio-tiempo",
-        showLabel: false,
-        color: "#ffffff00",
-        data: [
-          { x: timeRange?.startDate, y: 0 },
-          { x: timeRange?.endDate, y: 0 },
-        ],
-      },
-    ],
-    [timeRange]
-  );
-
   const seriesLegend = useMemo(() => {
     return dataVis
       .filter((s) => s.showSeries)
       .map((s) => ({
         color: s.color,
         label: `${s.profundidad} cm`,
+        profundidad: s.profundidad,
       }));
   }, [dataVis]);
 
-  if (dataVis.length === 0) return null;
+  if (dataVis.length === 0 || !timeRange) return null;
   return (
     <ParentSize>
       {({ width, height }) => (
         <GraficoLeyendaComponent
-          infoText={null}
           seriesLegend={seriesLegend}
           width={width}
           height={350}
           dataVis={dataVis}
-          areaList={areaList}
           unidad="°C"
           accessors={accessors}
-          axisLabel={""}
+          timeDomain={[timeRange.startDate, timeRange.endDate]}
         />
       )}
     </ParentSize>
