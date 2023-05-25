@@ -20,30 +20,35 @@ export default function SelectRangeComponent(props: Props) {
   //if (!props.tempRange) return (<div></div>)
   return (
     <div className="">
-      <div className="d-flex align-items-center">
-        <span className="opacity-75">Desde:</span>
-        <DatePicker
-          value={props.tempRange?.startDate}
-          onChange={props.setStartDate}
-          clearIcon={null}
-          locale="es-ES"
-          maxDate={new Date()}
-          className="ms-2 text-dark text-opacity-50"
-        />
-        <span className="ms-3 opacity-75">Hasta:</span>
-        <DatePicker
-          value={props.tempRange?.endDate}
-          onChange={props.setEndDate}
-          clearIcon={null}
-          locale="es-ES"
-          maxDate={new Date()}
-          className="ms-2 text-dark text-opacity-50"
-        />
+      <div className="d-flex align-items-center flex-wrap gap-3">
+        <div className="d-flex align-items-center">
+          <span className="opacity-75">Desde:</span>
+          <DatePicker
+            value={props.tempRange?.startDate}
+            onChange={props.setStartDate}
+            clearIcon={null}
+            locale="es-ES"
+            maxDate={new Date()}
+            className="ms-2 text-dark text-opacity-50"
+          />
+        </div>
+        <div className="d-flex align-items-center">
+          <span className="opacity-75">Hasta:</span>
+          <DatePicker
+            value={props.tempRange?.endDate}
+            onChange={props.setEndDate}
+            clearIcon={null}
+            locale="es-ES"
+            maxDate={new Date()}
+            className="ms-2 text-dark text-opacity-50"
+          />
+        </div>
+
         <Select
           options={props.sinceOptions}
           value={props.sinceSelected}
           onChange={props.selectSince}
-          className="ms-3 text-dark text-opacity-75 select-input"
+          className="text-dark text-opacity-75 select-input"
           classNames={{
             option: (state) =>
               state.isSelected
@@ -54,7 +59,7 @@ export default function SelectRangeComponent(props: Props) {
           }}
         />
         <button
-          className="ms-4 btn btn-primary text-white"
+          className="ms-1 btn btn-primary text-white"
           onClick={props.onFilter}
         >
           Filtrar
