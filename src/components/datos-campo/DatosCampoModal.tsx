@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import BtnIconComponent from "../common/btn-icon/BtnIconComponent";
 import CardComponent from "../common/card/CardComponent";
-import ParamsFormContainer from "../param-campo-page/params-form/ParamsFormContainer";
 import { MdClose as Close } from "react-icons/md";
 import DatosCampoContainer from "./DatosCampoContainer";
 
