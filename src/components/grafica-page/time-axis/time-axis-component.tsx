@@ -3,14 +3,15 @@ import { scaleTime } from "@visx/scale";
 
 interface Props {
   width: number;
-  hMargin: number;
+  marginS: number;
+  marginE: number;
   domain: Date[];
 }
 
 export default function TimeAxisComponent(props: Props) {
   const scaleFunction = scaleTime({
     domain: props.domain,
-    range: [props.hMargin, props.width - props.hMargin],
+    range: [props.marginS, props.width - props.marginE],
     clamp: true,
   });
 

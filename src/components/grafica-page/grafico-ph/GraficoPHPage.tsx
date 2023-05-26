@@ -15,7 +15,7 @@ export default function GraficoPHPage() {
 
   return (
     <>
-      <div className="mt-3 bg-secondary bg-opacity-25 card shadow">
+      <div className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3">
         <GraficoPHContainer />
         <TimeAxisContainer />
       </div>

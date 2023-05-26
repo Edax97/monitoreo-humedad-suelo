@@ -1,4 +1,3 @@
-import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import {
   DatumSensor,
@@ -30,18 +29,13 @@ export default function GraficoTemperaturaContainer() {
 
   if (dataVis.length === 0 || !timeRange) return null;
   return (
-    <ParentSize>
-      {({ width, height }) => (
-        <GraficoLeyendaComponent
-          seriesLegend={seriesLegend}
-          width={width}
-          height={350}
-          dataVis={dataVis}
-          unidad="°C"
-          accessors={accessors}
-          timeDomain={[timeRange.startDate, timeRange.endDate]}
-        />
-      )}
-    </ParentSize>
+    <GraficoLeyendaComponent
+      seriesLegend={seriesLegend}
+      dataVis={dataVis}
+      unidad="°C"
+      title="Temperatura (°C)"
+      accessors={accessors}
+      timeDomain={[timeRange.startDate, timeRange.endDate]}
+    />
   );
 }

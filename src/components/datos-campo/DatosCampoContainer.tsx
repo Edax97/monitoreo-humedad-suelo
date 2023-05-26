@@ -21,10 +21,6 @@ export default function DatosCampoContainer() {
         <div>76.52 Ha</div>
       </div>
       <div style={styleItem}>
-        <div className=" text-black text-opacity-50">IMEI</div>
-        <div>863192058179590</div>
-      </div>
-      <div style={styleItem}>
         <div className=" text-black text-opacity-50">Sistema de riego</div>
         <div>GOTEO</div>
       </div>

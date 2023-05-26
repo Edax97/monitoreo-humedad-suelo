@@ -1,3 +1,4 @@
+import { ParentSize } from "@visx/responsive";
 import React, { useCallback, useEffect, useState } from "react";
 import { SeriesVisType } from "../../state-provider/GraficasProvider";
 import LeyendaComponent, { SeriesLegend } from "../leyenda/leyenda-component";
@@ -9,8 +10,7 @@ interface Props {
   dataVis: SeriesVisType[];
   areaList?: AreaType[];
   unidad: string;
-  width: number;
-  height: number;
+  title?: string;
   accessors: AccessorsType;
   timeDomain: [Date, Date];
 }
@@ -38,15 +38,20 @@ export default function GraficoLeyendaComponent(props: Props) {
 
   return (
     <div className={` ${className}`}>
-      <div className="ps-5">
+      <div className="ps-3 pt-2 pt-lg-3 d-flex gap-3 align-items-center">
+        <div className="text-black-50" style={{ fontSize: "small" }}>
+          {props.title}
+        </div>
         <LeyendaComponent
           seriesLegend={seriesLegend}
           toggleSeries={toggleSeries}
         />
       </div>
-      <div>
-        <Grafica dataVis={dataVisM} {...graficoProps} />
-      </div>
+      <ParentSize>
+        {({ height, width }) => (
+          <Grafica width={width} dataVis={dataVisM} {...graficoProps} />
+        )}
+      </ParentSize>
     </div>
   );
 }

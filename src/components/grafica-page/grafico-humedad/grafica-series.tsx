@@ -1,4 +1,3 @@
-import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import {
   DatumSensor,
@@ -29,18 +28,13 @@ export default function GraficaSeries() {
 
   if (dataVis.length === 0 || !timeRange) return null;
   return (
-    <ParentSize>
-      {({ width, height }) => (
-        <GraficoLeyendaComponent
-          seriesLegend={seriesLegend}
-          width={width}
-          height={300}
-          dataVis={dataVis}
-          unidad="mm"
-          accessors={accessors}
-          timeDomain={[timeRange.startDate, timeRange.endDate]}
-        />
-      )}
-    </ParentSize>
+    <GraficoLeyendaComponent
+      seriesLegend={seriesLegend}
+      dataVis={dataVis}
+      unidad="mm"
+      title="Lámina de agua (mm)"
+      accessors={accessors}
+      timeDomain={[timeRange.startDate, timeRange.endDate]}
+    />
   );
 }

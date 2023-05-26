@@ -38,7 +38,6 @@ interface Props {
   areaList?: AreaType[];
   unidad: string;
   width: number;
-  height: number;
   accessors: AccessorsType;
   timeDomain: [Date, Date];
 }
@@ -47,16 +46,20 @@ const axisColor = "rgb(135, 142, 155, 1)";
 const gridColor = "rgba(135, 142, 155, 0.2)";
 
 export function Grafica(props: Props) {
+  const height = props.width > 560 ? props.width * 0.22 : props.width * 0.3;
+  const showAnnotations = props.width > 560;
+  const bottom = props.width > 560 ? 20 : 5;
+
   return (
     <XYChart
       resizeObserverPolyfill={ResizeObserver}
-      height={props.height}
+      height={height}
       width={props.width}
       margin={{
         top: 20,
-        bottom: 10,
-        right: 50,
-        left: 50,
+        bottom: bottom,
+        right: 40,
+        left: 40,
       }}
       xScale={{ type: "time", domain: props.timeDomain }}
       yScale={{ type: "linear", zero: false }}
@@ -73,22 +76,24 @@ export function Grafica(props: Props) {
             renderLine={false}
             fill={area.color}
           />
-          {area.showLabel && (
+          {area.showLabel && showAnnotations && (
             <Annotation
               key={`a-${area.label}`}
               datum={area.data[1]}
               xAccessor={(d) => d.x}
               yAccessor={(d) => d.y}
+              dx={0}
+              dy={0}
             >
               <AnnotationLabel
                 title={`${area.label}`}
                 verticalAnchor="start"
                 showAnchorLine={false}
                 showBackground={false}
-                maxWidth={25}
-                titleFontSize={14}
+                width={150}
+                titleFontSize={12}
                 titleFontWeight={200}
-                backgroundPadding={{ left: 5, top: 2 }}
+                backgroundPadding={{ left: -150, top: 0 }}
                 backgroundProps={{
                   height: 18,
                 }}
@@ -121,7 +126,6 @@ export function Grafica(props: Props) {
         tickLabelProps={{
           display: "none",
         }}
-        top={10}
       />
       <Axis
         orientation="right"
@@ -135,7 +139,7 @@ export function Grafica(props: Props) {
           fontSize: 10,
         })}
         hideZero={true}
-        rangePadding={{ start: 0, end: -10 }}
+        //rangePadding={{ start: 0, end: -10 }}
       />
       <Axis
         orientation="left"
@@ -149,7 +153,6 @@ export function Grafica(props: Props) {
           fontSize: 11,
         })}
         hideZero={true}
-        rangePadding={{ start: 0, end: -10 }}
       />
       <Grid rows={false} strokeDasharray={"3 7"} stroke={gridColor} />,
       {props.dataVis.map((dVis) => {
@@ -169,7 +172,7 @@ export function Grafica(props: Props) {
               colorAccessor={() => dVis.color}
               {...props.accessors}
             />
-            {lastDatum && (
+            {lastDatum && showAnnotations && (
               <Annotation
                 key={`ld-${dVis.profundidad}`}
                 datum={lastDatum}

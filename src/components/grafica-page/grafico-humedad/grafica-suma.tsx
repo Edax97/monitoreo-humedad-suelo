@@ -1,4 +1,3 @@
-import { ParentSize } from "@visx/responsive";
 import React, { useMemo } from "react";
 import {
   DatumSensor,
@@ -18,21 +17,38 @@ export default function GraficaSuma() {
     []
   );
 
+  const maximumValue = useMemo(() => {
+    const maxDatum = sumaVis?.trama.reduce((a, b) =>
+      accessors.yAccessor(a) > accessors.yAccessor(b) ? a : b
+    );
+    if (!maxDatum) return 0;
+    return accessors.yAccessor(maxDatum);
+  }, [sumaVis, accessors]);
+
   const areaList = useMemo<AreaType[]>(() => {
     if (!parametros || !timeRange) return [];
     return [
       {
-        label: "rango-valores",
+        label: "Saturación",
+        showLabel: true,
+        color: "hsl(200, 68%, 88%)",
+        data: [
+          { x: timeRange.startDate, y: maximumValue * 1.1 },
+          { x: timeRange.endDate, y: maximumValue * 1.1 },
+        ],
+      },
+      {
+        label: "y-zerp",
         showLabel: false,
-        color: "#ffffff00",
+        color: "rgba(0,0,0,0)",
         data: [
           { x: timeRange.startDate, y: 0 },
           { x: timeRange.endDate, y: 0 },
         ],
       },
       {
-        label: " aprovechable",
-        showLabel: false,
+        label: "Lámina aprovechable",
+        showLabel: true,
         color: "hsl(147, 68%, 88%)",
         data: [
           { x: timeRange.startDate, y: parametros.aprovechable },
@@ -40,8 +56,8 @@ export default function GraficaSuma() {
         ],
       },
       {
-        label: "raprovechable",
-        showLabel: false,
+        label: "Lámina rápid. aprovechable",
+        showLabel: true,
         color: "hsl(0, 61%, 89%)",
         data: [
           { x: timeRange.startDate, y: parametros.raprovechable },
@@ -49,7 +65,7 @@ export default function GraficaSuma() {
         ],
       },
     ];
-  }, [timeRange, parametros]);
+  }, [timeRange, parametros, maximumValue]);
 
   const sumaLegend = useMemo(
     () => ({
@@ -62,19 +78,14 @@ export default function GraficaSuma() {
 
   if (!sumaVis || !timeRange) return null;
   return (
-    <ParentSize>
-      {({ width, height }) => (
-        <GraficoLeyendaComponent
-          seriesLegend={[sumaLegend]}
-          width={width}
-          height={300}
-          dataVis={[sumaVis]}
-          areaList={areaList}
-          unidad="mm"
-          accessors={accessors}
-          timeDomain={[timeRange.startDate, timeRange.endDate]}
-        />
-      )}
-    </ParentSize>
+    <GraficoLeyendaComponent
+      seriesLegend={[sumaLegend]}
+      dataVis={[sumaVis]}
+      areaList={areaList}
+      unidad="mm"
+      title="Lámina de agua (mm)"
+      accessors={accessors}
+      timeDomain={[timeRange.startDate, timeRange.endDate]}
+    />
   );
 }

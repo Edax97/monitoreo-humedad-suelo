@@ -21,11 +21,11 @@ export default function GraficoHumedadPage() {
         <LoadingComponent className="mt-5 pt-5" />
       ) : (
         <>
-          <div className="mt-2 bg-secondary bg-opacity-25 card shadow">
+          <div className="mt-2 bg-secondary bg-opacity-25 card shadow px-lg-3">
             <GraficaSeries />
             <div className="pb-2"></div>
           </div>
-          <div className="mt-3 bg-secondary bg-opacity-25 card shadow">
+          <div className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3">
             <GraficaSuma />
             <TimeAxisContainer />
           </div>
