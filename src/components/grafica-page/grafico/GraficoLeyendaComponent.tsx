@@ -4,6 +4,8 @@ import { SeriesVisType } from "../../state-provider/GraficasProvider";
 import LeyendaComponent, { SeriesLegend } from "../leyenda/leyenda-component";
 import { AccessorsType, AreaType, Grafica } from "./grafico-component";
 
+export const graficoContainerStyle = { minWidth: 720 };
+
 interface Props {
   className?: string;
   seriesLegend: SeriesLegend[];

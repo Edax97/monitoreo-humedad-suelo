@@ -4,6 +4,7 @@ import { useGraficasContext } from "../../state-provider/GraficasProvider";
 import GraficaSeries from "./grafica-series";
 import GraficaSuma from "./grafica-suma";
 import TimeAxisContainer from "../time-axis/time-axis-container";
+import { graficoContainerStyle } from "../grafico/GraficoLeyendaComponent";
 
 export default function GraficoHumedadPage() {
   const { getLoading, getError } = useGraficasContext();
@@ -21,11 +22,17 @@ export default function GraficoHumedadPage() {
         <LoadingComponent className="mt-5 pt-5" />
       ) : (
         <>
-          <div className="mt-2 bg-secondary bg-opacity-25 card shadow px-lg-3">
+          <div
+            className="mt-2 bg-secondary bg-opacity-25 card shadow px-lg-3"
+            style={graficoContainerStyle}
+          >
             <GraficaSeries />
             <div className="pb-2"></div>
           </div>
-          <div className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3">
+          <div
+            className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3"
+            style={graficoContainerStyle}
+          >
             <GraficaSuma />
             <TimeAxisContainer />
           </div>

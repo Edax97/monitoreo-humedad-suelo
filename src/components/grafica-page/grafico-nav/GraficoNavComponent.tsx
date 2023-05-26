@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function GraficoNavComponent() {
   return (
-    <div className="d-flex gap-2 align-items-center">
+    <div className="d-flex gap-2 align-items-center flex-wrap">
       <NavLink
         to={"/"}
         className={({ isActive }) =>

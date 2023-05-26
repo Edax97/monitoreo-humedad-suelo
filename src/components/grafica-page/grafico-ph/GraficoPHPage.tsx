@@ -1,6 +1,7 @@
 import React from "react";
 import LoadingComponent from "../../common/loading/LoadingComponent";
 import { useGraficasContext } from "../../state-provider/GraficasProvider";
+import { graficoContainerStyle } from "../grafico/GraficoLeyendaComponent";
 import TimeAxisContainer from "../time-axis/time-axis-container";
 import GraficoPHContainer from "./GraficoPHContainer";
 
@@ -15,7 +16,10 @@ export default function GraficoPHPage() {
 
   return (
     <>
-      <div className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3">
+      <div
+        className="mt-3 bg-secondary bg-opacity-25 card shadow px-lg-3"
+        style={graficoContainerStyle}
+      >
         <GraficoPHContainer />
         <TimeAxisContainer />
       </div>
