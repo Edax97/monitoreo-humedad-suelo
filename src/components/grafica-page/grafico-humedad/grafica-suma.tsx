@@ -18,11 +18,12 @@ export default function GraficaSuma() {
   );
 
   const maximumValue = useMemo(() => {
-    const maxDatum = sumaVis?.trama.reduce((a, b) =>
-      accessors.yAccessor(a) > accessors.yAccessor(b) ? a : b
+    if (!sumaVis) return 0;
+    const maxDatum = sumaVis.trama.reduce(
+      (b, a) => (accessors.yAccessor(a) > b ? accessors.yAccessor(a) : b),
+      0
     );
-    if (!maxDatum) return 0;
-    return accessors.yAccessor(maxDatum);
+    return maxDatum;
   }, [sumaVis, accessors]);
 
   const areaList = useMemo<AreaType[]>(() => {
