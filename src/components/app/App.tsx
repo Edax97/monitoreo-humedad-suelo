@@ -3,9 +3,9 @@ import GraficoPage from "../grafica-page/GraficoPage";
 import ParamProvider from "../state-provider/param-provider";
 import SensoresProvider from "../state-provider/SensoresProvider";
 import GraficoHumedadPage from "../grafica-page/grafico-humedad/GraficoHumedadPage";
-import GraficasProvider from "../state-provider/GraficasProvider";
 import GraficoPHPage from "../grafica-page/grafico-ph/GraficoPHPage";
 import GraficoTemperaturaPage from "../grafica-page/grafico-temperatura/GraficoTemperaturaPage";
+import ErrorPage from "../error/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -25,18 +25,17 @@ const router = createBrowserRouter([
         element: <GraficoPHPage />,
       },
     ],
+    errorElement: <ErrorPage />,
   },
 ]);
 
 function App() {
   return (
-    <GraficasProvider>
-      <SensoresProvider>
-        <ParamProvider>
-          <RouterProvider router={router} />
-        </ParamProvider>
-      </SensoresProvider>
-    </GraficasProvider>
+    <SensoresProvider>
+      <ParamProvider>
+        <RouterProvider router={router} />
+      </ParamProvider>
+    </SensoresProvider>
   );
 }
 

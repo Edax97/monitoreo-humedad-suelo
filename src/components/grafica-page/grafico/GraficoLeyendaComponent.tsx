@@ -40,7 +40,7 @@ export default function GraficoLeyendaComponent(props: Props) {
 
   return (
     <div className={` ${className}`}>
-      <div className="ps-3 pt-2 pt-lg-3 d-flex gap-3 align-items-center">
+      <div className="ps-3 d-flex gap-3 align-items-center flex-wrap">
         <div className="text-black-50" style={{ fontSize: "small" }}>
           {props.title}
         </div>
@@ -51,7 +51,12 @@ export default function GraficoLeyendaComponent(props: Props) {
       </div>
       <ParentSize>
         {({ height, width }) => (
-          <Grafica width={width} dataVis={dataVisM} {...graficoProps} />
+          <Grafica
+            width={width}
+            height={width * 0.3}
+            dataVis={dataVisM}
+            {...graficoProps}
+          />
         )}
       </ParentSize>
     </div>

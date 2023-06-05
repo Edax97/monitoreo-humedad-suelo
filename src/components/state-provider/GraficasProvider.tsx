@@ -1,18 +1,16 @@
-import { timeFormat } from "d3";
 import React, {
   createContext,
   ReactNode,
   useCallback,
   useContext,
+  useEffect,
   useMemo,
   useState,
 } from "react";
-import {
-  fetchDataSondaAPI,
-  GetDataType,
-  ParametrosType,
-} from "../../api/data-sonda-api";
+import { useGraficasAPI } from "../../api-state/useGraficasAPI";
+import { ParametrosType } from "../../api/data-sonda-api";
 import { coloresList } from "../../api/utilities/colores";
+import { extendRange } from "../../api/utilities/date-utils";
 
 export interface DatumSensor {
   Humedad: number;
@@ -36,11 +34,11 @@ export type RangeType = { startDate: Date; endDate: Date };
 
 interface GraficaContextType {
   timeRange: RangeType | null;
+  updateTimeRange: (range: RangeType) => any;
   dataVis: SeriesVisType[];
   sumaVis: SeriesVisType | null;
-  parametros: ParametrosType | null;
-  updateData: (range: RangeType) => any;
   reloadData: () => any;
+  parametros: ParametrosType | null;
   getLoading: boolean;
   getError: boolean;
 }
@@ -52,24 +50,38 @@ interface Props {
 }
 export default function GraficasProvider(props: Props) {
   const [timeRange, setTimeRange] = useState<RangeType | null>(null);
+
   const [maxTimeRange, setMaxTimeRange] = useState<RangeType | null>(null);
 
-  const [dataSonda, setDataSonda] = useState<GetDataType | null>(null);
+  useEffect(() => {
+    if (!timeRange || !maxTimeRange) return setMaxTimeRange(timeRange);
+    if (
+      maxTimeRange.startDate > timeRange.startDate ||
+      maxTimeRange.endDate < timeRange.endDate
+    )
+      setMaxTimeRange(timeRange);
+  }, [timeRange, maxTimeRange]);
 
-  const [getLoading, setGetLoading] = useState(false);
-  const [getError, setGetError] = useState(false);
+  const updateTimeRange = useCallback((range: RangeType) => {
+    setTimeRange(extendRange(range));
+  }, []);
+
+  const { dataSonda, parametros, getError, getLoading, mutate } =
+    useGraficasAPI(maxTimeRange || null);
 
   const dataVis = useMemo<SeriesVisType[]>(() => {
     if (!dataSonda || !timeRange) return [];
-    return dataSonda.datos.map(({ profundidad, trama }, i) => {
+    return dataSonda.map(({ profundidad, trama }, i) => {
       const tramaFiltered = trama
         .map((datum) => ({
           ...datum,
           fecha: new Date(datum.fecha),
         }))
         .filter(
-          (datum) =>
-            datum.fecha > timeRange.startDate && datum.fecha < timeRange.endDate
+          (datum, j) =>
+            datum.fecha > timeRange.startDate &&
+            datum.fecha < timeRange.endDate &&
+            j % 4 === 0
         );
       return {
         profundidad: `${(+profundidad).toFixed(0)}`,
@@ -109,18 +121,38 @@ export default function GraficasProvider(props: Props) {
     };
   }, [dataVis]);
 
-  const valores = useMemo<ParametrosType | null>(() => {
-    if (!dataSonda) return null;
-    return dataSonda.parametros;
-  }, [dataSonda]);
+  const reloadData = useCallback(() => {
+    mutate();
+  }, [mutate]);
 
-  const getData = useCallback((desde: string, hasta: string) => {
+  return (
+    <GraficasContext.Provider
+      value={{
+        timeRange,
+        updateTimeRange,
+        dataVis,
+        sumaVis,
+        parametros,
+        reloadData,
+        getLoading,
+        getError,
+      }}
+    >
+      {props.children}
+    </GraficasContext.Provider>
+  );
+}
+
+export const useGraficasContext = () => useContext(GraficasContext);
+
+/*
+const getData = useCallback((desde: string, hasta: string) => {
     console.log("API request", new Date());
 
     setGetLoading(true);
     setGetError(false);
 
-    fetchDataSondaAPI(desde, hasta)
+    fetchDataSondaAPI("ConsultaPunto", "863192058179590", desde, hasta)
       .then((dataSonda) => {
         setGetLoading(false);
         setDataSonda(dataSonda);
@@ -171,23 +203,4 @@ export default function GraficasProvider(props: Props) {
     const hasta = `${timeFormat("%Y-%m-%d")(timeRange.endDate)} 23:59:59`;
     getData(desde, hasta);
   }, [timeRange, getData]);
-
-  return (
-    <GraficasContext.Provider
-      value={{
-        timeRange,
-        dataVis,
-        sumaVis,
-        parametros: valores,
-        updateData,
-        reloadData,
-        getLoading,
-        getError,
-      }}
-    >
-      {props.children}
-    </GraficasContext.Provider>
-  );
-}
-
-export const useGraficasContext = () => useContext(GraficasContext);
+*/

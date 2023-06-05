@@ -6,8 +6,8 @@ import {
   AnnotationCircleSubject,
   AnnotationLabel,
   AreaSeries,
-  Axis, // any of these can be non-animated equivalents
-  Grid,
+  AnimatedAxis,
+  AnimatedGrid,
   AnimatedLineSeries,
   Tooltip,
   XYChart,
@@ -15,7 +15,7 @@ import {
 } from "@visx/xychart";
 
 import "./grafico-component.scss";
-import { timeFormat } from "d3";
+import { curveMonotoneX, timeFormat } from "d3";
 import {
   DatumSensor,
   SeriesVisType,
@@ -38,6 +38,7 @@ interface Props {
   areaList?: AreaType[];
   unidad: string;
   width: number;
+  height: number;
   accessors: AccessorsType;
   timeDomain: [Date, Date];
 }
@@ -46,17 +47,16 @@ const axisColor = "rgb(135, 142, 155, 1)";
 const gridColor = "rgba(135, 142, 155, 0.2)";
 
 export function Grafica(props: Props) {
-  const height = props.width > 560 ? props.width * 0.22 : props.width * 0.3;
   const showAnnotations = props.width > 560;
   const bottom = props.width > 560 ? 20 : 5;
 
   return (
     <XYChart
       resizeObserverPolyfill={ResizeObserver}
-      height={height}
+      height={props.height}
       width={props.width}
       margin={{
-        top: 20,
+        top: 10,
         bottom: bottom,
         right: 40,
         left: 40,
@@ -105,7 +105,7 @@ export function Grafica(props: Props) {
           )}
         </>
       ))}
-      <Axis
+      <AnimatedAxis
         orientation="bottom"
         stroke={axisColor}
         tickStroke={axisColor}
@@ -118,7 +118,7 @@ export function Grafica(props: Props) {
         })}
         hideTicks={true}
       />
-      <Axis
+      <AnimatedAxis
         orientation="top"
         stroke={axisColor}
         strokeWidth={1}
@@ -127,7 +127,7 @@ export function Grafica(props: Props) {
           display: "none",
         }}
       />
-      <Axis
+      <AnimatedAxis
         orientation="right"
         stroke={axisColor}
         tickStroke={axisColor}
@@ -141,7 +141,7 @@ export function Grafica(props: Props) {
         hideZero={true}
         //rangePadding={{ start: 0, end: -10 }}
       />
-      <Axis
+      <AnimatedAxis
         orientation="left"
         stroke={axisColor}
         tickStroke={axisColor}
@@ -154,7 +154,7 @@ export function Grafica(props: Props) {
         })}
         hideZero={true}
       />
-      <Grid rows={false} strokeDasharray={"3 7"} stroke={gridColor} />,
+      <AnimatedGrid rows={false} strokeDasharray={"3 7"} stroke={gridColor} />,
       {props.dataVis.map((dVis) => {
         const lastDatum = dVis.trama.slice(-1)[0];
         const lastDatumLabel = `${props.accessors.yAccessor(lastDatum)}`;
@@ -165,7 +165,7 @@ export function Grafica(props: Props) {
         return (
           <>
             <AnimatedLineSeries
-              //curve={curveMonotoneX}
+              curve={curveMonotoneX}
               key={dVis.profundidad}
               dataKey={`d-${dVis.profundidad}`}
               data={dVis.trama}

@@ -15,7 +15,7 @@ interface Props {
 
 export default function LeyendaComponent(props: Props) {
   return props.seriesLegend.length > 0 ? (
-    <div className="d-flex gap-3" style={{ fontSize: "small" }}>
+    <div className="d-flex flex-wrap" style={{ fontSize: "small" }}>
       {props.seriesLegend.map((serie) => (
         <div
           key={serie.label}
@@ -24,7 +24,7 @@ export default function LeyendaComponent(props: Props) {
           onClick={() =>
             props.toggleSeries ? props.toggleSeries(serie.profundidad) : null
           }
-          className="d-flex align-items-center"
+          className="d-flex align-items-center px-1"
         >
           <i className="fs-5 fw-bolder pb-1">
             <Dash />
