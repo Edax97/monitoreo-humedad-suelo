@@ -81,7 +81,7 @@ export default function GraficasProvider(props: Props) {
           (datum, j) =>
             datum.fecha > timeRange.startDate &&
             datum.fecha < timeRange.endDate &&
-            j % 4 === 0
+            j % 1 === 0
         );
       return {
         profundidad: `${(+profundidad).toFixed(0)}`,
