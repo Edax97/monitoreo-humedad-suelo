@@ -60,7 +60,7 @@ export default function SelectRangeContainer() {
 
   useEffect(() => {
     updateTimeRange({
-      startDate: moverFecha(new Date(), -14),
+      startDate: moverFecha(new Date(), 0),
       endDate: new Date(),
     });
     // eslint-disable-next-line react-hooks/exhaustive-deps
