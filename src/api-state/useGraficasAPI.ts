@@ -14,7 +14,7 @@ export function useGraficasAPI(range: RangeType | null) {
   }, [range]);
 
   const { data, error, isLoading, mutate } = useSWR(
-    ["ConsultaPunto", "863192058179590", desde, hasta],
+    ["ConsultaPunto", "863192058179509", desde, hasta],
     (args) => fetchDataSondaAPI(...args)
   );
 
