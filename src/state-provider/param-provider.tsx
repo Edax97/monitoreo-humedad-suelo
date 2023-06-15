@@ -5,7 +5,7 @@ import React, {
   useContext,
   useState,
 } from "react";
-import { fetchParamsAPI, postParamsAPI } from "../../api/param-api";
+import { fetchParamsAPI, postParamsAPI } from "../api/param-api";
 
 export interface ParamsType {
   codigo: number;

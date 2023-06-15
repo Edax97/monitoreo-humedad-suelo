@@ -1,7 +1,7 @@
 import React, { FormEvent, useCallback } from "react";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
-import { DataSensorType } from "../../state-provider/SensoresProvider";
+import { DataSensorType } from "../../../state-provider/SensoresProvider";
 
 interface Props {
   onCancel: () => any;

@@ -1,7 +1,7 @@
 import React from "react";
 import LoadingComponent from "../../common/loading/LoadingComponent";
-import { useGraficasContext } from "../../state-provider/GraficasProvider";
-import GraficoCard from "../grafico/GraficoCard";
+import { useGraficasContext } from "../../../state-provider/GraficasProvider";
+import GraficoCard from "../../common/grafico/GraficoCard";
 import TimeAxisContainer from "../time-axis/time-axis-container";
 import GraficoPHContainer from "./GraficoPHContainer";
 

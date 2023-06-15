@@ -7,10 +7,10 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { useGraficasAPI } from "../../api-state/useGraficasAPI";
-import { ParametrosType } from "../../api/data-sonda-api";
-import { coloresList } from "../../api/utilities/colores";
-import { extendRange } from "../../api/utilities/date-utils";
+import { useGraficasAPI } from "../api-state/useGraficasAPI";
+import { ParametrosType } from "../api/data-sonda-api";
+import { coloresList } from "../api/utilities/colores";
+import { extendRange } from "../api/utilities/date-utils";
 
 export interface DatumSensor {
   Humedad: number;
@@ -67,7 +67,10 @@ export default function GraficasProvider(props: Props) {
   }, []);
 
   const { dataSonda, parametros, getError, getLoading, mutate } =
-    useGraficasAPI(maxTimeRange || null);
+    useGraficasAPI(
+      maxTimeRange?.startDate || null,
+      maxTimeRange?.endDate || null
+    );
 
   const dataVis = useMemo<SeriesVisType[]>(() => {
     if (!dataSonda || !timeRange) return [];

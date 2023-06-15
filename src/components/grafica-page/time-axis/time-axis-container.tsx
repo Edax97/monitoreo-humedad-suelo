@@ -1,6 +1,6 @@
 import { ParentSize } from "@visx/responsive";
 import React from "react";
-import { useGraficasContext } from "../../state-provider/GraficasProvider";
+import { useGraficasContext } from "../../../state-provider/GraficasProvider";
 import TimeAxisComponent from "./time-axis-component";
 
 export default function TimeAxisContainer() {

@@ -1,7 +1,9 @@
 import { ParentSize } from "@visx/responsive";
 import React, { useCallback, useEffect, useState } from "react";
-import { SeriesVisType } from "../../state-provider/GraficasProvider";
-import LeyendaComponent, { SeriesLegend } from "../leyenda/leyenda-component";
+import { SeriesVisType } from "../../../state-provider/GraficasProvider";
+import LeyendaComponent, {
+  SeriesLegend,
+} from "../../grafica-page/leyenda/leyenda-component";
 import { AccessorsType, AreaType, Grafica } from "./grafico-component";
 
 export const graficoContainerStyle = { minWidth: 720 };

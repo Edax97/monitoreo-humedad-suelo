@@ -1,4 +1,4 @@
-import { DataSensorType } from "../components/state-provider/SensoresProvider";
+import { DataSensorType } from "../state-provider/SensoresProvider";
 
 const sensoresURL =
   "https://saphy-iot.com/api/consultaSensores/863192058179590";

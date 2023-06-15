@@ -19,7 +19,7 @@ import { curveMonotoneX, timeFormat } from "d3";
 import {
   DatumSensor,
   SeriesVisType,
-} from "../../state-provider/GraficasProvider";
+} from "../../../state-provider/GraficasProvider";
 
 export interface AreaType {
   label: string;

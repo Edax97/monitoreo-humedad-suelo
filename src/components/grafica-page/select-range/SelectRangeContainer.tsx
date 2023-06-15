@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { SingleValue } from "react-select";
 import { moverFecha } from "../../../api/utilities/date-utils";
-import { useGraficasContext } from "../../state-provider/GraficasProvider";
+import { useGraficasContext } from "../../../state-provider/GraficasProvider";
 import SelectRangeComponent from "./SelectRangeComponent";
 
 export type SinceType = { value: number; label: string };

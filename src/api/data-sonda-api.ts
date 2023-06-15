@@ -1,7 +1,4 @@
-import {
-  DatumSensor,
-  RangeType,
-} from "../components/state-provider/GraficasProvider";
+import { DatumSensor, RangeType } from "../state-provider/GraficasProvider";
 
 interface DataSensorType {
   sensor: string;

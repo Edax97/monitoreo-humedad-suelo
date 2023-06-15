@@ -2,9 +2,9 @@ import React, { useMemo } from "react";
 import {
   DatumSensor,
   useGraficasContext,
-} from "../../state-provider/GraficasProvider";
-import { AccessorsType } from "../grafico/grafico-component";
-import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
+} from "../../../state-provider/GraficasProvider";
+import { AccessorsType } from "../../common/grafico/grafico-component";
+import GraficoLeyendaComponent from "../../common/grafico/GraficoLeyendaComponent";
 
 export default function GraficoPHContainer() {
   const { dataVis, timeRange } = useGraficasContext();

@@ -3,6 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.scss";
 import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/alert";
+import "animate.css";
 import App from "./components/app/App";
 import reportWebVitals from "./reportWebVitals";
 

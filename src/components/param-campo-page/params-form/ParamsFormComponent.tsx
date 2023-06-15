@@ -1,7 +1,7 @@
 import React, { FormEvent, useCallback } from "react";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
-import { ParamsType } from "../../state-provider/param-provider";
+import { ParamsType } from "../../../state-provider/param-provider";
 
 export interface ParamsLabelsType {
   [key: string]: { label: string; um: string };

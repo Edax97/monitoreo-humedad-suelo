@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from "react";
 import LoadingComponent from "../../common/loading/LoadingComponent";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
-import { useGraficasContext } from "../../state-provider/GraficasProvider";
-import { useParamsContext } from "../../state-provider/param-provider";
+import { useGraficasContext } from "../../../state-provider/GraficasProvider";
+import { useParamsContext } from "../../../state-provider/param-provider";
 import ParamsFormComponent, { ParamsLabelsType } from "./ParamsFormComponent";
 
 const paramsLabels: ParamsLabelsType = {

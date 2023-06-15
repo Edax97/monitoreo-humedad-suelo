@@ -1,4 +1,4 @@
-import { ParamsType } from "../components/state-provider/param-provider";
+import { ParamsType } from "../state-provider/param-provider";
 
 interface ParamsDataType {
   success: boolean;

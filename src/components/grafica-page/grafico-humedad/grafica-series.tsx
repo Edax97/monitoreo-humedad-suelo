@@ -2,8 +2,8 @@ import React, { useMemo } from "react";
 import {
   DatumSensor,
   useGraficasContext,
-} from "../../state-provider/GraficasProvider";
-import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
+} from "../../../state-provider/GraficasProvider";
+import GraficoLeyendaComponent from "../../common/grafico/GraficoLeyendaComponent";
 
 export default function GraficaSeries() {
   const { dataVis, timeRange } = useGraficasContext();

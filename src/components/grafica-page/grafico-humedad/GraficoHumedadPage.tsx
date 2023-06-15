@@ -1,10 +1,10 @@
 import LoadingComponent from "../../common/loading/LoadingComponent";
 import ConfigComponent from "../../common/menu/configuracion/configuracion-component";
-import { useGraficasContext } from "../../state-provider/GraficasProvider";
+import { useGraficasContext } from "../../../state-provider/GraficasProvider";
 import GraficaSeries from "./grafica-series";
 import GraficaSuma from "./grafica-suma";
 import TimeAxisContainer from "../time-axis/time-axis-container";
-import GraficoCard from "../grafico/GraficoCard";
+import GraficoCard from "../../common/grafico/GraficoCard";
 
 export default function GraficoHumedadPage() {
   const { getLoading, getError } = useGraficasContext();

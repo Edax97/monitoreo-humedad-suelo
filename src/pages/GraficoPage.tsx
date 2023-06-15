@@ -1,7 +1,7 @@
-import SelectRangeContainer from "./select-range/SelectRangeContainer";
 import { Outlet } from "react-router-dom";
-import GraficoNavComponent from "./grafico-nav/GraficoNavComponent";
-import DatosCampoDialog from "../datos-campo/DatosCampoModal";
+import DatosCampoDialog from "../components/datos-campo/DatosCampoModal";
+import GraficoNavComponent from "../components/grafica-page/grafico-nav/GraficoNavComponent";
+import SelectRangeContainer from "../components/grafica-page/select-range/SelectRangeContainer";
 import GraficasProvider from "../state-provider/GraficasProvider";
 
 export default function GraficoPage() {

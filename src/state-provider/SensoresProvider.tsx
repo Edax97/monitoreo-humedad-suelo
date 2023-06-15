@@ -5,7 +5,7 @@ import React, {
   useContext,
   useState,
 } from "react";
-import { getSensoresAPI, postSensoresAPI } from "../../api/sensores-api";
+import { getSensoresAPI, postSensoresAPI } from "../api/sensores-api";
 
 export interface DataSensorType {
   codigo: number;

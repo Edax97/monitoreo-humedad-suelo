@@ -2,9 +2,12 @@ import React, { useMemo } from "react";
 import {
   DatumSensor,
   useGraficasContext,
-} from "../../state-provider/GraficasProvider";
-import GraficoLeyendaComponent from "../grafico/GraficoLeyendaComponent";
-import { AccessorsType, AreaType } from "../grafico/grafico-component";
+} from "../../../state-provider/GraficasProvider";
+import GraficoLeyendaComponent from "../../common/grafico/GraficoLeyendaComponent";
+import {
+  AccessorsType,
+  AreaType,
+} from "../../common/grafico/grafico-component";
 
 export default function GraficaSuma() {
   const { sumaVis, timeRange, parametros } = useGraficasContext();
