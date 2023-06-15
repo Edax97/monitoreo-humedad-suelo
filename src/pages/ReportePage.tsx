@@ -9,7 +9,7 @@ export default function ReportePage() {
   return (
     <ReporteProvider>
       <div className="container py-4">
-        <div className="fs-5">Reporte AIPSA 1</div>
+        <div className="fs-5 opacity-75">Reportes</div>
         <div className="d-flex mt-4 gap-4 flex-wrap">
           <div>
             <SelectCampoContainer />

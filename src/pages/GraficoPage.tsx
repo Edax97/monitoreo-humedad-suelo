@@ -10,7 +10,8 @@ export default function GraficoPage() {
       <div className="app">
         <main className="my-4">
           <div className="container-lg">
-            <div className="pt-2 d-flex align-items-center flex-wrap gap-3">
+            <div className="fs-5 opacity-75">Dashboard</div>
+            <div className="pt-4 d-flex align-items-center flex-wrap gap-3">
               <SelectRangeContainer />
               <div className="ms-auto">
                 <div>
