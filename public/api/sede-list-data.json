@@ -1,0 +1,10 @@
+{
+  "status": true,
+  "data": [
+    { "sedeId": "0", "sedeName": "Piura" },
+    { "sedeId": "1", "sedeName": "Chimbote" },
+    { "sedeId": "2", "sedeName": "Chincha" },
+    { "sedeId": "3", "sedeName": "Arequipa" }
+  ],
+  "mensaje": ""
+}

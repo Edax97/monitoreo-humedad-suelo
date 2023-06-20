@@ -29,7 +29,8 @@ export default function SensoresFormContainer() {
     });
   }, [postSensores, reloadData]);
 
-  if (getLoading) return <LoadingComponent className="mt-5 pt-5 mb-5 pb-5" />;
+  if (getLoading || !dataSensores)
+    return <LoadingComponent className="mt-5 pt-5 mb-5 pb-5" />;
   if (dataSensores.length === 0)
     return (
       <div className="my-5">

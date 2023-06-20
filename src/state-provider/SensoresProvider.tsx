@@ -47,12 +47,12 @@ export default function SensoresProvider(props: Props) {
     setPostSuccess(false);
     setPostError(false);
     getSensoresAPI()
-      .then((data) => data.datos)
       .then((sensores) => {
         setDataSensores(sensores);
         setInitialDataSensores(sensores);
         setGetLoading(false);
-      });
+      })
+      .catch((e) => console.log(e));
   }, []);
 
   const postSensores = useCallback(() => {

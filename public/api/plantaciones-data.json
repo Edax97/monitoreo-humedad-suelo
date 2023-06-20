@@ -1,0 +1,77 @@
+{
+  "status": true,
+  "code": 200,
+  "data": [
+    {
+      "plant_id": "0",
+      "plant_coordenadas": "-10.5922,-77.7652",
+      "lista_puntos": [
+        {
+          "punto_id": 1,
+          "punto_lon": "-77.7643",
+          "punto_lat": "-10.5916"
+        },
+        {
+          "punto_id": 2,
+          "punto_lon": "-77.7658",
+          "punto_lat": "-10.5920"
+        },
+        {
+          "punto_id": 3,
+          "punto_lon": "-77.7660",
+          "punto_lat": "-10.5930"
+        },
+        {
+          "punto_id": 4,
+          "punto_lon": "-77.7645",
+          "punto_lat": "-10.5931"
+        },
+        {
+          "punto_id": 5,
+          "punto_lon": "-77.7643",
+          "punto_lat": "-10.5916"
+        }
+      ],
+      "lista_equipos": [
+        {
+          "modem_id": 1,
+          "modem_nombrepunto": "AIPSA EQUIPO 1",
+          "modem_imei": 863192058179509,
+          "sensor_Lista": [
+            {
+              "sensor_nombre": "SENSOR 20 CM",
+              "sensor_profundidad": "20.00",
+              "sensor_estado": "1",
+              "sensor_humedad": "43.3",
+              "sensor_temperatura": "25.2",
+              "sensor_conductividad": "0",
+              "sensor_ph": "5.8",
+              "sensor_potasio": "0",
+              "sensor_sodio": "0",
+              "sensor_fosforo": "0",
+              "sensor_bateria": "100",
+              "sensor_estado_descripcion": "OK",
+              "sensor_fecha": "2023-02-20 15:06:14"
+            },
+            {
+              "sensor_nombre": "SENSOR 40 CM",
+              "sensor_profundidad": "40.00",
+              "sensor_estado": "1",
+              "sensor_humedad": "63.8",
+              "sensor_temperatura": "25.5",
+              "sensor_conductividad": "0",
+              "sensor_ph": "6.8",
+              "sensor_potasio": "0",
+              "sensor_sodio": "0",
+              "sensor_fosforo": "0",
+              "sensor_bateria": "100",
+              "sensor_estado_descripcion": "OK",
+              "sensor_fecha": "2023-02-20 15:06:14"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "msg": "Consulta existosa"
+}

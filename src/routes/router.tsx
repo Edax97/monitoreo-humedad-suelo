@@ -5,9 +5,15 @@ import GraficoPHPage from "../components/grafica-page/grafico-ph/GraficoPHPage";
 import GraficoTemperaturaPage from "../components/grafica-page/grafico-temperatura/GraficoTemperaturaPage";
 import AlertasPage from "../pages/AlertasPage";
 import GraficoPage from "../pages/GraficoPage";
+import InicioPage from "../pages/InicioPage";
 import ReportePage from "../pages/ReportePage";
 
 export const router = createBrowserRouter([
+  {
+    path: "/inicio",
+    element: <InicioPage />,
+  },
+
   {
     path: "/",
     element: <GraficoPage />,

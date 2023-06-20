@@ -1,0 +1,9 @@
+{
+  "status": true,
+  "data": {
+    "plant_total": 9,
+    "equipos_total": 33,
+    "alertas_total": 14
+  },
+  "mensaje": ""
+}

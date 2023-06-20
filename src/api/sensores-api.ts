@@ -16,7 +16,12 @@ interface PostSensoresAPIType {
 }
 
 export const getSensoresAPI = () =>
-  fetch(sensoresURL).then<GetSensoresAPIType>((r) => r.json());
+  fetch(sensoresURL)
+    .then<GetSensoresAPIType>((r) => r.json())
+    .then(({ success, datos }) => {
+      if (!success) throw Error("API Error");
+      return datos;
+    });
 
 export const postSensoresAPI = (data: PostSensoresAPIType) => {
   return Promise.all(

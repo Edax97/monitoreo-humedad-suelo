@@ -1,4 +1,4 @@
-import React from "react";
+import React, { CSSProperties } from "react";
 import Select, { SingleValue } from "react-select";
 
 export interface SelectType {
@@ -11,6 +11,7 @@ interface Props {
   options: SelectType[];
   onSelect: (v: SingleValue<SelectType>) => any;
   label?: string;
+  selectStyle?: CSSProperties;
 }
 export default function SelectValue(props: Props) {
   return (
@@ -28,6 +29,9 @@ export default function SelectValue(props: Props) {
               : state.isFocused
               ? "bg-primary bg-opacity-25"
               : "",
+        }}
+        styles={{
+          container: (style) => ({ ...style, ...props.selectStyle }),
         }}
       />
     </div>
