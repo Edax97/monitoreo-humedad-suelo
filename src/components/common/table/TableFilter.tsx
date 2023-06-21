@@ -1,6 +1,13 @@
-import React, { ReactNode, useCallback, useMemo, useState } from "react";
+import React, {
+  ReactNode,
+  useCallback,
+  useMemo,
+  useRef,
+  useState,
+} from "react";
 import Toolbar from "./Toolbar";
 import { Headers } from "react-csv/components/CommonPropTypes";
+import { useReactToPrint } from "react-to-print";
 
 interface Props<RowT> {
   dataLista: RowT[];
@@ -23,6 +30,11 @@ export default function TableFilter<RowT extends {}>(props: Props<RowT>) {
 
   const onFilter = useCallback((f: string) => setFilter(f), []);
 
+  const componentToPrint = useRef(null);
+  const printTable = useReactToPrint({
+    content: () => componentToPrint.current,
+    documentTitle: "Imprimir tabla",
+  });
   return (
     <>
       <div className="pb-2 pe-3 pe-lg-5">
@@ -30,9 +42,10 @@ export default function TableFilter<RowT extends {}>(props: Props<RowT>) {
           headersCSV={props.headersCSV}
           csvData={filteredLista}
           onFilter={onFilter}
+          onPrint={printTable}
         />
       </div>
-      {props.render(filteredLista)}
+      <div ref={componentToPrint}>{props.render(filteredLista)}</div>
     </>
   );
 }

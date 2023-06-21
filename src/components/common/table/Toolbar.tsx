@@ -8,6 +8,7 @@ interface Props {
   onFilter: (f: string) => any;
   csvData: any[];
   headersCSV: Headers;
+  onPrint: () => void;
 }
 
 export default function Toolbar(props: Props) {
@@ -46,6 +47,20 @@ export default function Toolbar(props: Props) {
         >
           <i className="bi bi-cloud-arrow-down-fill text-dark text-opacity-75 fs-4" />
         </CSVLink>
+      </BtnIcon>
+
+      <BtnIcon>
+        <CSVLink
+          data={props.csvData}
+          filename="entel-iot.xlsx"
+          headers={props.headersCSV}
+        >
+          <i className="bi bi-file-earmark-excel-fill text-dark text-opacity-75 fs-5" />
+        </CSVLink>
+      </BtnIcon>
+
+      <BtnIcon onClick={props.onPrint}>
+        <i className="bi bi-printer-fill text-dark text-opacity-75 fs-4" />
       </BtnIcon>
     </div>
   );
