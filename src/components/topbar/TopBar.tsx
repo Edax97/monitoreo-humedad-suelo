@@ -28,6 +28,7 @@ export default function TopBar(props: Props) {
         >
           {props.statusText}
         </div>
+
         <div className="ms-auto"></div>
         {props.children}
       </div>
