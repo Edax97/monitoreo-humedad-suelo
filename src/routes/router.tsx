@@ -6,39 +6,50 @@ import GraficoTemperaturaPage from "../components/grafica-page/grafico-temperatu
 import AlertasPage from "../pages/AlertasPage";
 import GraficoPage from "../pages/GraficoPage";
 import InicioPage from "../pages/InicioPage";
+import Layout from "../pages/Layout";
 import ReportePage from "../pages/ReportePage";
 
 export const router = createBrowserRouter([
   {
-    path: "/inicio",
+    path: "/login",
     element: <InicioPage />,
   },
 
   {
     path: "/",
-    element: <GraficoPage />,
+    element: <Layout />,
     children: [
       {
         index: true,
-        element: <GraficoHumedadPage />,
+        element: <InicioPage />,
       },
       {
-        path: "grafico-temperatura",
-        element: <GraficoTemperaturaPage />,
+        path: "dashboard",
+        element: <GraficoPage />,
+        children: [
+          {
+            index: true,
+            element: <GraficoHumedadPage />,
+          },
+          {
+            path: "grafico-temperatura",
+            element: <GraficoTemperaturaPage />,
+          },
+          {
+            path: "grafico-ph",
+            element: <GraficoPHPage />,
+          },
+        ],
       },
       {
-        path: "grafico-ph",
-        element: <GraficoPHPage />,
+        path: "reporte",
+        element: <ReportePage />,
+      },
+      {
+        path: "alertas",
+        element: <AlertasPage />,
       },
     ],
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "reporte",
-    element: <ReportePage />,
-  },
-  {
-    path: "alertas",
-    element: <AlertasPage />,
   },
 ]);

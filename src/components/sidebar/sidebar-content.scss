@@ -1,0 +1,10 @@
+.link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  &.active {
+    color: #fff;
+  }
+  &:hover {
+    color: #fff;
+  }
+}

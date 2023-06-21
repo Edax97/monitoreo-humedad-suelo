@@ -5,7 +5,7 @@ export default function GraficoNavComponent() {
   return (
     <div className="d-flex gap-2 align-items-center flex-wrap">
       <NavLink
-        to={"/"}
+        to={"/dashboard/"}
         className={({ isActive }) =>
           `btn btn-sm ${
             isActive ? "btn-primary text-white" : "btn-outline-primary"
@@ -15,7 +15,7 @@ export default function GraficoNavComponent() {
         Humedad
       </NavLink>
       <NavLink
-        to="/grafico-temperatura"
+        to="/dashboard/grafico-temperatura"
         className={({ isActive }) =>
           `btn btn-sm ${
             isActive ? "btn-primary text-white" : "btn-outline-primary"
@@ -25,7 +25,7 @@ export default function GraficoNavComponent() {
         Temperatura
       </NavLink>
       <NavLink
-        to="/grafico-ph"
+        to="/dashboard/grafico-ph"
         className={({ isActive }) =>
           `btn btn-sm ${
             isActive ? "btn-primary text-white" : "btn-outline-primary"
