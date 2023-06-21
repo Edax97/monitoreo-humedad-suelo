@@ -1,6 +1,6 @@
 import {
   GoogleMap,
-  InfoWindow,
+  InfoWindowF as InfoWindow,
   MarkerF as Marker,
   PolygonF as Polygon,
   useJsApiLoader,
