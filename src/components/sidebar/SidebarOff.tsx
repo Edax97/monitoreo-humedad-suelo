@@ -1,6 +1,7 @@
 import React from "react";
 import Logo from "../../assets/logo.png";
 import BtnIcon from "../common/btn-icon/BtnIcon";
+import SelectSedeContainer from "../common/select-sede/SelectSedeContainer";
 import SidebarContent from "./SidebarContent";
 
 interface Props {
@@ -21,7 +22,12 @@ export default function SidebarOff(props: Props) {
         </BtnIcon>
       </div>
       <div className="offcanvas-body">
-        <SidebarContent onLogout={props.onLogout} isOffcanvas />
+        <div className="mx-3">
+          <SelectSedeContainer />
+        </div>
+        <div className="mt-3">
+          <SidebarContent onLogout={props.onLogout} isOffcanvas />
+        </div>
       </div>
     </div>
   );

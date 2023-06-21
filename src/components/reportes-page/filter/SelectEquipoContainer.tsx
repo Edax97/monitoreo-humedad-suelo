@@ -17,11 +17,13 @@ export default function SelectEquipoContainer() {
   }, [selected, setEquipoSelected]);
 
   return (
-    <SelectValue
-      selected={selected}
-      onSelect={setSelected}
-      options={options}
-      label="Equipo"
-    />
+    <div className="d-flex align-items-center gap-2">
+      <div className="opacity-75 text-dark">Equipo: </div>
+      <SelectValue
+        selected={selected}
+        onSelect={setSelected}
+        options={options}
+      />
+    </div>
   );
 }

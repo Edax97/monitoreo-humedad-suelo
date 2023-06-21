@@ -18,11 +18,13 @@ export default function SelectCampoContainer() {
   }, [selected, setCampoSelected]);
 
   return (
-    <SelectValue
-      selected={selected}
-      onSelect={setSelected}
-      options={options}
-      label="Campo"
-    />
+    <div className="d-flex align-items-center gap-2">
+      <div className="opacity-75 text-dark">Campo: </div>
+      <SelectValue
+        selected={selected}
+        onSelect={setSelected}
+        options={options}
+      />
+    </div>
   );
 }

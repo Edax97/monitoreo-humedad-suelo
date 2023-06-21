@@ -1,6 +1,7 @@
 import React, { useMemo } from "react";
 import { LabelKeyObject } from "react-csv/components/CommonPropTypes";
 import { useAlertasAPI } from "../../api-state/useAlertasAPI";
+import { useSedeContext } from "../../state-provider/SedeProvider";
 import CardWidget from "../common/card-widget/CardWidget";
 import LoadingComponent from "../common/loading/LoadingComponent";
 import ErrorMessageComponent from "../common/message/ErrorMessageComponent";
@@ -9,9 +10,12 @@ import TablePagination from "../common/table/TablePagination";
 import AlertasTable from "./AlertasTable";
 
 export default function AlertasContainer() {
-  const sedeId = useMemo(() => "1", []);
-  const sedeName = useMemo(() => "Piura", []);
-  const { alertas, error, loading } = useAlertasAPI("0", sedeId);
+  const { sedeSelected } = useSedeContext();
+
+  const { alertas, error, loading } = useAlertasAPI(
+    "0",
+    sedeSelected?.id || ""
+  );
 
   const headers = useMemo<LabelKeyObject[]>(
     () => [
@@ -36,7 +40,7 @@ export default function AlertasContainer() {
     );
 
   return (
-    <CardWidget title={`Alertas ${`sede ${sedeName}` || ""}`} toolbar={true}>
+    <CardWidget title={`Alertas ${sedeSelected?.name || ""}`} toolbar={true}>
       <div className="px-4 pt-4 pb-2">
         <TableFilter
           dataLista={alertas}
