@@ -1,3 +1,4 @@
+import { ParentSize } from "@visx/responsive";
 import React from "react";
 import { usePlantListAPI } from "../../../api-state/usePlantListAPI";
 import { useSedeContext } from "../../../state-provider/SedeProvider";
@@ -18,5 +19,9 @@ export default function PlantsContainer() {
         message="Error al cargar la data"
       />
     );
-  return <PlantsMap plantList={plantList} />;
+  return (
+    <ParentSize>
+      {({ width }) => <PlantsMap plantList={plantList} width={width} />}
+    </ParentSize>
+  );
 }

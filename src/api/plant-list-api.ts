@@ -1,3 +1,5 @@
+import { postMethod } from "./methods";
+
 export interface SensorType {
   sensor_nombre: string;
   sensor_profundidad: string;
@@ -38,10 +40,18 @@ interface ResponseType {
   mssg: string;
 }
 
-export const getPlantListAPI = (url: string, sedeId: string) =>
+export const getPlantListLocal = (url: string, sedeId: string) =>
   fetch(url)
     .then<ResponseType>((res) => res.json())
     .then(({ status, data }) => {
       if (!status) throw Error("API Error");
       return data;
     });
+
+export const getPlantListAPI = (api_url: string, sedeId: string) =>
+  postMethod<ResponseType>(
+    `${process.env.REACT_APP_API_URL}/${api_url}?id_sede=${sedeId}`
+  ).then(({ status, data }) => {
+    if (!status) throw Error("API Error");
+    return data;
+  });

@@ -3,9 +3,10 @@ import { NavLink } from "react-router-dom";
 import { SensorType } from "../../../api/plant-list-api";
 
 interface Props {
-  sensorLista: SensorType[];
+  sensorLista: SensorType[] | undefined;
 }
 export default function EquipoInfo(props: Props) {
+  if (!props.sensorLista) return null;
   return (
     <div className="p-2">
       {props.sensorLista.map((sensor) => (

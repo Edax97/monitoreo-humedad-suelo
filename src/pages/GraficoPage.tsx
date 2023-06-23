@@ -1,5 +1,5 @@
 import { Outlet } from "react-router-dom";
-import DatosCampoDialog from "../components/datos-campo/DatosCampoModal";
+import DatosCampoDialog from "../components/datos-campo/DatosCampoDialog";
 import GraficoNavComponent from "../components/grafica-page/grafico-nav/GraficoNavComponent";
 import SelectRangeContainer from "../components/grafica-page/select-range/SelectRangeContainer";
 import GraficasProvider from "../state-provider/GraficasProvider";

@@ -28,10 +28,13 @@ export default function DatosCampoDialog() {
         <div className="d-flex justify-content-center pt-5 mt-4">
           <CardComponent>
             <div style={{ maxWidth: "580px" }}>
-              <div className="pt-1 px-1 d-flex justify-content-end opacity-50">
-                <BtnIconComponent onClick={() => setModalOpen(false)}>
-                  <Close />
-                </BtnIconComponent>
+              <div className="pt-1 px-1 d-flex ">
+                <span className="ps-3 pt-3">Datos de campo</span>
+                <div className="ms-auto opacity-50">
+                  <BtnIconComponent onClick={() => setModalOpen(false)}>
+                    <Close />
+                  </BtnIconComponent>
+                </div>
               </div>
               <div className="m-3 m-lg-5 mt-lg-3">
                 <DatosCampoContainer />

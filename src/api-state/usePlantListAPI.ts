@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import { getPlantListAPI } from "../api/plant-list-api";
 
-const getPlantListURL = "api/plantaciones-data.json";
+const getPlantListURL = "api/consultas/plantaciones";
 
 export function usePlantListAPI(sedeId: string) {
   const { data, error, isLoading } = useSWR([getPlantListURL, sedeId], (args) =>

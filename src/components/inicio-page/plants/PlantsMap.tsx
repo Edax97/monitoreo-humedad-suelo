@@ -25,15 +25,17 @@ const polygonOptions = {
 
 interface Props {
   plantList: PlantacionType[];
+  width: number;
 }
 export default function PlantsMap(props: Props) {
-  const containerStyle = useMemo(
-    () => ({
+  const containerStyle = useMemo(() => {
+    let height = "24rem";
+    if (props.width > 720) height = "40rem";
+    return {
       width: "100%",
-      height: "48rem",
-    }),
-    []
-  );
+      height,
+    };
+  }, [props.width]);
   const zoom = useMemo(() => 17, []);
 
   const { isLoaded } = useJsApiLoader({
@@ -85,7 +87,9 @@ export default function PlantsMap(props: Props) {
                 onCloseClick={() => setInfoIndex(null)}
                 options={{ maxWidth: 300 }}
               >
-                <EquipoInfo sensorLista={plant.lista_equipos[0].sensor_Lista} />
+                <EquipoInfo
+                  sensorLista={plant.lista_equipos?.[0].sensor_Lista}
+                />
               </InfoWindow>
             )}
           </Marker>
