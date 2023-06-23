@@ -36,7 +36,7 @@ export default function PlantsMap(props: Props) {
       height,
     };
   }, [props.width]);
-  const zoom = useMemo(() => 17, []);
+  const zoom = useMemo(() => 16, []);
 
   const { isLoaded } = useJsApiLoader({
     googleMapsApiKey: process.env.REACT_APP_GOOGLE_API_KEY || "",

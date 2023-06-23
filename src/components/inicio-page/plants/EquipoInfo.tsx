@@ -38,7 +38,7 @@ export default function EquipoInfo(props: Props) {
         </div>
       ))}
       <div className=" mt-3 d-flex justify-content-end">
-        <NavLink to="/" className="btn btn-outline-primary btn-sm">
+        <NavLink to="/dashboard" className="btn btn-outline-primary btn-sm">
           Dashboard
         </NavLink>
       </div>

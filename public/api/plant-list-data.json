@@ -1,0 +1,9 @@
+{
+  "status": true,
+  "data": [
+    { "campoId": "0", "sedeName": "Paramonga", "campoName": "Paramonga 1" },
+    { "campoId": "1", "sedeName": "Paramonga", "campoName": "Paramonga 2" },
+    { "campoId": "2", "sedeName": "Paramonga", "campoName": "Paramonga 3" }
+  ],
+  "mensaje": ""
+}

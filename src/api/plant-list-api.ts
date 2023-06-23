@@ -1,4 +1,4 @@
-import { postMethod } from "./methods";
+import { getMethod, postMethod } from "./methods";
 
 export interface SensorType {
   sensor_nombre: string;
@@ -15,9 +15,10 @@ export interface SensorType {
   sensor_estado_descripcion: string;
   sensor_fecha: string;
 }
-interface EquipoType {
+export interface EquipoType {
   modem_id: number;
   modem_nombrepunto: string;
+  modem_coordenadas: string;
   modem_imei: number;
   sensor_Lista: SensorType[];
 }
@@ -29,6 +30,7 @@ interface PuntoType {
 export interface PlantacionType {
   plant_id: string;
   plant_coordenadas: string;
+  plant_nombre: string;
   lista_puntos: PuntoType[];
   lista_equipos: EquipoType[];
 }
@@ -41,12 +43,10 @@ interface ResponseType {
 }
 
 export const getPlantListLocal = (url: string, sedeId: string) =>
-  fetch(url)
-    .then<ResponseType>((res) => res.json())
-    .then(({ status, data }) => {
-      if (!status) throw Error("API Error");
-      return data;
-    });
+  getMethod<ResponseType>(url).then(({ status, data }) => {
+    if (!status) throw Error("API Error");
+    return data;
+  });
 
 export const getPlantListAPI = (api_url: string, sedeId: string) =>
   postMethod<ResponseType>(

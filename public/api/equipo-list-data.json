@@ -1,0 +1,10 @@
+{
+  "status": true,
+  "data": [
+    { "equipoId": "0", "equipoName": "AIPSA 1", "campoName": "Paramonga 1" },
+    { "equipoId": "1", "equipoName": "AIPSA 2", "campoName": "Paramonga 2" },
+    { "equipoId": "2", "equipoName": "REPC 1", "campoName": "Paramonga 3" },
+    { "equipoId": "3", "equipoName": "REPC 3", "campoName": "Paramonga 3" }
+  ],
+  "mensaje": ""
+}
