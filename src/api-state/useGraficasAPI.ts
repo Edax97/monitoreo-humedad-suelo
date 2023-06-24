@@ -3,7 +3,11 @@ import { useMemo } from "react";
 import useSWR from "swr";
 import { fetchDataSondaAPI } from "../api/data-sonda-api";
 
-export function useGraficasAPI(startDate: Date | null, endDate: Date | null) {
+export function useGraficasAPI(
+  startDate: Date | null,
+  endDate: Date | null,
+  equipoId: string
+) {
   const [desde, hasta] = useMemo(() => {
     if (!startDate || !endDate) return ["", ""];
     return [
@@ -13,7 +17,7 @@ export function useGraficasAPI(startDate: Date | null, endDate: Date | null) {
   }, [startDate, endDate]);
 
   const { data, error, isLoading, mutate } = useSWR(
-    ["ConsultaPunto", "863192058179509", desde, hasta],
+    ["ConsultaPunto", equipoId, desde, hasta],
     (args) => fetchDataSondaAPI(...args)
   );
 

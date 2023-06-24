@@ -24,9 +24,9 @@ interface EquipoType {
 interface ReporteContextType {
   timeRange: RangeType;
   updateTimeRange: (r: RangeType) => void;
-  campoSelected: CampoType | null;
+  plantSelected: CampoType | null;
   equipoSelected: EquipoType | null;
-  setCampoSelected: Dispatch<SetStateAction<CampoType | null>>;
+  setPlantSelected: Dispatch<SetStateAction<CampoType | null>>;
   setEquipoSelected: Dispatch<SetStateAction<EquipoType | null>>;
 }
 
@@ -38,7 +38,7 @@ interface Props {
 }
 export default function ReporteProvider({ children }: Props) {
   const [timeRange, setTimeRange] = useState<RangeType>(null);
-  const [campoSelected, setCampoSelected] = useState<CampoType | null>(null);
+  const [plantSelected, setPlantSelected] = useState<CampoType | null>(null);
   const [equipoSelected, setEquipoSelected] = useState<EquipoType | null>(null);
 
   const updateTimeRange = useCallback((r: RangeType) => {
@@ -50,10 +50,10 @@ export default function ReporteProvider({ children }: Props) {
     <ReporteContext.Provider
       value={{
         timeRange,
-        campoSelected,
+        plantSelected,
         equipoSelected,
         updateTimeRange,
-        setCampoSelected,
+        setPlantSelected,
         setEquipoSelected,
       }}
     >

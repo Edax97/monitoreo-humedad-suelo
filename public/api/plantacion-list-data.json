@@ -107,7 +107,7 @@
       ],
       "lista_equipos": [
         {
-          "modem_id": 1,
+          "modem_id": 2,
           "modem_nombrepunto": "AIPSA 2",
           "modem_coordenadas": "-10.6022,-77.7752",
           "modem_imei": 863192058179509,

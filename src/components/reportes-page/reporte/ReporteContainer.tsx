@@ -23,7 +23,8 @@ export default function ReporteContainer() {
 
   const { dataSonda, getError, getLoading } = useGraficasAPI(
     maxTimeRange?.[0] || null,
-    maxTimeRange?.[1] || null
+    maxTimeRange?.[1] || null,
+    "863192058179509"
   );
 
   const headers = useMemo(() => {

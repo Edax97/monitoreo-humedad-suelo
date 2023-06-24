@@ -89,6 +89,8 @@ export default function PlantsMap(props: Props) {
               >
                 <EquipoInfo
                   sensorLista={plant.lista_equipos?.[0].sensor_Lista}
+                  plantId={plant.plant_id}
+                  equipoId={`${plant.lista_equipos?.[0].modem_id || ""}`}
                 />
               </InfoWindow>
             )}

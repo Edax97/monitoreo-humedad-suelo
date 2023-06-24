@@ -11,7 +11,7 @@ export default function DatosCampoDialog() {
   return (
     <>
       <button
-        className="btn btn-outline-info bg-primary bg-opacity-10"
+        className="btn btn-outline-info btn-sm bg-primary bg-opacity-10"
         onClick={() => setModalOpen(true)}
       >
         Datos de campo

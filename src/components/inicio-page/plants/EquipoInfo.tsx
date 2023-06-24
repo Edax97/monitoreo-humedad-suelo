@@ -4,6 +4,8 @@ import { SensorType } from "../../../api/plant-list-api";
 
 interface Props {
   sensorLista: SensorType[] | undefined;
+  plantId: string;
+  equipoId: string;
 }
 export default function EquipoInfo(props: Props) {
   if (!props.sensorLista) return null;
@@ -38,7 +40,10 @@ export default function EquipoInfo(props: Props) {
         </div>
       ))}
       <div className=" mt-3 d-flex justify-content-end">
-        <NavLink to="/dashboard" className="btn btn-outline-primary btn-sm">
+        <NavLink
+          to={`/dashboard?plant_id=${props.plantId}&equipo_id=${props.equipoId}`}
+          className="btn btn-outline-primary btn-sm"
+        >
           Dashboard
         </NavLink>
       </div>

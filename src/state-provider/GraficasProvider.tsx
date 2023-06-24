@@ -69,7 +69,8 @@ export default function GraficasProvider(props: Props) {
   const { dataSonda, parametros, getError, getLoading, mutate } =
     useGraficasAPI(
       maxTimeRange?.startDate || null,
-      maxTimeRange?.endDate || null
+      maxTimeRange?.endDate || null,
+      "863192058179509"
     );
 
   const dataVis = useMemo<SeriesVisType[]>(() => {
