@@ -1,13 +1,13 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { SensorType } from "../../../api/plant-list-api";
+import { SensorType } from "../../../api/modem-sensor-list-api";
 
 interface Props {
   sensorLista: SensorType[] | undefined;
   plantId: string;
-  equipoId: string;
+  modemId: string;
 }
-export default function EquipoInfo(props: Props) {
+export default function ModemInfo(props: Props) {
   if (!props.sensorLista) return null;
   return (
     <div className="p-2">
@@ -41,7 +41,7 @@ export default function EquipoInfo(props: Props) {
       ))}
       <div className=" mt-3 d-flex justify-content-end">
         <NavLink
-          to={`/dashboard?plant_id=${props.plantId}&equipo_id=${props.equipoId}`}
+          to={`/dashboard?plant_id=${props.plantId}&equipo_id=${props.modemId}`}
           className="btn btn-outline-primary btn-sm"
         >
           Dashboard

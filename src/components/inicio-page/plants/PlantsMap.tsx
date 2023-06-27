@@ -8,7 +8,7 @@ import {
 import React, { useMemo, useState } from "react";
 import { PlantacionType } from "../../../api/plant-list-api";
 import LoadingComponent from "../../common/loading/LoadingComponent";
-import EquipoInfo from "./EquipoInfo";
+import ModemInfoContainer from "./ModemInfoContainer";
 
 interface LatLng {
   lat: number;
@@ -75,36 +75,48 @@ export default function PlantsMap(props: Props) {
       onLoad={onMapLoad}
       onClick={() => setInfoIndex(null)}
     >
-      {plantList.map((plant, j) => (
-        <>
-          <Marker
-            key={`m-${j}`}
-            position={plant.plant_coordenadas}
-            onClick={() => onMarker(j, plant.plant_coordenadas)}
-          >
-            {infoIndex === j && (
-              <InfoWindow
-                onCloseClick={() => setInfoIndex(null)}
-                options={{ maxWidth: 300 }}
+      {plantList.map((plant, j) => {
+        return (
+          <>
+            {plant.lista_modems.map((modem, k) => (
+              <Marker
+                key={`m-${k}`}
+                position={{
+                  lat: +modem.modem_latitud,
+                  lng: +modem.modem_longitud,
+                }}
+                onClick={() =>
+                  onMarker(j * 10 + k, {
+                    lat: +modem.modem_latitud,
+                    lng: +modem.modem_longitud,
+                  })
+                }
               >
-                <EquipoInfo
-                  sensorLista={plant.lista_equipos?.[0].sensor_Lista}
-                  plantId={plant.plant_id}
-                  equipoId={`${plant.lista_equipos?.[0].modem_id || ""}`}
-                />
-              </InfoWindow>
-            )}
-          </Marker>
-          <Polygon
-            key={`p-${j}`}
-            options={polygonOptions}
-            paths={plant.lista_puntos.map((punto) => ({
-              lat: +punto.punto_lat,
-              lng: +punto.punto_lon,
-            }))}
-          />
-        </>
-      ))}
+                {infoIndex === j * 10 + k && (
+                  <InfoWindow
+                    onCloseClick={() => setInfoIndex(null)}
+                    options={{ maxWidth: 300 }}
+                  >
+                    <ModemInfoContainer
+                      plantId={`${plant.plant_id}`}
+                      modemId={`${modem.modem_id}`}
+                    />
+                  </InfoWindow>
+                )}
+              </Marker>
+            ))}
+
+            <Polygon
+              key={`p-${j}`}
+              options={polygonOptions}
+              paths={plant.lista_puntos.map((punto) => ({
+                lat: +punto.punto_lat.replaceAll(",", "."),
+                lng: +punto.punto_lon.replaceAll(",", "."),
+              }))}
+            />
+          </>
+        );
+      })}
       <></>
     </GoogleMap>
   );

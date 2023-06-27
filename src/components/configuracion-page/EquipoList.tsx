@@ -1,9 +1,10 @@
 import React from "react";
-import { EquipoPlantType } from "../../api-state/useEquipoListAPI";
+import { ModemPlantType } from "../../api-state/useModemList";
+import Dialog from "../common/modal/Dialog";
 import ResponsiveContainer from "../common/table/ResponsiveContainer";
 
 interface Props {
-  equipoList: EquipoPlantType[];
+  equipoList: ModemPlantType[];
 }
 export default function EquipoList(props: Props) {
   return (
@@ -11,7 +12,7 @@ export default function EquipoList(props: Props) {
       <table className="table mx-auto" style={{ fontSize: "small" }}>
         <thead>
           <tr>
-            <th className="px-3">Equipo</th>
+            <th className="px-3">Módem</th>
             <th className="px-3">Plantación</th>
             <th className="px-3">Datos de equipo</th>
             <th className="px-3">Control de rangos</th>
@@ -23,14 +24,38 @@ export default function EquipoList(props: Props) {
               <td className="px-3">{equipo.modem_nombrepunto}</td>
               <td className="px-3">{equipo.plant_nombre}</td>
               <td className="px-3">
-                <button className="btn btn-outline-info btn-sm">
-                  Datos de equipo
-                </button>
+                <Dialog
+                  modalId="equipo_datos"
+                  title="Datos de equipo"
+                  trigger={(id) => (
+                    <button
+                      className="btn btn-outline-info btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target={id}
+                    >
+                      Datos de equipo
+                    </button>
+                  )}
+                >
+                  EQUIPO FORM
+                </Dialog>
               </td>
               <td className="px-3">
-                <button className="btn btn-outline-info btn-sm">
-                  Control de rangos
-                </button>
+                <Dialog
+                  modalId="equipo_control"
+                  title="Control de rangos"
+                  trigger={(id) => (
+                    <button
+                      className="btn btn-outline-info btn-sm"
+                      data-bs-toggle="modal"
+                      data-bs-target={id}
+                    >
+                      Control de rangos
+                    </button>
+                  )}
+                >
+                  CONTROL DE RANGO FORM
+                </Dialog>
               </td>
             </tr>
           ))}

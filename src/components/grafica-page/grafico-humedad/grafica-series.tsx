@@ -11,7 +11,7 @@ export default function GraficaSeries() {
   const accessors = useMemo(
     () => ({
       xAccessor: (d: DatumSensor) => d?.fecha,
-      yAccessor: (d: DatumSensor) => d?.raprovechable,
+      yAccessor: (d: DatumSensor) => +d?.raprovechable,
     }),
     []
   );

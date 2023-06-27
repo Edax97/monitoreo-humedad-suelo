@@ -1,0 +1,35 @@
+{
+  "success": true,
+  "error": "",
+  "data": {
+    "modem_id": "1",
+    "modem_name": "AIPSA 1",
+    "campo_id": "Campo id",
+    "sede_id": "Sede id",
+    "modem_imei": "1221ea1a2d",
+    "sensores": [
+      {
+        "sensor_name": "Sensor 1",
+        "sensor_id": "1",
+        "sensor_prof": "20",
+        "hume_max": "90",
+        "hume_min": "50",
+        "temp_max": "30",
+        "temp_min": "25",
+        "ph_max": "7",
+        "ph_min": "4"
+      },
+      {
+        "sensor_name": "Sensor 2",
+        "sensor_id": "1",
+        "sensor_prof": "40",
+        "hume_max": "90",
+        "hume_min": "50",
+        "temp_max": "30",
+        "temp_min": "25",
+        "ph_max": "7",
+        "ph_min": "4"
+      }
+    ]
+  }
+}

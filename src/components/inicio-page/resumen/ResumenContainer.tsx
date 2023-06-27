@@ -4,9 +4,12 @@ import LoadingComponent from "../../common/loading/LoadingComponent";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import CardResumeDetails from "../../common/resumen/CardResumeDetails";
 import { RiPlantFill as Plant } from "react-icons/ri";
+import { useSedeContext } from "../../../state-provider/SedeProvider";
 
 export default function ResumenContainer() {
-  const { resumen, error, loading } = useResumenAPI("1");
+  const { sedeSelected } = useSedeContext();
+
+  const { resumen, error, loading } = useResumenAPI(sedeSelected?.id || "");
 
   if (loading || !resumen) return <LoadingComponent className="my-5" />;
   if (error)
@@ -22,7 +25,7 @@ export default function ResumenContainer() {
         <CardResumeDetails
           titleCounter="Total de plantaciones"
           className="bg-success bg-opacity-50"
-          counter={resumen.plant_total}
+          counter={resumen.conteo_plantaciones}
           icon={<Plant />}
           to="/configuracion"
         />
@@ -31,7 +34,7 @@ export default function ResumenContainer() {
         <CardResumeDetails
           titleCounter="Equipos"
           className="bg-info bg-opacity-50"
-          counter={resumen.equipos_total}
+          counter={resumen.conteo_equipos}
           icon={<i className="bi bi-cpu"></i>}
           to="/configuracion"
         />
@@ -40,7 +43,7 @@ export default function ResumenContainer() {
         <CardResumeDetails
           titleCounter="Alertas"
           className="bg-danger bg-opacity-50"
-          counter={resumen.alertas_total}
+          counter={resumen.conteo_alertas}
           icon={<i className="bi bi-exclamation-triangle"></i>}
           to="/alertas"
         />

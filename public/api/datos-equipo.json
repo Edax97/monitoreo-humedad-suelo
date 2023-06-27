@@ -1,0 +1,23 @@
+{
+  "success": true,
+  "error": "",
+  "data": {
+    "equipo_id": "1",
+    "equipo_name": "AIPSA 1",
+    "campo_id": "Campo id",
+    "sede_id": "Sede id",
+    "equipo_imei": "1221ea1a2d",
+    "sensores": [
+      {
+        "sensor_name": "Sensor 1",
+        "sensor_id": "1",
+        "sensor_prof": "20"
+      },
+      {
+        "sensor_name": "Sensor 2",
+        "sensor_id": "1",
+        "sensor_prof": "40"
+      }
+    ]
+  }
+}

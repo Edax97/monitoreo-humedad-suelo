@@ -4,6 +4,7 @@ import "./index.scss";
 import "bootstrap/js/dist/dropdown";
 import "bootstrap/js/dist/alert";
 import "bootstrap/js/dist/offcanvas";
+import "bootstrap/js/dist/modal";
 import "animate.css";
 import App from "./components/app/App";
 import reportWebVitals from "./reportWebVitals";

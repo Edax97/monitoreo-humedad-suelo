@@ -1,30 +1,29 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { usePlantListLocal } from "../../../api-state/usePlantListAPI";
+import { usePlantListAPI } from "../../../api-state/usePlantListAPI";
 import { useReporteContext } from "../../../state-provider/ReporteProvider";
 import { useSedeContext } from "../../../state-provider/SedeProvider";
 import SelectValue, { SelectType } from "../../common/select-value/SelectValue";
 
 export default function SelectEquipoContainer() {
-  const { setEquipoSelected, plantSelected: campoSelected } =
-    useReporteContext();
+  const { setEquipoSelected, plantSelected } = useReporteContext();
   const [selected, setSelected] = useState<SelectType | null>(null);
   const { sedeSelected } = useSedeContext();
-  const { plantList } = usePlantListLocal(sedeSelected?.id || "");
+  const { plantList } = usePlantListAPI(sedeSelected?.id || "");
   const [params] = useSearchParams();
 
   const equipoList = useMemo(() => {
-    if (!plantList || !campoSelected) return null;
-    const plant = plantList.find((p) => p.plant_id === campoSelected.id);
+    if (!plantList || !plantSelected) return null;
+    const plant = plantList.find((p) => `${p.plant_id}` === plantSelected.id);
     if (!plant) return null;
-    return plant.lista_equipos;
-  }, [plantList, campoSelected]);
+    return plant.lista_modems;
+  }, [plantList, plantSelected]);
 
   const options = useMemo(() => {
     if (!equipoList) return [];
-    return equipoList.map((equipo) => ({
-      value: `${equipo.modem_id}`,
-      label: equipo.modem_nombrepunto,
+    return equipoList.map((modem) => ({
+      value: `${modem.modem_id}`,
+      label: modem.modem_nombrepunto,
     }));
   }, [equipoList]);
 
@@ -42,7 +41,7 @@ export default function SelectEquipoContainer() {
 
   return (
     <div className="d-flex align-items-center gap-2">
-      <div className="opacity-75 text-dark">Equipo: </div>
+      <div className="opacity-75 text-dark">Módem: </div>
       <SelectValue
         selected={selected}
         onSelect={setSelected}

@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import { getAlertasAPI } from "../api/alertas-api";
 
-const getAlertasURL = "api/alertas-data.json";
+const getAlertasURL = "api/alertas-data-last.json";
 
 export function useAlertasAPI(tipo: string, sedeId: string) {
   const { data, error, isLoading } = useSWR(

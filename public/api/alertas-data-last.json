@@ -1,0 +1,222 @@
+{
+  "success": true,
+  "error": "",
+  "data": [
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 1",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-25 04:27:51",
+      "ultimo_cambio": "2023-05-25 04:27:51",
+      "motivo": "Baja hume.",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 2",
+      "equipoId": "1",
+      "campo": "Paramonga 1",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alto PH",
+      "estado": "ACTIVO"
+    },
+    {
+      "equipo": "AIPSA 3",
+      "equipoId": "1",
+      "campo": "Paramonga 2",
+      "hora": "2023-05-24 03:27:51",
+      "ultimo_cambio": "2023-05-24 03:27:51",
+      "motivo": "Alta temp.",
+      "estado": "ACTIVO"
+    }
+  ]
+}

@@ -1,20 +1,20 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { useSearchParams } from "react-router-dom";
-import { usePlantListLocal } from "../../../api-state/usePlantListAPI";
+import { usePlantListAPI } from "../../../api-state/usePlantListAPI";
 import { useReporteContext } from "../../../state-provider/ReporteProvider";
 import { useSedeContext } from "../../../state-provider/SedeProvider";
 import SelectValue, { SelectType } from "../../common/select-value/SelectValue";
 
 export default function SelectCampoContainer() {
-  const { setPlantSelected: setCampoSelected } = useReporteContext();
+  const { setPlantSelected } = useReporteContext();
   const { sedeSelected } = useSedeContext();
-  const { plantList } = usePlantListLocal(sedeSelected?.id || "");
+  const { plantList } = usePlantListAPI(sedeSelected?.id || "");
   const [params] = useSearchParams();
 
   const options = useMemo(() => {
     if (!plantList) return [];
     return plantList.map((plant) => ({
-      value: plant.plant_id,
+      value: `${plant.plant_id}`,
       label: plant.plant_nombre,
     }));
   }, [plantList]);
@@ -30,12 +30,12 @@ export default function SelectCampoContainer() {
 
   useEffect(() => {
     if (!selected) return;
-    setCampoSelected({ id: `${selected.value}`, name: selected.label });
-  }, [selected, setCampoSelected]);
+    setPlantSelected({ id: `${selected.value}`, name: selected.label });
+  }, [selected, setPlantSelected]);
 
   return (
     <div className="d-flex align-items-center gap-2">
-      <div className="opacity-75 text-dark">Campo: </div>
+      <div className="opacity-75 text-dark">Plantación: </div>
       <SelectValue
         selected={selected}
         onSelect={setSelected}

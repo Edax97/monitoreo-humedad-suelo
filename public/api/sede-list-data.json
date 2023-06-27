@@ -1,10 +1,8 @@
 {
   "status": true,
   "data": [
-    { "sedeId": "0", "sedeName": "Piura" },
-    { "sedeId": "1", "sedeName": "Chimbote" },
-    { "sedeId": "2", "sedeName": "Chincha" },
-    { "sedeId": "3", "sedeName": "Arequipa" }
+    { "sedeId": "2", "sedeName": "Paramonga" },
+    { "sedeId": "0", "sedeName": "Chimbote" }
   ],
   "mensaje": ""
 }

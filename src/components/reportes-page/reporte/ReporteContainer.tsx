@@ -46,7 +46,7 @@ export default function ReporteContainer() {
       let row: ReporteRowType = { fecha: `${fecha}` };
       dataSonda.forEach((s) => {
         const humed = +s.trama[j].raprovechable.toFixed(1);
-        const temp = +s.trama[j].Temperatura.toFixed(1);
+        const temp = +s.trama[j].temperatura.toFixed(1);
         const ph = +s.trama[j].pH.toFixed(1);
         row[
           `${s.sensor}`

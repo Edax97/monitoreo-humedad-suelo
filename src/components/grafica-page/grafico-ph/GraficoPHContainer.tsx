@@ -12,7 +12,7 @@ export default function GraficoPHContainer() {
   const accessors = useMemo<AccessorsType>(
     () => ({
       xAccessor: (d: DatumSensor) => d?.fecha,
-      yAccessor: (d: DatumSensor) => d?.pH,
+      yAccessor: (d: DatumSensor) => +d?.pH,
     }),
     []
   );

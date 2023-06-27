@@ -7,19 +7,19 @@ import React, {
   useMemo,
   useState,
 } from "react";
-import { useGraficasAPI } from "../api-state/useGraficasAPI";
+import { useDataGraficaAPI } from "../api-state/useGraficasAPI";
 import { ParametrosType } from "../api/data-sonda-api";
 import { coloresList } from "../api/utilities/colores";
 import { extendRange } from "../api/utilities/date-utils";
 
 export interface DatumSensor {
-  Humedad: number;
+  humedad: number;
   aprovechable: number;
   raprovechable: number;
   fecha: Date;
   cm: number;
-  Temperatura: number;
-  Conductividad: number;
+  temperatura: number;
+  conductividad: number;
   pH: number;
 }
 
@@ -67,10 +67,10 @@ export default function GraficasProvider(props: Props) {
   }, []);
 
   const { dataSonda, parametros, getError, getLoading, mutate } =
-    useGraficasAPI(
+    useDataGraficaAPI(
       maxTimeRange?.startDate || null,
       maxTimeRange?.endDate || null,
-      "863192058179509"
+      "2"
     );
 
   const dataVis = useMemo<SeriesVisType[]>(() => {
@@ -106,15 +106,15 @@ export default function GraficasProvider(props: Props) {
       let [Humedad, aprovechable, raprovechable] = [0, 0, 0];
       dataVis.forEach((sensor) => {
         const datumSensor = sensor.trama[j];
-        Humedad += datumSensor?.Humedad || 0;
+        Humedad += datumSensor?.humedad || 0;
         aprovechable += datumSensor?.aprovechable || 0;
         raprovechable += datumSensor?.raprovechable || 0;
       });
       return {
         ...datum,
         Humedad,
-        aprovechable: +aprovechable.toFixed(2),
-        raprovechable: +raprovechable.toFixed(2),
+        aprovechable: +(+aprovechable).toFixed(2),
+        raprovechable: +(+raprovechable).toFixed(2),
       };
     });
     return {

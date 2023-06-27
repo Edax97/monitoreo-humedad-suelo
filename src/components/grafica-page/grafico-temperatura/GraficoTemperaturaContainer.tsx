@@ -12,7 +12,7 @@ export default function GraficoTemperaturaContainer() {
   const accessors = useMemo<AccessorsType>(
     () => ({
       xAccessor: (d: DatumSensor) => d?.fecha,
-      yAccessor: (d: DatumSensor) => d?.Temperatura,
+      yAccessor: (d: DatumSensor) => +d?.temperatura,
     }),
     []
   );
