@@ -1,7 +1,7 @@
 import React from "react";
-import { ModemPlantType } from "../../api-state/useModemList";
-import Dialog from "../common/modal/Dialog";
-import ResponsiveContainer from "../common/table/ResponsiveContainer";
+import { ModemPlantType } from "../../../api-state/useModemList";
+import Dialog from "../../common/modal/Dialog";
+import ResponsiveContainer from "../../common/table/ResponsiveContainer";
 
 interface Props {
   equipoList: ModemPlantType[];

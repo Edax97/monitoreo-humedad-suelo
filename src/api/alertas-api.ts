@@ -1,13 +1,15 @@
 //const getAlertasURL = "api/alertas-data.json";
 
 export interface AlertaAPIType {
-  equipo: string;
-  equipoId: string;
-  campo: string;
+  sensor_name: string;
+  modem_name: string;
+  plant_name: string;
   hora: string;
-  ultimo_cambio: string;
   motivo: string;
   estado: string;
+  temp: string;
+  hume: string;
+  ph: string;
 }
 
 interface ResponseType {
@@ -16,7 +18,7 @@ interface ResponseType {
   data: AlertaAPIType[];
 }
 
-export const getAlertasAPI = (url: string, tipo: string, sedeId: string) =>
+export const getAlertasAPI = (url: string, sedeId: string) =>
   fetch(url)
     .then<ResponseType>((res) => res.json())
     .then((r) => {

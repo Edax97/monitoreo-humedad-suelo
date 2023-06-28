@@ -1,5 +1,5 @@
 import React from "react";
-import ReporteContainer from "../components/reportes-page/reporte/ReporteContainer";
+import ReportePageList from "../components/reportes-page/reporte/ReportePageList";
 import SelectRangeContainer from "../components/reportes-page/filter/SelectRangeContainer";
 import ReporteProvider from "../state-provider/ReporteProvider";
 import SelectCampoContainer from "../components/reportes-page/filter/SelectCampoContainer";
@@ -20,7 +20,7 @@ export default function ReportePage() {
           <SelectRangeContainer />
         </div>
         <div className="mt-4">
-          <ReporteContainer />
+          <ReportePageList />
         </div>
       </div>
     </ReporteProvider>

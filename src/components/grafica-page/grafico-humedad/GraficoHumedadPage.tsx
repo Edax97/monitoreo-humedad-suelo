@@ -1,5 +1,4 @@
 import LoadingComponent from "../../common/loading/LoadingComponent";
-import ConfigComponent from "../../common/menu/configuracion/configuracion-component";
 import { useGraficasContext } from "../../../state-provider/GraficasProvider";
 import GraficaSeries from "./grafica-series";
 import GraficaSuma from "./grafica-suma";
@@ -15,9 +14,6 @@ export default function GraficoHumedadPage() {
     );
   return (
     <>
-      <div className="d-flex justify-content-end">
-        <ConfigComponent />
-      </div>
       {getLoading ? (
         <LoadingComponent className="mt-5 pt-5" />
       ) : (

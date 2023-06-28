@@ -6,7 +6,8 @@ import { useSedeContext } from "../../../state-provider/SedeProvider";
 import SelectValue, { SelectType } from "../../common/select-value/SelectValue";
 
 export default function SelectEquipoContainer() {
-  const { setEquipoSelected, plantSelected } = useReporteContext();
+  const { setModemSelected: setEquipoSelected, plantSelected } =
+    useReporteContext();
   const [selected, setSelected] = useState<SelectType | null>(null);
   const { sedeSelected } = useSedeContext();
   const { plantList } = usePlantListAPI(sedeSelected?.id || "");

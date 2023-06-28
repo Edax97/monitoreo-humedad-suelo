@@ -11,6 +11,7 @@ import { useDataGraficaAPI } from "../api-state/useGraficasAPI";
 import { ParametrosType } from "../api/data-sonda-api";
 import { coloresList } from "../api/utilities/colores";
 import { extendRange } from "../api/utilities/date-utils";
+import { useReporteContext } from "./ReporteProvider";
 
 export interface DatumSensor {
   humedad: number;
@@ -50,7 +51,6 @@ interface Props {
 }
 export default function GraficasProvider(props: Props) {
   const [timeRange, setTimeRange] = useState<RangeType | null>(null);
-
   const [maxTimeRange, setMaxTimeRange] = useState<RangeType | null>(null);
 
   useEffect(() => {
@@ -66,11 +66,12 @@ export default function GraficasProvider(props: Props) {
     setTimeRange(extendRange(range));
   }, []);
 
+  const { modemSelected } = useReporteContext();
   const { dataSonda, parametros, getError, getLoading, mutate } =
     useDataGraficaAPI(
       maxTimeRange?.startDate || null,
       maxTimeRange?.endDate || null,
-      "2"
+      modemSelected?.id || ""
     );
 
   const dataVis = useMemo<SeriesVisType[]>(() => {
@@ -106,9 +107,9 @@ export default function GraficasProvider(props: Props) {
       let [Humedad, aprovechable, raprovechable] = [0, 0, 0];
       dataVis.forEach((sensor) => {
         const datumSensor = sensor.trama[j];
-        Humedad += datumSensor?.humedad || 0;
-        aprovechable += datumSensor?.aprovechable || 0;
-        raprovechable += datumSensor?.raprovechable || 0;
+        Humedad += +datumSensor?.humedad || 0;
+        aprovechable += +datumSensor?.aprovechable || 0;
+        raprovechable += +datumSensor?.raprovechable || 0;
       });
       return {
         ...datum,

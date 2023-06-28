@@ -1,7 +1,6 @@
 import React from "react";
-import EquipoListContainer from "../components/configuracion-page/EquipoListContainer";
-import PlantListContainer from "../components/configuracion-page/PlantListContainer";
-import SedeListContainer from "../components/configuracion-page/SedeListContainer";
+import EquipoListContainer from "../components/configuracion-page/modem/EquipoListContainer";
+import PlantListContainer from "../components/configuracion-page/plantacion/PlantListContainer";
 
 export default function ConfiguracionPage() {
   return (
@@ -11,9 +10,6 @@ export default function ConfiguracionPage() {
       </div>
       <div className="mt-4">
         <PlantListContainer />
-      </div>
-      <div className="mt-4">
-        <SedeListContainer />
       </div>
     </div>
   );

@@ -1,9 +1,10 @@
 {
-  "success": true,
-  "error": "",
+  "status": true,
+  "code": "500",
+  "msg": "",
   "data": {
     "campo_id": "1",
-    "campo_name": "AIPSA 1",
+    "campo_name": "CAÑA DE AZUCAR",
     "sede_id": "Sede id.",
     "campo_empresa": "AIPSA",
     "cultivo": "CAÑA DE AZUCAR",

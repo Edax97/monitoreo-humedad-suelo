@@ -1,13 +1,13 @@
 import React, { useMemo } from "react";
 import { LabelKeyObject } from "react-csv/components/CommonPropTypes";
-import { usePlantListLocal } from "../../api-state/usePlantListAPI";
-import { PlantacionType } from "../../api/plant-list-api";
-import { useSedeContext } from "../../state-provider/SedeProvider";
-import CardWidget from "../common/card-widget/CardWidget";
-import LoadingComponent from "../common/loading/LoadingComponent";
-import ErrorMessageComponent from "../common/message/ErrorMessageComponent";
-import TableFilter from "../common/table/TableFilter";
-import TablePagination from "../common/table/TablePagination";
+import { usePlantListAPI } from "../../../api-state/usePlantListAPI";
+import { PlantacionType } from "../../../api/plant-list-api";
+import { useSedeContext } from "../../../state-provider/SedeProvider";
+import CardWidget from "../../common/card-widget/CardWidget";
+import LoadingComponent from "../../common/loading/LoadingComponent";
+import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
+import TableFilter from "../../common/table/TableFilter";
+import TablePagination from "../../common/table/TablePagination";
 import PlantList from "./PlantList";
 
 export type PlantSedeType = PlantacionType & { sede_nombre: string };
@@ -15,9 +15,7 @@ export type PlantSedeType = PlantacionType & { sede_nombre: string };
 export default function PlantListContainer() {
   const { sedeSelected } = useSedeContext();
 
-  const { plantList, error, loading } = usePlantListLocal(
-    sedeSelected?.id || ""
-  );
+  const { plantList, error, loading } = usePlantListAPI(sedeSelected?.id || "");
 
   const plantSedeList = useMemo<PlantSedeType[]>(() => {
     if (!plantList || !sedeSelected) return [];

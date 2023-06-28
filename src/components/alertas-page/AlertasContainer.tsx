@@ -12,20 +12,19 @@ import AlertasTable from "./AlertasTable";
 export default function AlertasContainer() {
   const { sedeSelected } = useSedeContext();
 
-  const { alertas, error, loading } = useAlertasAPI(
-    "0",
-    sedeSelected?.id || ""
-  );
+  const { alertas, error, loading } = useAlertasAPI(sedeSelected?.id || "");
 
   const headers = useMemo<LabelKeyObject[]>(
     () => [
-      { key: "equipo", label: "Equipo" },
-      { key: "campo", label: "Equipo" },
-      { key: "hora", label: "Equipo" },
-      { key: "ultimo_cambio", label: "Ultimo cambio" },
+      { key: "sensor_name", label: "Sensor" },
+      { key: "modem_name", label: "Módem" },
+      { key: "plant_name", label: "Plantación" },
+      { key: "hora", label: "Hora" },
       { key: "motivo", label: "Motivo" },
       { key: "estado", label: "Estado" },
-      { key: "equipoId", label: "Detalles" },
+      { key: "temp", label: "Temp. (%)" },
+      { key: "hume", label: "Hume. (mm)" },
+      { key: "ph", label: "PH" },
     ],
     []
   );
