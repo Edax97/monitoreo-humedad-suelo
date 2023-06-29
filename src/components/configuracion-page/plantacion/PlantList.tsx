@@ -26,13 +26,11 @@ export default function PlantList(props: Props) {
               <td className="px-3">{plant.sede_nombre}</td>
               <td className="px-3">
                 <Dialog
-                  modalId={`datos-campo-${j}`}
                   title="Datos de campo"
-                  trigger={(id) => (
+                  showComponent={(onShow) => (
                     <button
                       className="btn btn-outline-info btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target={id}
+                      onClick={onShow}
                     >
                       Datos de campo
                     </button>
@@ -43,13 +41,11 @@ export default function PlantList(props: Props) {
               </td>
               <td className="px-3">
                 <Dialog
-                  modalId={`parmas-campo-${j}`}
                   title="Parámetros de campo"
-                  trigger={(id) => (
+                  showComponent={(onShow) => (
                     <button
                       className="btn btn-outline-info btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target={id}
+                      onClick={onShow}
                     >
                       Parámetros de campo
                     </button>

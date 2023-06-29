@@ -18,9 +18,9 @@ export default function InputSm({
     <input
       type={type || "number"}
       className={`form-control form-control-sm text-opacity-75 text-dark ${
-        className || "bg-light bg-opacity-10"
+        className || "bg-light bg-opacity-25"
       }`}
-      style={{ width: "6rem" }}
+      style={{ maxWidth: "6rem" }}
       value={value}
       onChange={onChange}
       {...restProps}

@@ -28,28 +28,28 @@ export default function AlertasTable(props: Props) {
         <tbody className="text-dark text-opacity-75">
           {props.alertaLista.map((alerta, j) => (
             <tr key={j}>
-              <td className="px-3">{alerta.sensor_name}</td>
-              <td className="px-3">{alerta.modem_name}</td>
-              <td className="px-3">{alerta.plant_name}</td>
-              <td className="px-3">{alerta.hora}</td>
-              <td className="px-3">{alerta.motivo}</td>
+              <td className="px-3">{alerta.sensor_nombre}</td>
+              <td className="px-3">{alerta.modem_nombre}</td>
+              <td className="px-3">{alerta.plantacion_nombre}</td>
+              <td className="px-3">{alerta.alerta_hora}</td>
+              <td className="px-3">{alerta.alerta_motivo}</td>
               <td
                 className={`px-3 ${
-                  alerta.estado === "ACTIVO" ? "text-danger" : "text-primary"
+                  alerta.alerta_estado === "ACTIVO"
+                    ? "text-danger"
+                    : "text-primary"
                 }`}
               >
-                {alerta.estado}
+                {alerta.alerta_estado}
               </td>
               <td className="px-3">
                 <Dialog
-                  modalId={`alerta_detalle_${j}`}
-                  title={`Alerta ${alerta.motivo}`}
-                  trigger={(id) => (
+                  title={`Alerta ${alerta.alerta_motivo}`}
+                  showComponent={(onShow) => (
                     <button
                       type="button"
                       className="btn btn-outline-info btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target={id}
+                      onClick={onShow}
                     >
                       Detalles
                     </button>

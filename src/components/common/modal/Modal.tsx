@@ -7,8 +7,8 @@ interface Props {
 }
 export default function Modal(props: Props) {
   useEffect(() => {
-    const modalElement = document.getElementById(props.modalId);
-    document.body.append(modalElement || "");
+    //const modalElement = document.getElementById(props.modalId);
+    //document.body.append(modalElement || "");
   }, [props.modalId]);
 
   return (

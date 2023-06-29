@@ -47,7 +47,7 @@ export const deleteMethod = async <T>(url: string, body?: any) => {
 
 export const putMethod = async <T>(url: string, body?: any) => {
   const user = null;
-
+  console.log("Body", body);
   const response = await fetch(url, {
     method: "PUT",
     headers: {

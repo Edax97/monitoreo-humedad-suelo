@@ -2,6 +2,7 @@ import React, { FormEvent, useCallback, useEffect, useState } from "react";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
 import { PlantConfigType } from "../../../api/plantacion-configuracion-api";
+import FieldControl from "../../common/forms/FieldControl";
 
 interface FieldLabelsType {
   [key: string]: { label: string; um: string };
@@ -44,27 +45,22 @@ export default function ParamsCampo(props: Props) {
       props.onSave(plantConfig);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [props.onSave]
+    [props.onSave, plantConfig]
   );
 
   if (!plantConfig) return null;
   return (
-    <form action="#" onSubmit={onSubmit} style={{ width: "100%" }}>
+    <form action="#" onSubmit={onSubmit}>
       {Object.keys(fieldLabels).map((key) => (
-        <div className="mb-3 d-flex align-items-center" key={`input-${key}`}>
-          <div>{fieldLabels[key].label}</div>
-          <input
-            aria-label={fieldLabels[key].label}
+        <div className="mb-3" key={`input-${key}`}>
+          <FieldControl
+            label={fieldLabels[key].label}
+            ud={fieldLabels[key].um}
             type="number"
-            className="form-control ms-auto"
-            style={{ width: "6rem" }}
             value={plantConfig[key]}
-            onChange={(e) => updateField(key, +e.target.value)}
-            required
+            setValue={(v) => updateField(key, +v)}
+            inputStyle={{ width: "7rem" }}
           />
-          <div className="ms-2 text-secondary" style={{ width: "2rem" }}>
-            {fieldLabels[key].um}
-          </div>
         </div>
       ))}
 

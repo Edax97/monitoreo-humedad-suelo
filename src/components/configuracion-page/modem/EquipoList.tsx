@@ -2,6 +2,8 @@ import React from "react";
 import { ModemPlantType } from "../../../api-state/useModemList";
 import Dialog from "../../common/modal/Dialog";
 import ResponsiveContainer from "../../common/table/ResponsiveContainer";
+import ControlVarContainer from "./ControlVarContainer";
+import DatosEquipoContainer from "./DatosEquipoContainer";
 
 interface Props {
   equipoList: ModemPlantType[];
@@ -25,36 +27,32 @@ export default function EquipoList(props: Props) {
               <td className="px-3">{equipo.plant_nombre}</td>
               <td className="px-3">
                 <Dialog
-                  modalId="equipo_datos"
                   title="Datos de equipo"
-                  trigger={(id) => (
+                  showComponent={(onShow) => (
                     <button
                       className="btn btn-outline-info btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target={id}
+                      onClick={onShow}
                     >
                       Datos de equipo
                     </button>
                   )}
                 >
-                  EQUIPO FORM
+                  <DatosEquipoContainer modemId={`${equipo.modem_id}`} />
                 </Dialog>
               </td>
               <td className="px-3">
                 <Dialog
-                  modalId="equipo_control"
                   title="Control de rangos"
-                  trigger={(id) => (
+                  showComponent={(onShow) => (
                     <button
                       className="btn btn-outline-info btn-sm"
-                      data-bs-toggle="modal"
-                      data-bs-target={id}
+                      onClick={onShow}
                     >
                       Control de rangos
                     </button>
                   )}
                 >
-                  CONTROL DE RANGO FORM
+                  <ControlVarContainer modemId={`${equipo.modem_id}`} />
                 </Dialog>
               </td>
             </tr>

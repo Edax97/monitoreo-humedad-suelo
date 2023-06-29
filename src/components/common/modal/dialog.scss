@@ -1,8 +1,7 @@
 .modal {
   z-index: 1060;
-  position: static;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .modal-backdrop {
-  position: relative;
+  z-index: -1;
 }

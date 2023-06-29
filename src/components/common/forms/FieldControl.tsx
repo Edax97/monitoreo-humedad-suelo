@@ -4,11 +4,11 @@ const inputStyle: CSSProperties = {
   width: "12rem",
 };
 const udStyle: CSSProperties = {
-  width: "3rem",
+  width: "2.5rem",
 };
 
 interface Props {
-  label: string;
+  label?: string;
   ud?: string;
   value: string;
   type?: "text" | "number";
@@ -20,14 +20,16 @@ interface Props {
 }
 export default function FieldControl(props: Props) {
   return (
-    <div className="d-flex align-items-center flex-wrap gap-3">
-      <div className="opacity-75" style={props.labelStyle}>
-        {props.label}:
-      </div>
+    <div className="d-flex align-items-center flex-wrap gap-3 w-100">
+      {props.label && (
+        <div className="opacity-75" style={props.labelStyle}>
+          {props.label}:
+        </div>
+      )}
       <div className="ms-auto d-flex align-items-center">
         <input
           type={props.type || "text"}
-          className={`form-control bg-light bg-opacity-10 ${
+          className={`form-control bg-light bg-opacity-25 ${
             props.inputClassName || ""
           }`}
           style={props.inputStyle || inputStyle}
@@ -36,7 +38,7 @@ export default function FieldControl(props: Props) {
           onChange={(e) => props.setValue(e.target.value)}
           required
         />
-        <div className="ps-3 text-secondary" style={props.udStyle || udStyle}>
+        <div className="ps-2 text-secondary" style={props.udStyle || udStyle}>
           {props.ud || ""}
         </div>
       </div>
