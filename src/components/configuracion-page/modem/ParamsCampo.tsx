@@ -1,8 +1,8 @@
 import React, { FormEvent, useCallback, useEffect, useState } from "react";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import SuccessMessageComponent from "../../common/message/SuccessMessageComponent";
-import { PlantConfigType } from "../../../api/plantacion-configuracion-api";
 import FieldControl from "../../common/forms/FieldControl";
+import { ParamsConfigType } from "../../../api/params-config-api";
 
 interface FieldLabelsType {
   [key: string]: { label: string; um: string };
@@ -17,38 +17,40 @@ const fieldLabels: FieldLabelsType = {
 };
 
 interface Props {
-  plantConfig: PlantConfigType;
-  onSave: (plant: PlantConfigType) => any;
+  paramsConfig: ParamsConfigType;
+  onSave: (params: ParamsConfigType) => any;
   saveLoading: boolean;
   saveSuccess: boolean;
   saveError: boolean;
 }
 export default function ParamsCampo(props: Props) {
-  const [plantConfig, setPlantConfig] = useState<PlantConfigType | null>(null);
+  const [paramsConfig, setParamsConfig] = useState<ParamsConfigType | null>(
+    null
+  );
 
   useEffect(() => {
-    setPlantConfig(props.plantConfig);
-  }, [props.plantConfig]);
+    setParamsConfig(props.paramsConfig);
+  }, [props.paramsConfig]);
 
   const updateField = useCallback(
     (key: string, value: number) => {
-      if (!plantConfig) return null;
-      setPlantConfig({ ...plantConfig, [key]: `${value}` });
+      if (!paramsConfig) return null;
+      setParamsConfig({ ...paramsConfig, [key]: `${value}` });
     },
-    [plantConfig]
+    [paramsConfig]
   );
 
   const onSubmit = useCallback(
     (e: FormEvent<HTMLFormElement>) => {
       e.preventDefault();
-      if (!plantConfig) return;
-      props.onSave(plantConfig);
+      if (!paramsConfig) return;
+      props.onSave(paramsConfig);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [props.onSave, plantConfig]
+    [props.onSave, paramsConfig]
   );
 
-  if (!plantConfig) return null;
+  if (!paramsConfig) return null;
   return (
     <form action="#" onSubmit={onSubmit}>
       {Object.keys(fieldLabels).map((key) => (
@@ -57,7 +59,7 @@ export default function ParamsCampo(props: Props) {
             label={fieldLabels[key].label}
             ud={fieldLabels[key].um}
             type="number"
-            value={plantConfig[key]}
+            value={paramsConfig[key]}
             setValue={(v) => updateField(key, +v)}
             inputStyle={{ width: "7rem" }}
           />
@@ -77,13 +79,6 @@ export default function ParamsCampo(props: Props) {
       )}
 
       <div className="pt-4 d-flex justify-content-center gap-3">
-        <button
-          className="btn btn-secondary"
-          type="button"
-          data-bs-dismiss="modal"
-        >
-          Cancelar
-        </button>
         <button
           className="btn btn-primary text-white"
           type="submit"

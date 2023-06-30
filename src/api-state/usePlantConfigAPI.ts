@@ -1,7 +1,5 @@
 import useSWR from "swr";
-import { getPlantConfigAPI } from "../api/plantacion-configuracion-api";
-
-const getPlantConfigURL = "api/plantacion-data.json";
+import { getPlantConfigAPI, getPlantConfigURL } from "../api/plant-config-api";
 
 export function usePlantConfigAPI(plantId: string) {
   const { data, error, isLoading, mutate } = useSWR(

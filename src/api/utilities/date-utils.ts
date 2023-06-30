@@ -18,3 +18,8 @@ export function extendRangeArray(r: RangeArrayType): RangeArrayType {
   const endDate = `${timeFormat("%Y-%m-%d")(r[1])} 23:59:59`;
   return [new Date(startDate), new Date(endDate)];
 }
+
+export function intervaloDias(desde: Date, hasta: Date) {
+  const msInDay = 1000 * 60 * 60 * 24;
+  return (hasta.getTime() - desde.getTime()) / msInDay;
+}

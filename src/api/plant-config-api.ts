@@ -2,7 +2,6 @@
 
 export interface PlantConfigType {
   campo_id: string;
-  campo_name: string;
   sede_id: string;
   campo_empresa: string;
   cultivo: string;
@@ -12,11 +11,6 @@ export interface PlantConfigType {
   fecha_inicio: string;
   edad_cultivo: string;
   coordenadas: string;
-  prof_raiz: string;
-  capacidad_campo: string;
-  pmp: string;
-  densidad_ap: string;
-  const_agotamiento: string;
   [key: string]: string;
 }
 
@@ -26,6 +20,8 @@ interface ResponseType {
   data: PlantConfigType;
   code: string;
 }
+
+export const getPlantConfigURL = "api/plantacion-data.json";
 
 export const getPlantConfigAPI = (url: string, plantId: string) =>
   fetch(url)

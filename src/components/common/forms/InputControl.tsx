@@ -4,7 +4,7 @@ const inputStyle: CSSProperties = {
   width: "12rem",
 };
 const udStyle: CSSProperties = {
-  width: "3rem",
+  width: "2.5rem",
 };
 
 interface Props {

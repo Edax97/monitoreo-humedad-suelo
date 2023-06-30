@@ -1,0 +1,12 @@
+{
+  "status": true,
+  "code": "200",
+  "data": {
+    "prof_raiz": "30",
+    "capacidad_campo": "31.1",
+    "pmp": "19.09",
+    "densidad_ap": "1.43",
+    "const_agotamiento": "0.65"
+  },
+  "msg": ""
+}
