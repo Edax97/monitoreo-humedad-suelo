@@ -40,7 +40,7 @@ export default function AlertasContainer() {
 
   return (
     <CardWidget title={`Alertas ${sedeSelected?.name || ""}`} toolbar={true}>
-      <div className="px-4 pt-4 pb-2">
+      <div className="pt-4 pb-2">
         <TableFilter
           dataLista={alertas}
           headersCSV={headers}

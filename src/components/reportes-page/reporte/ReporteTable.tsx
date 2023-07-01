@@ -13,7 +13,7 @@ interface Props {
 export default function ReporteTable(props: Props) {
   return (
     <ResponsiveContainer>
-      <table className="table mx-auto" style={{ fontSize: "small" }}>
+      <table className="table" style={{ fontSize: 15 }}>
         <thead>
           <tr>
             {props.headers.map((h) => (

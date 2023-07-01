@@ -47,7 +47,7 @@ export default function PlantListContainer() {
       title={`Plantaciones ${sedeSelected?.name || ""}`}
       toolbar={true}
     >
-      <div className="px-4 pt-4 pb-2">
+      <div className="pt-4 pb-2 px-lg-5">
         <TableFilter
           dataLista={plantSedeList}
           headersCSV={headers}

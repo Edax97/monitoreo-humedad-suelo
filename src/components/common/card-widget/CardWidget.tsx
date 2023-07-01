@@ -39,7 +39,9 @@ export default function CardWidget(props: Props) {
         {children}
       </div> */}
       {!minimized && (
-        <div className="animate__animated animate__fadeIn">{children}</div>
+        <div className="animate__animated animate__fadeIn px-2 px-lg-4">
+          {children}
+        </div>
       )}
     </div>
   );

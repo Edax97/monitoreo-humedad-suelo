@@ -16,7 +16,7 @@ export default function ReportePageList() {
 
   return (
     <CardWidget title={`Reporte ${modemSelected?.name || ""}`} toolbar={true}>
-      <div className="px-4 pt-4 pb-2">
+      <div className="pt-4 pb-2 px-lg-5">
         <APIPagination
           pageCount={pagesCount || 1}
           hiddenPages={(prev, next) => (

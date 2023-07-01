@@ -1,5 +1,4 @@
 import React, { ReactNode } from "react";
-import CardWidget from "../card-widget/CardWidget";
 
 interface PropsType {
   titleCounter: string;
@@ -10,7 +9,7 @@ interface PropsType {
 }
 export default function CardResume(props: PropsType) {
   return (
-    <CardWidget className={props.className}>
+    <div className={`${props.className} card border-0 shadow`}>
       <div className="p-3 pt-4 mx-3">
         <div className=" opacity-75">{props.titleCounter}</div>
         <div className="mt-2 d-flex align-items-center">
@@ -19,6 +18,6 @@ export default function CardResume(props: PropsType) {
         </div>
         {props.children}
       </div>
-    </CardWidget>
+    </div>
   );
 }

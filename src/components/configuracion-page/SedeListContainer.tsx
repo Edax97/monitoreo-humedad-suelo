@@ -26,7 +26,7 @@ export default function SedeListContainer() {
     );
   return (
     <CardWidget title={`Sedes`} toolbar={true}>
-      <div className="px-4 pt-4 pb-2">
+      <div className="pt-4 pb-2">
         <TableFilter
           dataLista={sedeList}
           headersCSV={headers}

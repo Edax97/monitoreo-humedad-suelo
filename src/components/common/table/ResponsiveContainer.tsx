@@ -9,7 +9,7 @@ export default function ResponsiveContainer(props: Props) {
       style={{
         overflowX: "auto",
         whiteSpace: "nowrap",
-        maxWidth: "85vw",
+        maxWidth: "80vw",
         margin: "auto",
       }}
     >
