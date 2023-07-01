@@ -1,7 +1,10 @@
 import React from "react";
 import { useParamsConfigAPI } from "../../../api-state/useParamsConfigAPI";
 import { useRequestState } from "../../../api-state/useRequestState";
-import { ParamsConfigType } from "../../../api/params-config-api";
+import {
+  ParamsConfigType,
+  updateParamsConfigAPI,
+} from "../../../api/params-config-api";
 import LoadingComponent from "../../common/loading/LoadingComponent";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import ParamsCampo from "./ParamsCampo";
@@ -15,9 +18,10 @@ export default function ParamsCampoContainer(props: Props) {
   );
 
   const { reqState: saveState, onRequest: onSave } = useRequestState(
-    async (params: ParamsConfigType) => {
-      mutate(params);
-      return params;
+    (params: ParamsConfigType) => {
+      return updateParamsConfigAPI(params, props.modemId).then((par) =>
+        mutate(par)
+      );
     }
   );
 

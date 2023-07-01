@@ -1,12 +1,14 @@
 //const getAlertasURL = "api/alertas-data.json";
 
+import { postMethod, putMethod } from "./methods";
+
 export interface PlantConfigType {
   campo_id: string;
   sede_id: string;
   campo_empresa: string;
-  cultivo: string;
-  variedad: string;
-  area: string;
+  campo_cultivo: string;
+  campo_variedad: string;
+  campo_area: string;
   sistema_riego: string;
   fecha_inicio: string;
   edad_cultivo: string;
@@ -21,12 +23,29 @@ interface ResponseType {
   code: string;
 }
 
-export const getPlantConfigURL = "api/plantacion-data.json";
+export const getPlantConfigURL = "api/consultas/plantacion/detalle_campo";
+export const updatePlantConfigURL = "api/consultas/plantacion/detalle_campo";
 
-export const getPlantConfigAPI = (url: string, plantId: string) =>
-  fetch(url)
-    .then<ResponseType>((res) => res.json())
-    .then((r) => {
-      if (!r.status) throw Error("API error");
-      return r.data;
-    });
+export const getPlantConfigAPI = (api_url: string, plantId: string) =>
+  postMethod<ResponseType>(
+    `${process.env.REACT_APP_API_URL}/${api_url}?id_plantacion=${plantId}`
+  ).then((r) => {
+    if (!r.status) throw Error("API error");
+    return r.data;
+  });
+
+export const updatePlantConfigAPI = (plantConfig: PlantConfigType) => {
+  const body: ResponseType = {
+    status: true,
+    code: "200",
+    msg: "",
+    data: plantConfig,
+  };
+  return putMethod<ResponseType>(
+    `${process.env.REACT_APP_API_URL}/${updatePlantConfigURL}`,
+    body
+  ).then(({ status, data }) => {
+    if (!status) throw Error("API Error");
+    return data;
+  });
+};

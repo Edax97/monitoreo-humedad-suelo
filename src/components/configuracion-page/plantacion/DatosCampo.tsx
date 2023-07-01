@@ -50,8 +50,10 @@ export default function DatosCampo(props: Props) {
     if (!plantConfig) return [null, "0"];
     const inicio = new Date(plantConfig.fecha_inicio);
     const edad = (intervaloDias(inicio, new Date()) / 30).toFixed(1);
+    setPlantConfig({ ...plantConfig, edad_cultivo: edad });
     return [inicio, edad];
-  }, [plantConfig]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [plantConfig?.fecha_inicio]);
 
   if (!plantConfig) return null;
   return (
@@ -71,7 +73,7 @@ export default function DatosCampo(props: Props) {
           label="Cultivo"
           ud=""
           type="text"
-          value={plantConfig.cultivo}
+          value={plantConfig.campo_cultivo}
           setValue={(v) => setPlantConfig({ ...plantConfig, campo_empresa: v })}
           inputStyle={inputStyle}
         />
@@ -81,8 +83,10 @@ export default function DatosCampo(props: Props) {
           label="Variedad"
           ud=""
           type="text"
-          value={plantConfig.variedad}
-          setValue={(v) => setPlantConfig({ ...plantConfig, variedad: v })}
+          value={plantConfig.campo_variedad}
+          setValue={(v) =>
+            setPlantConfig({ ...plantConfig, campo_variedad: v })
+          }
           inputStyle={inputStyle}
         />
       </div>
@@ -91,12 +95,11 @@ export default function DatosCampo(props: Props) {
           label="Área"
           ud="Ha"
           type="number"
-          value={plantConfig.area.split(" ")[0]}
-          setValue={(v) => setPlantConfig({ ...plantConfig, area: `${v} Ha` })}
+          value={plantConfig.campo_area}
+          setValue={(v) => setPlantConfig({ ...plantConfig, campo_area: v })}
           inputStyle={inputStyle}
         />
       </div>
-
       <div className="mt-3">
         <FieldControl
           label="Sistema de riego"
@@ -107,7 +110,6 @@ export default function DatosCampo(props: Props) {
           inputStyle={inputStyle}
         />
       </div>
-
       <div className="mt-3">
         <InputControl
           label="Fecha de inicio"

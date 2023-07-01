@@ -1,7 +1,10 @@
 import React from "react";
 import { usePlantConfigAPI } from "../../../api-state/usePlantConfigAPI";
 import { useRequestState } from "../../../api-state/useRequestState";
-import { PlantConfigType } from "../../../api/plant-config-api";
+import {
+  PlantConfigType,
+  updatePlantConfigAPI,
+} from "../../../api/plant-config-api";
 import LoadingComponent from "../../common/loading/LoadingComponent";
 import ErrorMessageComponent from "../../common/message/ErrorMessageComponent";
 import DatosCampo from "./DatosCampo";
@@ -15,9 +18,8 @@ export default function DatosCampoContainer(props: Props) {
   );
 
   const { reqState: saveState, onRequest: onSave } = useRequestState(
-    async (plant: PlantConfigType) => {
-      mutate(plant);
-      return plant;
+    (plant: PlantConfigType) => {
+      return updatePlantConfigAPI(plant).then((p) => mutate(p));
     }
   );
 
