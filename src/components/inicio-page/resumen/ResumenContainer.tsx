@@ -23,7 +23,7 @@ export default function ResumenContainer() {
     <div className="row gy-4">
       <div className="col-12 col-md-6 col-xl-3">
         <CardResumeDetails
-          titleCounter="Total de plantaciones"
+          titleCounter="Plantaciones"
           className="bg-success bg-opacity-50"
           counter={resumen.conteo_plantaciones}
           icon={<Plant />}
@@ -32,7 +32,7 @@ export default function ResumenContainer() {
       </div>
       <div className="col-12 col-md-6 col-xl-3">
         <CardResumeDetails
-          titleCounter="Equipos"
+          titleCounter="Módems"
           className="bg-info bg-opacity-50"
           counter={resumen.conteo_equipos}
           icon={<i className="bi bi-cpu"></i>}
