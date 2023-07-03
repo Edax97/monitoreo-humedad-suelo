@@ -3,7 +3,7 @@ export const opcionesLista = [
     label: "Inicio",
     codigo: 1,
     icon: <i className="bi bi-house"></i>,
-    to: "/",
+    to: "/home",
   },
   {
     label: "Dashboard",

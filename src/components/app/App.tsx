@@ -1,20 +1,21 @@
-import { RouterProvider } from "react-router-dom";
-import ParamProvider from "../../state-provider/param-provider";
-import SensoresProvider from "../../state-provider/SensoresProvider";
-import { router } from "../../routes/router";
+import { useEffect, useMemo } from "react";
+import { Outlet, useNavigate } from "react-router-dom";
 import "./app.scss";
-import { SedeProvider } from "../../state-provider/SedeProvider";
 
 function App() {
-  return (
-    <SedeProvider>
-      <SensoresProvider>
-        <ParamProvider>
-          <RouterProvider router={router} />
-        </ParamProvider>
-      </SensoresProvider>
-    </SedeProvider>
-  );
+  const isLogged = useMemo(() => false, []);
+
+  const navigate = useNavigate();
+  useEffect(() => {
+    if (isLogged) {
+      navigate("/home");
+      return;
+    }
+    navigate("/");
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isLogged]);
+
+  return <Outlet />;
 }
 
 export default App;

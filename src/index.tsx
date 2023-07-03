@@ -6,15 +6,25 @@ import "bootstrap/js/dist/alert";
 import "bootstrap/js/dist/offcanvas";
 import "bootstrap/js/dist/modal";
 import "animate.css";
-import App from "./components/app/App";
 import reportWebVitals from "./reportWebVitals";
+import { SedeProvider } from "./state-provider/SedeProvider";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes/router";
+import ParamProvider from "./state-provider/param-provider";
+import SensoresProvider from "./state-provider/SensoresProvider";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
   <React.StrictMode>
-    <App />
+    <SedeProvider>
+      <SensoresProvider>
+        <ParamProvider>
+          <RouterProvider router={router} />
+        </ParamProvider>
+      </SensoresProvider>
+    </SedeProvider>
   </React.StrictMode>
 );
 
